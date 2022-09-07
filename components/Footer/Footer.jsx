@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { useId } from 'react';
 
 import cabanaLabsLogo from '../../public/images/cabana_labs_logo.png';
 import twitterLogo from '../../public/icons/twitter.png';
@@ -7,7 +8,10 @@ import dotsLogo from '../../public/icons/dots.png';
 import githubLogo from '../../public/icons/github.png';
 import telegramLogo from '../../public/icons/telegram.png';
 
+import { footerData } from './footerData';
+
 export const Footer = () => {
+  const id = useId();
   return (
     <footer className='bg-[#EFF1F2] mt-20'>
       <span className='lg:hidden text-xl ml-20'>
@@ -16,56 +20,23 @@ export const Footer = () => {
       <div className='hidden lg:flex justify-between pt-10 px-14 pb-4 text-lg'>
         <div className='flex flex-col'>
           <div className='flex gap-20'>
-            <div>
-              <span className='text-lg text-cabanaBlue font-bold'>About</span>
-              <ul className='space-y-8 mt-8'>
-                <li className='text-sm text-corduroy font-medium'>About</li>
-                <li className='text-sm text-corduroy font-medium'>About</li>
-                <li className='text-sm text-corduroy font-medium'>About</li>
-              </ul>
-            </div>
-            <div>
-              <span className='text-lg text-cabanaBlue font-bold'>
-                Solutions
-              </span>
-              <ul className='space-y-8 mt-8'>
-                <li className='text-sm text-corduroy font-medium'>Solutions</li>
-                <li className='text-sm text-corduroy font-medium'>Solutions</li>
-                <li className='text-sm text-corduroy font-medium'>Solutions</li>
-              </ul>
-            </div>
-            <div>
-              <span className='text-lg text-cabanaBlue font-bold'>Team</span>
-              <ul className='space-y-8 mt-8'>
-                <li className='text-sm text-corduroy font-medium'>Team</li>
-                <li className='text-sm text-corduroy font-medium'>Team</li>
-                <li className='text-sm text-corduroy font-medium'>Team</li>
-              </ul>
-            </div>
-            <div>
-              <span className='text-lg text-cabanaBlue font-bold'>Connect</span>
-              <ul className='space-y-8 mt-8'>
-                <li className='text-sm text-corduroy font-medium'>Connect</li>
-                <li className='text-sm text-corduroy font-medium'>Connect</li>
-                <li className='text-sm text-corduroy font-medium'>Connect</li>
-              </ul>
-            </div>
-            <div>
-              <span className='text-lg text-cabanaBlue font-bold'>
-                Documentation
-              </span>
-              <ul className='space-y-8 mt-8'>
-                <li className='text-sm text-corduroy font-medium'>
-                  Documentation
-                </li>
-                <li className='text-sm text-corduroy font-medium'>
-                  Documentation
-                </li>
-                <li className='text-sm text-corduroy font-medium'>
-                  Documentation
-                </li>
-              </ul>
-            </div>
+            {footerData.map(data => (
+              <div key={data.category}>
+                <span className='text-lg text-cabanaBlue font-bold'>
+                  {data.category}
+                </span>
+                <ul className='space-y-8 mt-8'>
+                  {data.items.map((item, index) => (
+                    <li
+                      key={item.label + id + index}
+                      className='text-sm text-corduroy font-medium'
+                    >
+                      {item.label}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
           <div className='flex items-center gap-10 mt-auto -translate-x-6'>
             <div>
@@ -98,7 +69,7 @@ export const Footer = () => {
               type='email'
               placeholder='Enter your Email'
             />
-            <button className='button-filled-sm w-max mt-2'>Sign up</button>
+            <button className='button-filled-xs w-max mt-2'>Sign up</button>
           </div>
           <div className='mt-auto pt-24'>
             <ul className='flex justify-between'>
