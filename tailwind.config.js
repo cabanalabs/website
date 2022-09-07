@@ -19,8 +19,8 @@ module.exports = {
         satoshi: ['Satoshi', 'sans-serif'],
       },
       fontSize: {
-        xs: ['1.2rem', { lineHeight: '1rem' }],
-        sm: ['1.4rem', { lineHeight: '1.25rem' }],
+        xs: ['1.2rem', { lineHeight: '1.6rem' }],
+        sm: ['1.4rem', { lineHeight: '2rem' }],
         base: ['1.6rem', { lineHeight: '1.5rem' }],
         lg: ['1.8rem', { lineHeight: '2.4rem' }],
         xl: ['2.4rem', { lineHeight: '3.6rem' }],

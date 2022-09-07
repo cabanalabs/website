@@ -1,4 +1,4 @@
-import { CustomSection, Button } from '../../components';
+import { CustomSection } from '../../components';
 
 export const HeroSection = () => {
   return (
@@ -19,8 +19,8 @@ export const HeroSection = () => {
             </span>
           </div>
           <div className='flex gap-4 text-xl'>
-            <Button>Learn more</Button>
-            <Button variant='outlined'>Book a demo</Button>
+            <button className='button-filled-lg'>Learn more</button>
+            <button className='button-outlined-lg'>Book a demo</button>
           </div>
         </div>
       </div>
