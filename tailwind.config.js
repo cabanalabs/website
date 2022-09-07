@@ -24,8 +24,9 @@ module.exports = {
         base: ['1.6rem', { lineHeight: '1.5rem' }],
         lg: ['1.8rem', { lineHeight: '2.4rem' }],
         xl: ['2.4rem', { lineHeight: '3.6rem' }],
-        '2xl': ['4.8rem', { lineHeight: '6rem' }],
-        '3xl': ['6rem', { lineHeight: '6.4rem' }],
+        '2xl': ['3.6rem', { lineHeight: '4.4rem' }],
+        '3xl': ['4.8rem', { lineHeight: '6rem' }],
+        '4xl': ['6rem', { lineHeight: '6.4rem' }],
       },
       dropShadow: {
         regular: '0px 8px 16px rgba(0, 0, 0, 0.24)',
