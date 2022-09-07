@@ -17,6 +17,7 @@ a {
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar-track {
@@ -37,6 +38,14 @@ a {
 @layer components {
   .nav-item {
     @apply text-black text-sm font-medium cursor-pointer hover:text-cabanaBlue hover:font-bold transition-all;
+  }
+
+  .section {
+    @apply my-20;
+  }
+
+  .section-content {
+    @apply max-w-[866px] m-auto px-6;
   }
 
   .button-outlined-lg {

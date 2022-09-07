@@ -13,7 +13,7 @@ import { footerData } from './footerData';
 export const Footer = () => {
   const id = useId();
   return (
-    <footer className='bg-[#EFF1F2] mt-20'>
+    <footer className='bg-porcelain mt-20'>
       <span className='lg:hidden text-xl ml-20'>
         Footer in progress for mobile
       </span>
