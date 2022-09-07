@@ -1,10 +1,8 @@
-import { CustomSection } from '../../components';
-
 export const HeroSection = () => {
   return (
-    <CustomSection>
-      <div className='min-h-[500px] md:min-h-[717px] bg-hero bg-cover flex justify-center items-center px-6'>
-        <div className='bg-white opacity-95 p-10 md:p-20 rounded-xl drop-shadow-regular max-w-[866px]'>
+    <section className='bg-hero bg-cover'>
+      <div className='min-h-[500px] md:min-h-[717px] flex justify-center items-center section-content'>
+        <div className='bg-white opacity-95 p-10 md:p-20 rounded-2xl drop-shadow-regular'>
           <h1 className='text-2xl md:text-4xl font-medium'>
             Security is hard.
             <br />
@@ -28,6 +26,6 @@ export const HeroSection = () => {
           </div>
         </div>
       </div>
-    </CustomSection>
+    </section>
   );
 };
