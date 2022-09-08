@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
 import { Navigation, Footer } from '../components';
-import { Banner, HeroSection, SSISection } from '../sections';
+import { Banner, HeroSection, SSISection, ServicesSection } from '../sections';
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
         <meta property='og:title' content='Cabana Branding Page' key='title' />
         <meta
           name='description'
-          content='Cabana Branding Page'
+          content='Cabana Branding Page and Hubert is super awesome - remember that'
           key='description'
         />
 
@@ -24,6 +24,7 @@ export default function Home() {
           <HeroSection />
           <SSISection />
           <Banner />
+          <ServicesSection />
         </main>
         <Footer />
       </div>
