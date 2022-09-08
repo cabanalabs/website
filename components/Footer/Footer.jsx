@@ -13,7 +13,7 @@ import { footerData } from './footerData';
 export const Footer = () => {
   const id = useId();
   return (
-    <footer className='bg-porcelain mt-20'>
+    <footer className='bg-porcelain mt-20 section'>
       <span className='lg:hidden text-xl ml-20'>
         Footer in progress for mobile
       </span>
@@ -45,6 +45,7 @@ export const Footer = () => {
                 width={78}
                 height={36}
                 src={cabanaLabsLogo}
+                quality={100}
               />
             </div>
             <span className='text-sm text-corduroy font-medium'>
@@ -79,6 +80,7 @@ export const Footer = () => {
                   height={22}
                   src={twitterLogo}
                   alt='Twitter icon'
+                  quality={100}
                 />
               </li>
               <li>
@@ -87,10 +89,17 @@ export const Footer = () => {
                   height={24}
                   src={linkedinLogo}
                   alt='LinkedIn icon'
+                  quality={100}
                 />
               </li>
               <li>
-                <Image width={30} height={17} src={dotsLogo} alt='Dots icon' />
+                <Image
+                  width={30}
+                  height={17}
+                  src={dotsLogo}
+                  alt='Dots icon'
+                  quality={100}
+                />
               </li>
               <li>
                 <Image
@@ -98,6 +107,7 @@ export const Footer = () => {
                   height={24}
                   src={githubLogo}
                   alt='Github icon'
+                  quality={100}
                 />
               </li>
               <li>
@@ -106,6 +116,7 @@ export const Footer = () => {
                   height={22}
                   src={telegramLogo}
                   alt='Telegram icon'
+                  quality={100}
                 />
               </li>
             </ul>

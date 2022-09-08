@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
 import { Navigation, Footer } from '../components';
-import { HeroSection, SSISection } from '../sections';
+import { Banner, HeroSection, SSISection } from '../sections';
 
 export default function Home() {
   return (
@@ -18,11 +18,12 @@ export default function Home() {
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         <meta />
       </Head>
-      <div className='relative max-w-[1200px] m-auto'>
+      <div className='relative'>
         <Navigation />
         <main>
           <HeroSection />
           <SSISection />
+          <Banner />
         </main>
         <Footer />
       </div>

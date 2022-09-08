@@ -10,13 +10,13 @@ export const Navigation = () => {
   };
 
   return (
-    <header className='h-[72px] sticky top-0 left-0 z-10'>
-      <nav className='flex justify-between items-center m-auto px-10 py-2 w-full h-full bg-white'>
+    <header className='h-[72px] sticky top-0 left-0 z-10 bg-white'>
+      <nav className='flex justify-between items-center m-auto px-10 py-2 h-full max-w-section'>
         <div
           className='cursor-pointer hover:scale-[1.02] active:scale-100 transition-all'
           onClick={onLogoClickHandler}
         >
-          <Image alt='Cabana Labs Logo' src={cabanaLabsLogo} />
+          <Image alt='Cabana Labs Logo' src={cabanaLabsLogo} quality={100} />
         </div>
         <ul className='hidden sm:flex gap-12 '>
           <li className='nav-item'>Home</li>
