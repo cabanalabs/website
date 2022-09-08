@@ -11,7 +11,7 @@ export const SectionItem = ({ image, title, description, reversed }) => {
         <Image layout='fill' src={image} alt={title} quality={100} />
       </div>
       <div className='px-10 md:px-0 text-left max-w-[500px]'>
-        <h3 className='text-xl md:text-xxl font-medium mb-6'>{title}</h3>
+        <h3 className='text-xl md:text-xxl font-bold mb-6'>{title}</h3>
         <span className='text-base md:text-lg text-corduroy font-medium'>
           {description}
         </span>

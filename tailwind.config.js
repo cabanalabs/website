@@ -14,7 +14,9 @@ module.exports = {
       },
       backgroundImage: {
         hero: "url('/images/hero_bg.png')",
+        banner: 'linear-gradient(90deg, #007CC2 0%, #B22479 100%)',
       },
+
       fontFamily: {
         satoshi: ['Satoshi', 'sans-serif'],
       },
@@ -31,6 +33,14 @@ module.exports = {
       },
       dropShadow: {
         regular: '0px 8px 16px rgba(0, 0, 0, 0.24)',
+      },
+      boxShadow: {
+        regular: '0px 4px 8px rgba(0, 0, 0, 0.16)',
+      },
+      maxWidth: {
+        section: '1200px',
+        banner: '1140px',
+        content: '866px',
       },
     },
   },
