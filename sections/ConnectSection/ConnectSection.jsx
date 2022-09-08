@@ -9,13 +9,16 @@ import telegramLogo from '../../public/icons/telegram_white.png';
 
 export const ConnectSection = () => {
   return (
-    <section className='section m-h-[468px] bg-[#00649C] md:rounded-r-full'>
+    <section
+      className='section m-h-[468px] bg-[#00649C] md:rounded-r-full'
+      id='contact'
+    >
       <div className='section-content py-20 relative h-full flex flex-col-reverse md:flex-row justify-between items-center'>
         <div className='space-y-14'>
           <h3 className='text-xl md:text-2xl text-white font-medium'>
             We would love to talk …
           </h3>
-          <h4 className='text-lg md:text-xl text-white font-medium'>
+          <h4 className='text-lg md:text-xl text-white font-normal'>
             If you would like to learn more about Verified Credentials, Self
             Sovereign Identity and how this can help your organization feel free
             to reach out and say hello.

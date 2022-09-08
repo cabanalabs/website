@@ -7,6 +7,7 @@ import {
   SSISection,
   ServicesSection,
   ConnectSection,
+  PartnetshipsSection,
 } from '../sections';
 
 export default function Home() {
@@ -32,6 +33,7 @@ export default function Home() {
           <Banner />
           <ServicesSection />
           <ConnectSection />
+          <PartnetshipsSection />
         </main>
         <Footer />
       </div>
