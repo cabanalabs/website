@@ -21,8 +21,12 @@ export const Navigation = () => {
         <ul className='hidden sm:flex gap-12 '>
           <li className='nav-item'>Home</li>
           <li className='nav-item'>About</li>
-          <li className='nav-item'>Services</li>
-          <li className='nav-item'>Contact</li>
+          <li className='nav-item'>
+            <a href='#services'>Services</a>
+          </li>
+          <li className='nav-item'>
+            <a href='#contact'>Contact</a>
+          </li>
           <li className='nav-item'>Documentation</li>
         </ul>
       </nav>

@@ -15,6 +15,7 @@ module.exports = {
       backgroundImage: {
         hero: "url('/images/hero_bg.png')",
         banner: 'linear-gradient(90deg, #007CC2 0%, #B22479 100%)',
+        partnerships: 'linear-gradient(90deg, #00649C 0%, #089B82 100%);',
       },
 
       fontFamily: {

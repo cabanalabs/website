@@ -6,7 +6,7 @@ import { servicesData } from './servicesData';
 
 export const ServicesSection = () => {
   return (
-    <section className='section'>
+    <section className='section' id='services'>
       <div className='section-content'>
         <SectionCard
           image={servicesImage}
