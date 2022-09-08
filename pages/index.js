@@ -1,7 +1,13 @@
 import Head from 'next/head';
 
 import { Navigation, Footer } from '../components';
-import { Banner, HeroSection, SSISection, ServicesSection } from '../sections';
+import {
+  Banner,
+  HeroSection,
+  SSISection,
+  ServicesSection,
+  ConnectSection,
+} from '../sections';
 
 export default function Home() {
   return (
@@ -25,6 +31,7 @@ export default function Home() {
           <SSISection />
           <Banner />
           <ServicesSection />
+          <ConnectSection />
         </main>
         <Footer />
       </div>
