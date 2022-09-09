@@ -66,7 +66,7 @@ export const Footer = () => {
               progress.
             </span>
             <input
-              className='border-dashed border-[1px] rounded-xl p-4 text-sm font-bold text-corduroy outline-none border-cabanaBlue placeholder-corduroy mt-10'
+              className='border-dashed border-[1px] border-cabanaBlue rounded-xl p-4 text-sm font-bold text-corduroy outline-none placeholder-corduroy mt-10'
               type='email'
               placeholder='Enter your Email'
             />
