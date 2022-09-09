@@ -16,7 +16,7 @@ export const Navigation = () => {
   };
 
   return (
-    <header className='h-[72px] sticky top-0 left-0 z-10 bg-white'>
+    <header className='h-[72px] sticky top-0 left-0 z-20 bg-white'>
       <nav className='flex justify-between items-center m-auto px-10 py-2 h-full max-w-section'>
         <div
           className='cursor-pointer hover:scale-[1.02] active:scale-100 transition-all'
