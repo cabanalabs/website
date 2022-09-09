@@ -22,7 +22,13 @@ export const Navigation = () => {
           className='cursor-pointer hover:scale-[1.02] active:scale-100 transition-all'
           onClick={onLogoClickHandler}
         >
-          <Image alt='Cabana Labs Logo' src={cabanaLabsLogo} quality={100} />
+          <Image
+            width={104}
+            height={48}
+            alt='Cabana Labs Logo'
+            src={cabanaLabsLogo}
+            quality={100}
+          />
         </div>
         <motion.div
           className='sm:hidden'
