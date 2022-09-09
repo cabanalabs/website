@@ -8,6 +8,7 @@ import {
   ServicesSection,
   ConnectSection,
   PartnetshipsSection,
+  FAQSection,
 } from '../sections';
 
 export default function Home() {
@@ -18,7 +19,7 @@ export default function Home() {
         <meta property='og:title' content='Cabana Branding Page' key='title' />
         <meta
           name='description'
-          content='Cabana Branding Page and Hubert is super awesome - remember that'
+          content='Cabana Branding Page and Hubert & Magda is super awesome - remember that'
           key='description'
         />
 
@@ -33,6 +34,7 @@ export default function Home() {
           <Banner />
           <ServicesSection />
           <ConnectSection />
+          <FAQSection />
           <PartnetshipsSection />
         </main>
         <Footer />

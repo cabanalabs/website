@@ -1,8 +1,27 @@
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+
+const cardVariants = {
+  offscreen: {
+    y: 150,
+  },
+  onscreen: {
+    y: 0,
+    transition: {
+      type: 'spring',
+      bounce: 0.4,
+      duration: 0.8,
+    },
+  },
+};
 
 export const SectionItem = ({ image, title, description, reversed }) => {
   return (
-    <div
+    <motion.div
+      initial='offscreen'
+      whileInView='onscreen'
+      viewport={{ once: true, amount: 0.8 }}
+      variants={cardVariants}
       className={`flex flex-col md:flex-row ${
         reversed ? 'md:flex-row-reverse' : ''
       } items-center justify-between`}
@@ -16,6 +35,6 @@ export const SectionItem = ({ image, title, description, reversed }) => {
           {description}
         </span>
       </div>
-    </div>
+    </motion.div>
   );
 };
