@@ -11,7 +11,7 @@ export const ConnectSection = () => {
   return (
     <section
       className='section m-h-[468px] bg-[#00649C] md:rounded-r-full'
-      id='contact'
+      id='connect'
     >
       <div className='section-content py-20 relative h-full flex flex-col-reverse md:flex-row justify-between items-center'>
         <div className='space-y-14'>

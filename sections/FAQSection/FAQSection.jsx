@@ -6,7 +6,7 @@ export const FAQSection = () => {
   const accordionIds = [0, 1, 2, 3, 4, 5];
 
   return (
-    <section className='section'>
+    <section className='section' id='faq'>
       <div className='section-content'>
         <h3 className='text-3xl text-center font-medium'>
           Frequently asked questions

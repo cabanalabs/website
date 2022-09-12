@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 import cabanaLabsLogo from '../../public/images/cabana_labs_logo.png';
 import { BurgerMenu } from './BurgerMenu';
@@ -54,7 +55,9 @@ export const Navigation = () => {
             <ul className='flex flex-col gap-4 '>
               {navData.map(item => (
                 <li key={item.label} className='nav-item'>
-                  <a href={item.to}>{item.label}</a>
+                  <Link to={item.to} offset={item.offset}>
+                    {item.label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -63,7 +66,9 @@ export const Navigation = () => {
         <ul className='hidden sm:flex gap-12 '>
           {navData.map(item => (
             <li key={item.label} className='nav-item'>
-              <a href={item.to}>{item.label}</a>
+              <Link to={item.to} offset={item.offset}>
+                {item.label}
+              </Link>
             </li>
           ))}
         </ul>
