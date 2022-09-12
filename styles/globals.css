@@ -42,6 +42,10 @@ a {
     @apply text-black text-sm font-medium cursor-pointer hover:text-cabanaBlue hover:font-bold transition-all;
   }
 
+  .nav-item-selected {
+    @apply text-sm cursor-pointer text-cabanaBlue font-bold;
+  }
+
   .section {
     @apply my-20 md:my-40 max-w-section mx-auto;
   }
