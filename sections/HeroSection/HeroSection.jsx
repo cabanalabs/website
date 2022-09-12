@@ -37,6 +37,7 @@ export const HeroSection = () => {
           src={heroBg}
           alt='Hero background'
           quality={100}
+          priority
         />
       </div>
     </section>
