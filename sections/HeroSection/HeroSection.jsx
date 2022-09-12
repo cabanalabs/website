@@ -4,7 +4,7 @@ import heroBg from '../../public/images/hero_bg.png';
 
 export const HeroSection = () => {
   return (
-    <section className='relative overflow-hidden'>
+    <section className='relative overflow-hidden' id='hero'>
       <div className='min-h-[500px] md:min-h-[717px] flex justify-center items-center section-content'>
         <div className='bg-white opacity-95 p-10 md:p-20 rounded-2xl drop-shadow-regular z-10'>
           <h1 className='text-2xl md:text-4xl font-medium'>

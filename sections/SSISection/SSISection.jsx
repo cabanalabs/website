@@ -5,7 +5,7 @@ import { ssiData } from './ssidata';
 
 export const SSISection = () => {
   return (
-    <section className='section'>
+    <section className='section' id='ssi'>
       <div className='section-content'>
         <SectionCard
           image={ssiImage}

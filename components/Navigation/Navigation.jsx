@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { scroller } from 'react-scroll';
 
 import cabanaLabsLogo from '../../public/images/cabana_labs_logo.png';
 import { BurgerMenu } from './BurgerMenu';
@@ -13,6 +14,14 @@ export const Navigation = () => {
     if (typeof window !== 'undefined') {
       window.scrollTo(0, 0);
     }
+  };
+
+  const onNavItemClickHandler = (to, offset) => {
+    if (!to) return;
+
+    scroller.scrollTo(to, {
+      offset: offset,
+    });
   };
 
   return (
@@ -54,7 +63,11 @@ export const Navigation = () => {
             <ul className='flex flex-col gap-4 '>
               {navData.map(item => (
                 <li key={item.label} className='nav-item'>
-                  <a href={item.to}>{item.label}</a>
+                  <span
+                    onClick={() => onNavItemClickHandler(item.to, item.offset)}
+                  >
+                    {item.label}
+                  </span>
                 </li>
               ))}
             </ul>
@@ -63,7 +76,9 @@ export const Navigation = () => {
         <ul className='hidden sm:flex gap-12 '>
           {navData.map(item => (
             <li key={item.label} className='nav-item'>
-              <a href={item.to}>{item.label}</a>
+              <span onClick={() => onNavItemClickHandler(item.to, item.offset)}>
+                {item.label}
+              </span>
             </li>
           ))}
         </ul>

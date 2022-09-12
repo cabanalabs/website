@@ -1,22 +1,27 @@
 export const navData = [
   {
     label: 'Home',
-    to: '#',
+    to: 'hero',
+    offset: -100,
   },
   {
     label: 'About',
-    to: '#',
+    to: 'ssi',
+    offset: -100,
   },
   {
     label: 'Services',
-    to: '#',
+    to: 'services',
+    offset: -100,
   },
   {
     label: 'Contact',
-    to: '#',
+    to: 'connect',
+    offset: -100,
   },
   {
     label: 'Documentation',
-    to: '#',
+    to: 'faq',
+    offset: -100,
   },
 ];
