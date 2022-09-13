@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import cabanaLabs from '../../public/images/cabana_logo_labs.png';
+import cabanaLabs from '../../public/images/cabana_logo_labs.svg';
 import twitterLogo from '../../public/icons/twitter_white.png';
 import linkedinLogo from '../../public/icons/linkedin_white.png';
 import dotsLogo from '../../public/icons/dots_white.png';

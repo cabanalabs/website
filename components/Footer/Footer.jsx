@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { useId } from 'react';
 
-import cabanaLabsLogo from '../../public/images/cabana_labs_logo.png';
+import cabanaLabsLogo from '../../public/images/cabana_logo.svg';
 import twitterLogo from '../../public/icons/twitter.png';
 import linkedinLogo from '../../public/icons/linkedin.png';
 import dotsLogo from '../../public/icons/dots.png';
