@@ -8,7 +8,7 @@ export const FAQSection = () => {
   return (
     <section className='section' id='faq'>
       <div className='section-content'>
-        <h3 className='text-3xl text-center font-medium'>
+        <h3 className='text-xxl md:text-3xl font-bold text-center md:font-medium'>
           Frequently asked questions
         </h3>
         <div className='mt-20 flex flex-col gap-10'>
