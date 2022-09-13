@@ -8,12 +8,12 @@ export const FAQItem = ({ i, expanded, setExpanded }) => {
   const isOpen = i === expanded;
 
   return (
-    <div className='bg-white border-dashed border-[1px] border-cabanaBlue rounded-xl p-10'>
+    <div
+      className='bg-white border-dashed border-[1px] border-cabanaBlue rounded-xl p-10'
+      onClick={() => setExpanded(isOpen ? false : i)}
+    >
       <div className='flex justify-between items-center cursor-pointer'>
-        <h4
-          className='text-lg md:text-xl font-medium text-corduroy'
-          onClick={() => setExpanded(isOpen ? false : i)}
-        >
+        <h4 className='text-lg md:text-xl font-medium text-corduroy'>
           What is meaning of life?
         </h4>
         <Image
