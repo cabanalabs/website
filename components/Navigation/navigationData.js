@@ -10,16 +10,6 @@ export const navData = [
     offset: -100,
   },
   {
-    label: 'Services',
-    to: 'services',
-    offset: -100,
-  },
-  {
-    label: 'Contact',
-    to: 'connect',
-    offset: -100,
-  },
-  {
     label: 'Documentation',
     to: 'faq',
     offset: -100,

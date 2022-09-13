@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { FAQItem } from '../../components';
 
 export const FAQSection = () => {
-  const [expanded, setExpanded] = useState(0);
+  const [expanded, setExpanded] = useState(null);
   const accordionIds = [0, 1, 2, 3, 4, 5];
 
   return (
