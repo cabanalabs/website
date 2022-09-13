@@ -8,7 +8,7 @@ export const Banner = () => {
         <h3 className='text-white text-center font-medium text-xxl md:text-3xl px-16 lg:pl-48 lg:pr-32'>
           Cabana secures your online organization.
         </h3>
-        <div className='shrink-0 w-[200px] h-[200px] md:w-[280px] md:h-[280px] lg:w-[340px] lg:h-[340px] xl:w-[450px] xl:h-[450px]'>
+        <div className='shrink-0 w-[200px] h-[200px] md:w-[280px] md:h-[280px] lg:mr-32'>
           <Image
             layout='responsive'
             src={bannerImage}

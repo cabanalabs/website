@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { scroller } from 'react-scroll';
 
-import cabanaLabsLogo from '../../public/images/cabana_labs_logo.png';
+import cabanaLabsLogo from '../../public/images/cabana_logo.svg';
 import { BurgerMenu } from './BurgerMenu';
 import { navData } from './navigationData';
 
