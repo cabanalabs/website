@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import heroBg from '../../public/images/hero_bg.png';
+import heroBg from '../../public/images/hero_bg.jpg';
 
 export const HeroSection = () => {
   return (
