@@ -45,7 +45,7 @@ export const PartnetshipsSection = () => {
               quality={100}
             />
           </div>
-          <div className=''>
+          <div className='-translate-y-2'>
             <Image
               src={tokenLogo}
               width={172}
