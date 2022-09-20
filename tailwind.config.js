@@ -10,8 +10,9 @@ module.exports = {
       colors: {
         cabanaBlue: '#007CC2',
         cabanaBlue2: '#00649C',
-        porcelain: '#EFF1F2',
         corduroy: '#585959',
+        porcelain: '#EFF1F2',
+        swamp: '#001927',
       },
       backgroundImage: {
         hero: "url('/images/hero_bg.png')",
