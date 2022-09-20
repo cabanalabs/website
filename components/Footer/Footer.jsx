@@ -1,41 +1,34 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { useId } from 'react';
 
 import cabanaLabsLogo from '../../public/images/cabana_logo.svg';
 import twitterLogo from '../../public/icons/twitter.png';
 import linkedinLogo from '../../public/icons/linkedin.png';
-import dotsLogo from '../../public/icons/dots.png';
-import githubLogo from '../../public/icons/github.png';
-import telegramLogo from '../../public/icons/telegram.png';
 
 import { footerData } from './footerData';
 
 export const Footer = () => {
   const id = useId();
+
   return (
     <footer className='bg-porcelain section mt-20 mb-0'>
       <div className='flex flex-col gap-10 md:flex-row justify-between px-6 lg:pt-10 lg:px-14 pb-4 text-lg'>
         <div className='flex flex-col flex-1 lg:flex-initial'>
-          <div className='flex justify-center lg:justify-start gap-20'>
+          <div className='flex flex-col gap-2 items-center md:items-start mb-8 md:mb-0 lg:justify-start'>
             {footerData.map(data => (
-              <div key={data.category}>
-                <span className='text-base md:text-lg text-cabanaBlue font-bold'>
-                  {data.category}
-                </span>
-                <ul className='space-y-8 mt-8'>
-                  {data.items.map((item, index) => (
-                    <li
-                      key={item.label + id + index}
-                      className='text-sm text-corduroy font-medium'
-                    >
-                      {item.label}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <ul key={data.category}>
+                <li>
+                  <Link href={data.to}>
+                    <a className='text-base md:text-lg text-cabanaBlue font-bold'>
+                      {data.category}
+                    </a>
+                  </Link>
+                </li>
+              </ul>
             ))}
           </div>
-          <div className='flex items-center justify-center gap-4 lg:gap-10 mt-auto md:-translate-x-6'>
+          <div className='flex items-center justify-center md:justify-start gap-4 lg:gap-10 mt-auto lg:-translate-x-6'>
             <div className='hidden md:block'>
               <Image
                 alt='Cabana Labs Logo'
@@ -69,8 +62,8 @@ export const Footer = () => {
             />
             <button className='button-filled-xs w-max mt-2'>Sign up</button>
           </div>
-          <div className='mt-auto pt-12 md:pt-24'>
-            <ul className='flex justify-around md:justify-between'>
+          <div className='mt-auto pt-12 md:ml-auto md:pt-24'>
+            <ul className='flex gap-12'>
               <li>
                 <Image
                   width={26}
@@ -86,33 +79,6 @@ export const Footer = () => {
                   height={24}
                   src={linkedinLogo}
                   alt='LinkedIn icon'
-                  quality={100}
-                />
-              </li>
-              <li>
-                <Image
-                  width={30}
-                  height={17}
-                  src={dotsLogo}
-                  alt='Dots icon'
-                  quality={100}
-                />
-              </li>
-              <li>
-                <Image
-                  width={24}
-                  height={24}
-                  src={githubLogo}
-                  alt='Github icon'
-                  quality={100}
-                />
-              </li>
-              <li>
-                <Image
-                  width={25}
-                  height={22}
-                  src={telegramLogo}
-                  alt='Telegram icon'
                   quality={100}
                 />
               </li>

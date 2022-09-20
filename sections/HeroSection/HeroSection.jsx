@@ -4,20 +4,24 @@ import heroBg from '../../public/images/hero_bg.jpg';
 
 export const HeroSection = () => {
   return (
-    <section className='relative overflow-hidden' id='hero'>
-      <div className='min-h-[500px] md:min-h-[717px] flex justify-center items-center section-content'>
+    <section className='relative overflow-hidden'>
+      <div className='py-20 lg:py-40 flex justify-center items-center section-content'>
         <div className='bg-white opacity-95 p-10 md:p-20 rounded-2xl drop-shadow-regular z-10'>
           <h1 className='text-2xl md:text-4xl font-medium'>
-            Security is hard.
+            <span className='text-cabanaBlue font-medium'>
+              Digital identity
+            </span>
+            is complex.
             <br />
             <span className='text-cabanaBlue font-medium'>Cabana</span> makes it
-            easy.
+            simple.
           </h1>
           <div className='my-12 md:my-14'>
             <span className='text-lg md:text-xl font-medium text-corduroy'>
-              We give individuals ownership and control over their data and
-              develop products that incentivise both consumers and organizations
-              to operate on a level playing field.
+              Cabana provides digital identity solutions that mutually benefit
+              organizations and consumers. Our products reduce costs and improve
+              trust for businesses by giving individuals ownership and control
+              over their data.
             </span>
           </div>
           <div className='flex gap-4'>

@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         cabanaBlue: '#007CC2',
+        cabanaBlue2: '#00649C',
         porcelain: '#EFF1F2',
         corduroy: '#585959',
       },
@@ -30,7 +31,7 @@ module.exports = {
         xxl: ['3rem', { lineHeight: '4.2rem' }],
         '2xl': ['3.6rem', { lineHeight: '4.4rem' }],
         '3xl': ['4.8rem', { lineHeight: '6rem' }],
-        '4xl': ['6rem', { lineHeight: '6.4rem' }],
+        '4xl': ['6rem', { lineHeight: '7.2rem' }],
       },
       dropShadow: {
         regular: '0px 8px 16px rgba(0, 0, 0, 0.24)',

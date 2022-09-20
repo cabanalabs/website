@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import plus from '../../public/icons/plus.png';
 import minus from '../../public/icons/minus.png';
 
-export const FAQItem = ({ i, expanded, setExpanded }) => {
+export const FAQItem = ({ i, expanded, setExpanded, item }) => {
   const isOpen = i === expanded;
 
   return (
@@ -14,7 +14,7 @@ export const FAQItem = ({ i, expanded, setExpanded }) => {
     >
       <div className='flex justify-between items-center cursor-pointer'>
         <h4 className='text-lg md:text-xl font-medium text-corduroy'>
-          What is meaning of life?
+          {item.question}
         </h4>
         <Image
           src={isOpen ? minus : plus}
@@ -37,8 +37,7 @@ export const FAQItem = ({ i, expanded, setExpanded }) => {
             transition={{ duration: 0.3 }}
           >
             <span className='text-base md:text-lg font-medium text-corduroy block pt-10'>
-              We believe in a decentralized future that returns ownership and
-              control over your finances, data, and identity.
+              {item.answer}
             </span>
           </motion.div>
         )}

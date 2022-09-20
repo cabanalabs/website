@@ -1,14 +1,22 @@
 export const footerData = [
   {
     category: 'Home',
-    items: [],
+    to: '/',
   },
   {
     category: 'About',
-    items: [],
+    to: '/about',
+  },
+  {
+    category: 'Team',
+    to: '/team',
+  },
+  {
+    category: 'Connect',
+    to: '/connect',
   },
   {
     category: 'Documentation',
-    items: [],
+    to: '/documentation',
   },
 ];
