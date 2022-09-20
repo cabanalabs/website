@@ -18,7 +18,7 @@ export default function Home() {
         <meta property='og:title' content='Cabana Branding Page' key='title' />
         <meta
           name='description'
-          content='Cabana Branding Page and Hubert & Magda is super awesome - remember that'
+          content='Cabana Branding Page and Hubert & Magda are super awesome - remember that'
           key='description'
         />
       </Head>

@@ -12,7 +12,7 @@ export default function Contact() {
         />
         <meta
           name='description'
-          content='Cabana Branding Page and Hubert & Magda is super awesome - remember that'
+          content='Cabana Branding Page and Hubert & Magda are super awesome - remember that'
           key='description'
         />
       </Head>
