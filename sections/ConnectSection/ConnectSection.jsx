@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import cabanaLabs from '../../public/images/cabana_logo_labs.svg';
 import twitterLogo from '../../public/icons/twitter.svg';
-import linkedinLogo from '../../public/icons/linkedin.svg';
+import linkedinLogo from '../../public/icons/linkedIn.svg';
 import mailIcon from '../../public/icons/mail.svg';
 
 export const ConnectSection = () => {
