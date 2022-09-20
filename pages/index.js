@@ -1,11 +1,10 @@
 import Head from 'next/head';
 
-import { Navigation, Footer } from '../components';
 import {
   Banner,
   HeroSection,
-  SSISection,
-  ServicesSection,
+  ForOrg,
+  ForConsumers,
   ConnectSection,
   PartnetshipsSection,
   FAQSection,
@@ -22,23 +21,16 @@ export default function Home() {
           content='Cabana Branding Page and Hubert & Magda is super awesome - remember that'
           key='description'
         />
-
-        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-        <meta />
       </Head>
-      <div className='relative'>
-        <Navigation />
-        <main>
-          <HeroSection />
-          <SSISection />
-          <Banner />
-          <ServicesSection />
-          <ConnectSection />
-          <FAQSection />
-          <PartnetshipsSection />
-        </main>
-        <Footer />
-      </div>
+      <>
+        <HeroSection />
+        <ForOrg />
+        <Banner />
+        <ForConsumers />
+        <ConnectSection />
+        <PartnetshipsSection />
+        <FAQSection />
+      </>
     </>
   );
 }

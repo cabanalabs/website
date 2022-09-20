@@ -2,6 +2,10 @@ import Image from 'next/image';
 
 import partnerships from '../../public/images/partnerships.png';
 
+import validataLogo from '../../public/images/validata.png';
+import steadynamic from '../../public/images/steadynamic.png';
+import tokenLogo from '../../public/images/token_logo.png';
+
 export const PartnetshipsSection = () => {
   return (
     <section className='bg-partnerships'>
@@ -22,19 +26,34 @@ export const PartnetshipsSection = () => {
           organization started with self sovereign identity and verified
           credentials.
         </h4>
-        <div className='flex flex-wrap justify-center gap-12 lg:gap-32 mt-14 md:mt-20 mb-10'>
-          <span className='text-xl md:text-xxl text-white font-semibold'>
-            Token Events
-          </span>
-          <span className='text-xl md:text-xxl text-white font-semibold'>
-            Validata
-          </span>
-          <span className='text-xl md:text-xxl text-white font-semibold'>
-            JennyCo
-          </span>
-          <span className='text-xl md:text-xxl text-white font-semibold'>
-            Steadynamic
-          </span>
+        <div className='flex flex-wrap justify-center items-center gap-8 mt-12 md:mt-24 md:gap-12'>
+          <div className=''>
+            <Image
+              src={validataLogo}
+              width={242}
+              height={44}
+              alt='Validata logo'
+              quality={100}
+            />
+          </div>
+          <div className=''>
+            <Image
+              src={steadynamic}
+              width={348}
+              height={47}
+              alt='Steadynamic logo'
+              quality={100}
+            />
+          </div>
+          <div className=''>
+            <Image
+              src={tokenLogo}
+              width={172}
+              height={73}
+              alt='Banner'
+              quality={100}
+            />
+          </div>
         </div>
       </div>
     </section>

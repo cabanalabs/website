@@ -1,7 +1,7 @@
 export { HeroSection } from './HeroSection/HeroSection';
-export { SSISection } from './SSISection/SSISection';
+export { ForOrg } from './ForOrg/ForOrg';
 export { Banner } from './Banner/Banner';
-export { ServicesSection } from './ServicesSection/ServicesSection';
+export { ForConsumers } from './ForConsumers/ForConsumers';
 export { ConnectSection } from './ConnectSection/ConnectSection';
 export { PartnetshipsSection } from './PartnetshipsSection/PartnetshipsSection';
 export { FAQSection } from './FAQSection/FAQSection';
