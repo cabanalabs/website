@@ -1,15 +1,22 @@
 import Image from 'next/image';
+import { scroller } from 'react-scroll';
 
 import heroBg from '../../public/images/hero_bg.jpg';
 
 export const HeroSection = () => {
+  const onLearnMoreClickHandler = () => {
+    scroller.scrollTo('forOrg', {
+      offset: -100,
+    });
+  };
+
   return (
     <section className='relative overflow-hidden'>
       <div className='py-20 lg:py-40 flex justify-center items-center section-content'>
         <div className='bg-white opacity-95 p-10 md:p-20 rounded-2xl drop-shadow-regular z-10'>
           <h1 className='text-2xl md:text-4xl font-medium'>
             <span className='text-cabanaBlue font-medium'>
-              Digital identity
+              Digital identity {''}
             </span>
             is complex.
             <br />
@@ -25,7 +32,10 @@ export const HeroSection = () => {
             </span>
           </div>
           <div className='flex gap-4'>
-            <button className='button-filled-sm md:button-filled-lg'>
+            <button
+              onClick={onLearnMoreClickHandler}
+              className='button-filled-sm md:button-filled-lg'
+            >
               Learn more
             </button>
             <button className='button-outlined-sm md:button-outlined-lg'>
