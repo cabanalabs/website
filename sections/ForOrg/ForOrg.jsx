@@ -5,7 +5,7 @@ import { forOrgData } from './forOrgData';
 
 export const ForOrg = () => {
   return (
-    <section className='section'>
+    <section className='section' id='forOrg'>
       <div className='section-content'>
         <SectionCard
           image={forOrg}
