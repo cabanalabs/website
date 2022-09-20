@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
       <NextNProgress
         color='#007CC2'
         startPosition={0.3}
-        stopDelayMs={0}
+        stopDelayMs={300}
         height={3}
         options={{ showSpinner: false }}
       />
