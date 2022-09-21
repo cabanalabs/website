@@ -21,10 +21,10 @@ export const PartnetshipsSection = () => {
         <h3 className='text-xl md:text-2xl text-white font-medium mt-6 mb-6 md:mb-10'>
           Partnerships
         </h3>
-        <h4 className='text-lg md:text-xl text-white font-normal text-center px-6 md:px-60'>
-          We offer a suite of tools and solutions to get you and your
-          organization started with self sovereign identity and verified
-          credentials.
+        <h4 className='text-lg md:text-xl text-white font-normal text-center px-6 md:px-52'>
+          Cabana has partnered with a number of innovative organizations that
+          are revolutionizing the way we manage and control our identity and
+          data online.
         </h4>
         <div className='flex flex-wrap justify-center items-center gap-8 mt-12 md:mt-24 md:gap-12'>
           <div className=''>
@@ -45,7 +45,7 @@ export const PartnetshipsSection = () => {
               quality={100}
             />
           </div>
-          <div className='-translate-y-2'>
+          <div className='-translate-y-3'>
             <Image
               src={tokenLogo}
               width={172}

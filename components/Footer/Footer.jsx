@@ -12,11 +12,11 @@ export const Footer = () => {
   const id = useId();
 
   return (
-    <footer className='mt-20 bg-white'>
-      <section className='section mb-0 pb-10'>
+    <footer className='bg-white'>
+      <section className='section mb-0 mt-0 pb-10'>
         <div className='flex flex-col gap-10 md:flex-row justify-between px-6 lg:pt-10 lg:px-14 pb-4 text-lg'>
           <div className='flex flex-col flex-1 lg:flex-initial'>
-            <div className='flex flex-col gap-2 items-center md:items-start mb-8 md:mb-0 lg:justify-start'>
+            <div className='flex flex-col gap-6 items-center md:items-start mb-8 md:mb-0 lg:justify-start'>
               {footerData.map(data => (
                 <ul key={data.category}>
                   <li>
