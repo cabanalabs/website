@@ -28,8 +28,8 @@ export default function Home() {
         <Banner />
         <ForConsumers />
         <ConnectSection />
-        <PartnetshipsSection />
         <FAQSection />
+        <PartnetshipsSection />
       </>
     </>
   );

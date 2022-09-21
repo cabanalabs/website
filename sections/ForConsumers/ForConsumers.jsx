@@ -10,7 +10,7 @@ export const ForConsumers = () => {
       <div className='section-content'>
         <SectionCard
           image={forConsumersImage}
-          title='Cabana For Consumers'
+          title='Cabana for consumers'
           description='Cabana gives consumers full control over their online personal data and digital privacy, improving security and reducing the time spent verifying their identity online.'
         />
         <div className='space-y-14 md:space-y-20 mt-20'>

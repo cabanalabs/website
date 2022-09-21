@@ -14,8 +14,9 @@ export const ConnectSection = () => {
             What we can do for your organization
           </h3>
           <h4 className='text-lg md:text-xl text-white font-normal md:pr-32'>
-            To learn more about digital identity solutions, contact our Cabana
-            team through any of our social platforms below.
+            Discover how easy it is to secure identity assets and
+            cryptocurrencies with our wallet-as-a-service solution and bring
+            web3 connectivity into your organization.
           </h4>
           <h4 className='text-lg md:text-xl text-white font-normal md:pr-32'>
             Book a demo to see how we can help your organization improve

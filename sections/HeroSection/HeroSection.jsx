@@ -15,13 +15,11 @@ export const HeroSection = () => {
       <div className='py-20 lg:py-40 flex justify-center items-center section-content'>
         <div className='bg-white opacity-95 p-10 md:p-20 rounded-2xl drop-shadow-regular z-10'>
           <h1 className='text-2xl md:text-4xl font-medium'>
-            <span className='text-cabanaBlue font-medium'>
-              Digital identity {''}
-            </span>
-            is complex.
+            One person, one account,
             <br />
-            <span className='text-cabanaBlue font-medium'>Cabana</span> makes it
-            simple.
+            <span className='text-cabanaBlue font-medium'>
+              infinite possibilities.
+            </span>
           </h1>
           <div className='my-12 md:my-14'>
             <span className='text-lg md:text-xl font-medium text-corduroy'>
