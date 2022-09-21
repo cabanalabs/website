@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import { scroller } from 'react-scroll';
 
 import heroBg from '../../public/images/hero_bg.jpg';
@@ -8,6 +9,12 @@ export const HeroSection = () => {
     scroller.scrollTo('forOrg', {
       offset: -100,
     });
+  };
+
+  const router = useRouter();
+
+  const onBookClickHandler = () => {
+    router.push('/contact');
   };
 
   return (
@@ -36,7 +43,10 @@ export const HeroSection = () => {
             >
               Learn more
             </button>
-            <button className='button-outlined-sm md:button-outlined-lg'>
+            <button
+              onClick={onBookClickHandler}
+              className='button-outlined-sm md:button-outlined-lg'
+            >
               Book a demo
             </button>
           </div>

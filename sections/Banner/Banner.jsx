@@ -1,8 +1,15 @@
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 import bannerImage from '../../public/images/banner.png';
 
 export const Banner = () => {
+  const router = useRouter();
+
+  const onBookClickHandler = () => {
+    router.push('/contact');
+  };
+
   return (
     <section className='max-w-[1140px] mx-auto px-6 xl:px-0'>
       <div className='bg-banner rounded-2xl drop-shadow-regular flex flex-col-reverse lg:flex-row justify-center items-center h-full w-full py-20'>
@@ -22,7 +29,10 @@ export const Banner = () => {
             Ask us about our gas subsidy program and offer your customers
             feeless transactions.
           </span>
-          <button className='block lg:hidden button-outlined-sm-white md:button-outlined-lg-white'>
+          <button
+            onClick={onBookClickHandler}
+            className='block lg:hidden button-outlined-sm-white md:button-outlined-lg-white'
+          >
             Book a demo
           </button>
         </div>
@@ -33,7 +43,10 @@ export const Banner = () => {
             alt='Banner'
             quality={100}
           />
-          <button className='hidden lg:block button-outlined-sm-white md:button-outlined-lg-white absolute -bottom-28 left-1/2 -translate-x-1/2 min-w-max'>
+          <button
+            onClick={onBookClickHandler}
+            className='hidden lg:block button-outlined-sm-white md:button-outlined-lg-white absolute -bottom-28 left-1/2 -translate-x-1/2 min-w-max'
+          >
             Book a demo
           </button>
         </div>
