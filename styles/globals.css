@@ -46,6 +46,10 @@ a {
     @apply text-sm cursor-pointer text-cabanaBlue hover:text-black font-bold;
   }
 
+  .cabana-input {
+    @apply border-dashed border-[1px] border-cabanaBlue rounded-xl p-4 text-sm font-bold text-corduroy outline-none placeholder-corduroy;
+  }
+
   .section {
     @apply my-20 md:my-40 max-w-section mx-auto;
   }

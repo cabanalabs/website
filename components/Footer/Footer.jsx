@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useId } from 'react';
 
 import cabanaLabsLogo from '../../public/images/cabana_logo.svg';
 import twitterLogo from '../../public/icons/twitter.png';
@@ -9,11 +8,9 @@ import linkedinLogo from '../../public/icons/linkedin.png';
 import { footerData } from './footerData';
 
 export const Footer = () => {
-  const id = useId();
-
   return (
     <footer className='bg-white'>
-      <section className='section mb-0 mt-0 pb-10'>
+      <section className='section mb-0 mt-0 pt-10 pb-10'>
         <div className='flex flex-col gap-10 md:flex-row justify-between px-6 lg:pt-10 lg:px-14 pb-4 text-lg'>
           <div className='flex flex-col flex-1 lg:flex-initial'>
             <div className='flex flex-col gap-6 items-center md:items-start mb-8 md:mb-0 lg:justify-start'>
@@ -57,7 +54,7 @@ export const Footer = () => {
                 progress.
               </span>
               <input
-                className='border-dashed border-[1px] border-cabanaBlue rounded-xl p-4 text-sm font-bold text-corduroy outline-none placeholder-corduroy mt-10'
+                className='cabana-input mt-10'
                 type='email'
                 placeholder='Enter your Email'
               />
