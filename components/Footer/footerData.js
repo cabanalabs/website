@@ -8,7 +8,7 @@ export const footerData = [
     to: '/about',
   },
   {
-    category: 'Connect',
-    to: '/connect',
+    category: 'Contact',
+    to: '/contact',
   },
 ];

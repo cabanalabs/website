@@ -6,3 +6,4 @@ export { ConnectSection } from './ConnectSection/ConnectSection';
 export { PartnetshipsSection } from './PartnetshipsSection/PartnetshipsSection';
 export { FAQSection } from './FAQSection/FAQSection';
 export { StaffSection } from './StaffSection/StaffSection';
+export { ContactFormSection } from './ContactFormSection/ContactFormSection';

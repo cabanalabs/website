@@ -22,17 +22,20 @@ export const Banner = () => {
             Ask us about our gas subsidy program and offer your customers
             feeless transactions.
           </span>
-          <button className='button-outlined-sm-white md:button-outlined-lg-white lg:absolute lg:bottom-20 lg: right-40'>
+          <button className='block lg:hidden button-outlined-sm-white md:button-outlined-lg-white'>
             Book a demo
           </button>
         </div>
-        <div className='shrink-0 w-[200px] h-[200px] md:w-[280px] md:h-[280px] lg:-translate-x-20'>
+        <div className='shrink-0 w-[200px] h-[200px] md:w-[280px] md:h-[280px] lg:-translate-x-20 -translate-y-14 relative'>
           <Image
             layout='responsive'
             src={bannerImage}
             alt='Banner'
             quality={100}
           />
+          <button className='hidden lg:block button-outlined-sm-white md:button-outlined-lg-white absolute -bottom-28 left-1/2 -translate-x-1/2 min-w-max'>
+            Book a demo
+          </button>
         </div>
       </div>
     </section>
