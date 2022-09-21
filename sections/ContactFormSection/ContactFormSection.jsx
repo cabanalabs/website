@@ -2,17 +2,56 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 
 export const ContactFormSection = () => {
-  const [textAreaLength, setTextAreaLength] = useState(0);
+  const [isMessageSent, setIsMessageSent] = useState(false);
 
   const textAreaMaxLength = 600;
 
   const {
     register,
     handleSubmit,
+    reset,
+    watch,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = data => console.log(data);
+  const textAreaValue = watch('message')?.length || 0;
+
+  const onSubmit = async data => {
+    const { name, organization, email, subject, message } = data;
+
+    const settings = {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name,
+        organization,
+        email,
+        subject,
+        message,
+      }),
+    };
+
+    try {
+      const res = await fetch(
+        `https://cabanalabs.com/info/contact/us`,
+        settings
+      );
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        console.log('somethig went wrong');
+        return;
+      }
+      console.log(data);
+      reset();
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <div className='my-20'>
@@ -30,6 +69,7 @@ export const ContactFormSection = () => {
               type='text'
               name='name'
               id='name'
+              defaultValue=''
               {...register('name')}
             />
           </div>
@@ -45,6 +85,7 @@ export const ContactFormSection = () => {
               type='text'
               name='organization'
               id='organization'
+              defaultValue=''
               {...register('organization')}
             />
           </div>
@@ -60,6 +101,7 @@ export const ContactFormSection = () => {
               type='email'
               name='email'
               id='email'
+              defaultValue=''
               {...register('email', {
                 required: {
                   value: true,
@@ -85,6 +127,7 @@ export const ContactFormSection = () => {
               type='text'
               name='subject'
               id='subject'
+              defaultValue=''
               {...register('subject', {
                 required: {
                   value: true,
@@ -110,9 +153,9 @@ export const ContactFormSection = () => {
               type='text'
               name='message'
               id='message'
+              defaultValue=''
               rows={4}
               maxLength={textAreaMaxLength}
-              onChange={e => setTextAreaLength(e.target.value.length)}
               {...register('message', {
                 required: {
                   value: true,
@@ -126,7 +169,7 @@ export const ContactFormSection = () => {
               </span>
             )}
             <span className='text-sm text-corduroy font-medium block text-right mt-2'>
-              {textAreaLength}/{textAreaMaxLength}
+              {textAreaValue}/{textAreaMaxLength}
             </span>
           </div>
         </div>
