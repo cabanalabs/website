@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useForm } from 'react-hook-form';
 
 import cabanaLabsLogo from '../../public/images/cabana_logo.svg';
 import twitterLogo from '../../public/icons/twitter.png';
@@ -8,6 +10,54 @@ import linkedinLogo from '../../public/icons/linkedin.png';
 import { footerData } from './footerData';
 
 export const Footer = () => {
+  const [isSending, setIsSending] = useState(false);
+  const [isAdded, setIsAdded] = useState(false);
+
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = async data => {
+    if (isSending) return;
+
+    const { email } = data;
+
+    const settings = {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email,
+      }),
+    };
+
+    try {
+      setIsSending(true);
+      const res = await fetch(
+        `https://cabanalabs.com/info/newsletter/signup`,
+        settings
+      );
+      const data = await res.json();
+
+      if (!res.ok) {
+        console.log('somethig went wrong', data);
+        return;
+      }
+
+      setIsAdded(true);
+      reset();
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setIsSending(false);
+    }
+  };
+
   return (
     <footer className='bg-white'>
       <section className='section mb-0 mt-0 pt-10 pb-10'>
@@ -53,12 +103,37 @@ export const Footer = () => {
                 Sign up for our Newsletter to stay up-to-date on Cabana Labs
                 progress.
               </span>
-              <input
-                className='cabana-input mt-10'
-                type='email'
-                placeholder='Enter your Email'
-              />
-              <button className='button-filled-xs w-max mt-2'>Sign up</button>
+              <form className='flex flex-col gap-4'>
+                <input
+                  className='cabana-input mt-10'
+                  type='email'
+                  placeholder='Enter your Email'
+                  id='email'
+                  defaultValue=''
+                  {...register('email', {
+                    required: {
+                      value: true,
+                      message: 'This field is required.',
+                    },
+                    pattern: {
+                      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,3}$/i,
+                      message: 'Invalid email address',
+                    },
+                  })}
+                />
+                {errors?.email?.message && (
+                  <span className='text-xs text-red-500 font-semibold block'>
+                    *{errors?.email?.message}
+                  </span>
+                )}
+                <button
+                  disabled={isSending}
+                  onClick={handleSubmit(onSubmit)}
+                  className='button-filled-xs w-max mt-2 disabled:bg-gray-400 disabled:border-transparent disabled:cursor-wait disabled:text-white'
+                >
+                  Sign up
+                </button>
+              </form>
             </div>
             <div className='mt-auto pt-12 md:ml-auto md:pt-24'>
               <ul className='flex gap-12'>

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 
 export const ContactFormSection = () => {
+  const [isSending, setIsSending] = useState(false);
   const [isMessageSent, setIsMessageSent] = useState(false);
 
   const textAreaMaxLength = 600;
@@ -17,6 +18,8 @@ export const ContactFormSection = () => {
   const textAreaValue = watch('message')?.length || 0;
 
   const onSubmit = async data => {
+    if (isSending) return;
+
     const { name, organization, email, subject, message } = data;
 
     const settings = {
@@ -35,28 +38,31 @@ export const ContactFormSection = () => {
     };
 
     try {
+      setIsSending(true);
       const res = await fetch(
         `https://cabanalabs.com/info/contact/us`,
         settings
       );
-
       const data = await res.json();
 
       if (!res.ok) {
-        console.log('somethig went wrong');
+        console.log('somethig went wrong', data);
         return;
       }
-      console.log(data);
+
+      setIsMessageSent(true);
       reset();
     } catch (error) {
       console.log(error);
+    } finally {
+      setIsSending(false);
     }
   };
 
   return (
     <div className='my-20'>
       <form>
-        <div className='mb-12 md:mb-28 space-y-12'>
+        <div className='mb-12 md:mb-20 space-y-12'>
           <div>
             <label
               className='text-base md:text-lg text-swamp font-medium mb-4 block'
@@ -106,6 +112,10 @@ export const ContactFormSection = () => {
                 required: {
                   value: true,
                   message: 'This field is required.',
+                },
+                pattern: {
+                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,3}$/i,
+                  message: 'Invalid email address',
                 },
               })}
             />
@@ -174,7 +184,11 @@ export const ContactFormSection = () => {
           </div>
         </div>
         <div className='flex justify-center'>
-          <button onClick={handleSubmit(onSubmit)} className='button-filled-lg'>
+          <button
+            disabled={isSending}
+            onClick={handleSubmit(onSubmit)}
+            className='button-filled-lg disabled:bg-gray-400 disabled:border-transparent disabled:cursor-wait disabled:text-white'
+          >
             Send Message
           </button>
         </div>
