@@ -50,6 +50,7 @@ export const Footer = () => {
       }
 
       setIsAdded(true);
+      alert('Email added');
       reset();
     } catch (error) {
       console.log(error);

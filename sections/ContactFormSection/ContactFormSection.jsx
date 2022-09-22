@@ -51,6 +51,7 @@ export const ContactFormSection = () => {
       }
 
       setIsMessageSent(true);
+      alert('Message sent');
       reset();
     } catch (error) {
       console.log(error);
