@@ -1,0 +1,45 @@
+{
+  "hosting": {
+    "public": "out",
+    "target": "cabana-labs",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/auth/**",
+        "function": "auth"
+      },
+      {
+        "source": "/info/**",
+        "function": "info"
+      },
+      {
+        "source": "/storage/**",
+        "function": "storage"
+      },
+      {
+        "source": "/org/**",
+        "function": "org"
+      },
+      {
+        "source": "/vc/**",
+        "function": "vc"
+      },
+      {
+        "source": "/m/**",
+        "function": "vc"
+      },
+      {
+        "source": "/t/**",
+        "function": "vc"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
