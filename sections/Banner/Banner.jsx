@@ -15,7 +15,7 @@ export const Banner = () => {
       <div className='bg-banner rounded-2xl drop-shadow-regular flex flex-col-reverse lg:flex-row justify-center items-center h-full w-full py-20'>
         <div className='px-16 lg:pl-48 lg:pr-24 space-y-10'>
           <h3 className='text-white text-left font-medium text-xxl md:text-3xl md:whitespace-nowrap'>
-            Securing crypto assets is hard
+            Securing crypto is hard
             <br />
             Cabana makes it easy
           </h3>
