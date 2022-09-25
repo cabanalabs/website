@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "cabana-identity"
+  },
+  "targets": {
+    "cabana-identity": {
+      "hosting": {
+        "cabana-labs": [
+          "cabana-labs"
+        ]
+      }
+    }
   }
 }
