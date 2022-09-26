@@ -152,22 +152,36 @@ export const Footer = () => {
             <div className='mt-auto pt-12 md:ml-auto md:pt-24'>
               <ul className='flex gap-12'>
                 <li>
-                  <Image
-                    width={26}
-                    height={22}
-                    src={twitterLogo}
-                    alt='Twitter icon'
-                    quality={100}
-                  />
+                  <a
+                    href='https://twitter.com/cabana_labs'
+                    target='_blank'
+                    rel='noreferrer'
+                    title='Cabana Labs Twitter'
+                  >
+                    <Image
+                      width={26}
+                      height={22}
+                      src={twitterLogo}
+                      alt='Twitter icon'
+                      quality={100}
+                    />
+                  </a>
                 </li>
                 <li>
-                  <Image
-                    width={24}
-                    height={24}
-                    src={linkedinLogo}
-                    alt='LinkedIn icon'
-                    quality={100}
-                  />
+                  <a
+                    href='https://www.linkedin.com/company/81897790'
+                    target='_blank'
+                    rel='noreferrer'
+                    title='Cabana Labs LinkedIn'
+                  >
+                    <Image
+                      width={24}
+                      height={24}
+                      src={linkedinLogo}
+                      alt='LinkedIn icon'
+                      quality={100}
+                    />
+                  </a>
                 </li>
               </ul>
             </div>
