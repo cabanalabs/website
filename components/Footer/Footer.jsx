@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 
 import cabanaLabsLogo from '../../public/images/cabana_logo.svg';
 import twitterLogo from '../../public/icons/twitter_svg.svg';
-import linkedinLogo from '../../public/icons/linkedin_svg.svg';
+import linkedinLogo from '../../public/icons/linkedIn_svg.svg';
 
 import { footerData } from './footerData';
 
