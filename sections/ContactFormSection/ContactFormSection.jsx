@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 
 export const ContactFormSection = () => {
@@ -51,7 +51,6 @@ export const ContactFormSection = () => {
       }
 
       setIsMessageSent(true);
-      alert('Message sent');
       reset();
     } catch (error) {
       console.log(error);
@@ -59,6 +58,18 @@ export const ContactFormSection = () => {
       setIsSending(false);
     }
   };
+
+  useEffect(() => {
+    if (!isMessageSent) return;
+
+    const successMessageTimeout = setTimeout(() => {
+      setIsMessageSent(false);
+    }, 5000);
+
+    return () => {
+      clearTimeout(successMessageTimeout);
+    };
+  }, [isMessageSent]);
 
   return (
     <div className='my-20'>
@@ -184,14 +195,19 @@ export const ContactFormSection = () => {
             </span>
           </div>
         </div>
-        <div className='flex justify-center'>
+        <div className='flex flex-col justify-center items-center'>
           <button
             disabled={isSending}
             onClick={handleSubmit(onSubmit)}
-            className='button-filled-lg disabled:bg-gray-400 disabled:border-transparent disabled:cursor-wait disabled:text-white'
+            className='button-filled-lg disabled:bg-gray-400 disabled:border-transparent disabled:cursor-wait disabled:text-white w-max'
           >
             Send Message
           </button>
+          {isMessageSent && (
+            <span className='text-base md:text-lg text-green-600 font-semibold mt-4'>
+              The message has been sent.
+            </span>
+          )}
         </div>
       </form>
     </div>

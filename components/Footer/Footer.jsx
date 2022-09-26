@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useForm } from 'react-hook-form';
@@ -50,7 +50,6 @@ export const Footer = () => {
       }
 
       setIsAdded(true);
-      alert('Email added');
       reset();
     } catch (error) {
       console.log(error);
@@ -58,6 +57,18 @@ export const Footer = () => {
       setIsSending(false);
     }
   };
+
+  useEffect(() => {
+    if (!isAdded) return;
+
+    const successNewsletterTimeout = setTimeout(() => {
+      setIsAdded(false);
+    }, 5000);
+
+    return () => {
+      clearTimeout(successNewsletterTimeout);
+    };
+  }, [isAdded]);
 
   return (
     <footer className='bg-white'>
@@ -134,6 +145,11 @@ export const Footer = () => {
                 >
                   Sign up
                 </button>
+                {isAdded && (
+                  <span className='text-xs text-green-600 font-semibold'>
+                    Thank you for signing up for the newsletter.
+                  </span>
+                )}
               </form>
             </div>
             <div className='mt-auto pt-12 md:ml-auto md:pt-24'>
