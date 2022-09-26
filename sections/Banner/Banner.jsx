@@ -12,14 +12,14 @@ export const Banner = () => {
 
   return (
     <section className='max-w-[1140px] mx-auto px-6 xl:px-0'>
-      <div className='bg-banner rounded-2xl drop-shadow-regular flex flex-col-reverse lg:flex-row justify-center items-center h-full w-full py-20'>
+      <div className='bg-banner rounded-2xl drop-shadow-regular flex flex-col-reverse lg:flex-row justify-center items-center h-full w-full pt-20 pb-10 md:py-20'>
         <div className='px-16 lg:pl-48 lg:pr-24 space-y-10'>
-          <h3 className='text-white text-left font-medium text-xxl md:text-3xl md:whitespace-nowrap'>
+          <h3 className='text-white text-left font-medium text-xl md:text-3xl md:whitespace-nowrap'>
             Securing crypto is hard
             <br />
             Cabana makes it easy
           </h3>
-          <span className='text-xl text-white block'>
+          <span className='text-lg md:text-xl text-white block'>
             Discover how to provide frictionless onboarding to your customers
             that increase customer engagement and conversions. No complicated
             seed phrases or private key exports. A multi-party computation
@@ -36,7 +36,7 @@ export const Banner = () => {
             Book a demo
           </button>
         </div>
-        <div className='shrink-0 w-[200px] h-[200px] md:w-[280px] md:h-[280px] lg:-translate-x-20 -translate-y-14 relative'>
+        <div className='shrink-0 w-[180px] h-[180px] md:w-[280px] md:h-[280px] lg:-translate-x-20 -translate-y-14 relative'>
           <Image
             layout='responsive'
             src={bannerImage}

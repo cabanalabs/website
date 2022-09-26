@@ -9,19 +9,21 @@ export const FAQItem = ({ i, expanded, setExpanded, item }) => {
 
   return (
     <div
-      className='bg-white border-dashed border-[1px] border-cabanaBlue rounded-xl p-10'
+      className='bg-white border-dashed border-[1px] border-cabanaBlue rounded-xl py-10 px-6'
       onClick={() => setExpanded(isOpen ? false : i)}
     >
-      <div className='flex justify-between items-center cursor-pointer'>
+      <div className='flex justify-between items-center cursor-pointer gap-4'>
         <h4 className='text-lg md:text-xl font-medium text-corduroy'>
           {item.question}
         </h4>
-        <Image
-          src={isOpen ? minus : plus}
-          alt={isOpen ? 'Minus' : 'Plus'}
-          height={36}
-          width={36}
-        />
+        <div className='shrink-0'>
+          <Image
+            src={isOpen ? minus : plus}
+            alt={isOpen ? 'Minus' : 'Plus'}
+            height={30}
+            width={30}
+          />
+        </div>
       </div>
       <AnimatePresence initial={false}>
         {isOpen && (
