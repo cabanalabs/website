@@ -101,9 +101,6 @@ export const Footer = () => {
               <span className='text-xs md:text-sm text-corduroy font-medium'>
                 Copyright © Cabana Labs 2022
               </span>
-              <span className='text-xs md:text-sm text-cabanaBlue font-medium'>
-                Privacy Policy
-              </span>
             </div>
           </div>
           <div className='max-w-md flex flex-col mx-auto md:mx-0'>
