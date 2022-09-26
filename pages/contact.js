@@ -17,13 +17,13 @@ export default function Contact() {
         />
         <meta
           name='description'
-          content='Cabana Branding Page and Hubert & Magda are super awesome - remember that'
+          content='Cabana Branding Page - contact'
           key='description'
         />
       </Head>
       <section className='section'>
         <div className='section-content'>
-          <div className='bg-white max-w-[866px] mx-auto shadow-regular flex flex-col items-center rounded-2xl py-10 px-10 md:pt-10 md:pb-20 md:px-24'>
+          <div className='bg-white max-w-[866px] mx-auto shadow-regular flex flex-col items-center rounded-2xl py-10 px-10 md:pt-20 md:pb-20 md:px-24'>
             <div className='mb-10 md:mb-16 w-[170px] h-[170px] md:w-[260px] md:h-[260px]'>
               <Image
                 layout='responsive'

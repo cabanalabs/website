@@ -75,7 +75,7 @@ a {
   }
 
   .button-filled-xs {
-    @apply border-2 border-cabanaBlue bg-cabanaBlue text-white py-[5px] px-[12px]  rounded-full text-xs font-medium hover:bg-white hover:border-2 hover:border-cabanaBlue hover:text-cabanaBlue hover:scale-[1.02] active:scale-100 transition-all;
+    @apply border-2 border-cabanaBlue bg-cabanaBlue text-white py-[5px] px-[12px] rounded-full text-xs font-bold hover:bg-white hover:border-2 hover:border-cabanaBlue hover:text-cabanaBlue hover:scale-[1.02] active:scale-100 transition-all;
   }
 
   .button-outlined-lg-white {

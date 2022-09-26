@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { useForm } from 'react-hook-form';
 
 import cabanaLabsLogo from '../../public/images/cabana_logo.svg';
-import twitterLogo from '../../public/icons/twitter.png';
-import linkedinLogo from '../../public/icons/linkedin.png';
+import twitterLogo from '../../public/icons/twitter_svg.svg';
+import linkedinLogo from '../../public/icons/linkedIn_svg.svg';
 
 import { footerData } from './footerData';
 
@@ -101,9 +101,6 @@ export const Footer = () => {
               <span className='text-xs md:text-sm text-corduroy font-medium'>
                 Copyright © Cabana Labs 2022
               </span>
-              <span className='text-xs md:text-sm text-cabanaBlue font-medium'>
-                Privacy Policy
-              </span>
             </div>
           </div>
           <div className='max-w-md flex flex-col mx-auto md:mx-0'>
@@ -155,22 +152,36 @@ export const Footer = () => {
             <div className='mt-auto pt-12 md:ml-auto md:pt-24'>
               <ul className='flex gap-12'>
                 <li>
-                  <Image
-                    width={26}
-                    height={22}
-                    src={twitterLogo}
-                    alt='Twitter icon'
-                    quality={100}
-                  />
+                  <a
+                    href='https://twitter.com/cabana_labs'
+                    target='_blank'
+                    rel='noreferrer'
+                    title='Cabana Labs Twitter'
+                  >
+                    <Image
+                      width={26}
+                      height={22}
+                      src={twitterLogo}
+                      alt='Twitter icon'
+                      quality={100}
+                    />
+                  </a>
                 </li>
                 <li>
-                  <Image
-                    width={24}
-                    height={24}
-                    src={linkedinLogo}
-                    alt='LinkedIn icon'
-                    quality={100}
-                  />
+                  <a
+                    href='https://www.linkedin.com/company/81897790'
+                    target='_blank'
+                    rel='noreferrer'
+                    title='Cabana Labs LinkedIn'
+                  >
+                    <Image
+                      width={24}
+                      height={24}
+                      src={linkedinLogo}
+                      alt='LinkedIn icon'
+                      quality={100}
+                    />
+                  </a>
                 </li>
               </ul>
             </div>

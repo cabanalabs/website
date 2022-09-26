@@ -3,7 +3,7 @@ import Image from 'next/image';
 import partnerships from '../../public/images/partnerships.png';
 
 import validataLogo from '../../public/images/validata.png';
-import steadynamic from '../../public/images/steadynamic.png';
+import steadynamic from '../../public/images/steadynamic.svg';
 import tokenLogo from '../../public/images/token_logo.png';
 
 export const PartnetshipsSection = () => {
