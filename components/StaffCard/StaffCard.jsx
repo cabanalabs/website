@@ -3,19 +3,40 @@ import Image from 'next/image';
 import linkedInLogo from '../../public/icons/linkedin_blue.svg';
 
 export const StaffCard = ({ staff }) => {
-  const { name, role, comment, avatar, socials } = staff;
+  const { name, role, description, avatar, list, linkedIn } = staff;
 
   return (
-    <div className='px-16 mx-auto'>
+    <li>
       <div className='flex justify-center items-center mb-8'>
-        <Image src={avatar} alt={name} width={132} height={132} />
+        <Image
+          className='rounded-full bg-pos'
+          src={avatar}
+          alt={name}
+          width={132}
+          height={132}
+          objectFit='cover'
+        />
       </div>
       <h2 className='text-xl text-black font-bold'>{name}</h2>
       <h3 className='text-lg text-swamp font-medium mb-4'>{role}</h3>
-      <span className='text-sm text-corduroy font-medium'>{comment}</span>
+      <span className='text-sm text-corduroy font-medium'>{description}</span>
+      <ul className='list-disc text-sm text-corduroy font-medium mt-4 pl-6 space-y-1'>
+        {list?.map(item => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
       <div className='mt-8'>
-        <Image src={linkedInLogo} alt='LinkedIn logo' width={24} height={24} />
+        {linkedIn && (
+          <a href={linkedIn.link} target='_blank' rel='noreferrer'>
+            <Image
+              src={linkedInLogo}
+              alt='LinkedIn logo'
+              width={24}
+              height={24}
+            />
+          </a>
+        )}
       </div>
-    </div>
+    </li>
   );
 };
