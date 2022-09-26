@@ -9,15 +9,11 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Cabana Branding Page - Contact</title>
-        <meta
-          property='og:title'
-          content='Cabana Branding Page - contact'
-          key='title'
-        />
+        <title>Cabana Labs - Contact</title>
+        <meta property='og:title' content='Cabana Labs - contact' key='title' />
         <meta
           name='description'
-          content='Cabana Branding Page - contact'
+          content='Cabana Labs - contact'
           key='description'
         />
       </Head>
