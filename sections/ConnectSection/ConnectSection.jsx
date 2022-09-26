@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 import cabanaLabs from '../../public/images/cabana_logo_labs.svg';
 import twitterLogo from '../../public/icons/twitter.svg';
@@ -6,6 +7,12 @@ import linkedinLogo from '../../public/icons/linkedIn.svg';
 import mailIcon from '../../public/icons/mail.svg';
 
 export const ConnectSection = () => {
+  const router = useRouter();
+
+  const onEnvelopeClickHandler = () => {
+    router.push('/contact');
+  };
+
   return (
     <section className='m-h-[468px] bg-cabanaBlue2 md:rounded-r-full mb-0 md:mr-20'>
       <div className='section-content py-20 relative h-full flex flex-col-reverse lg:flex-row justify-between items-center'>
@@ -25,24 +32,42 @@ export const ConnectSection = () => {
           </h4>
           <ul className='flex gap-16 items-center'>
             <li>
-              <Image
-                width={26}
-                height={22}
-                src={twitterLogo}
-                alt='Twitter icon'
-                quality={100}
-              />
+              <a
+                href='https://twitter.com/cabana_labs'
+                target='_blank'
+                rel='noreferrer'
+                title='Cabana Labs Twitter'
+              >
+                <Image
+                  width={26}
+                  height={22}
+                  src={twitterLogo}
+                  alt='Twitter icon'
+                  quality={100}
+                />
+              </a>
             </li>
             <li>
-              <Image
-                width={24}
-                height={24}
-                src={linkedinLogo}
-                alt='LinkedIn icon'
-                quality={100}
-              />
+              <a
+                href='https://www.linkedin.com/company/81897790'
+                target='_blank'
+                rel='noreferrer'
+                title='Cabana Labs LinkedIn'
+              >
+                <Image
+                  width={24}
+                  height={24}
+                  src={linkedinLogo}
+                  alt='LinkedIn icon'
+                  quality={100}
+                />
+              </a>
             </li>
-            <li>
+            <li
+              onClick={onEnvelopeClickHandler}
+              role='link'
+              className='cursor-pointer'
+            >
               <Image
                 width={24}
                 height={24}

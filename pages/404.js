@@ -19,15 +19,15 @@ export default function Custom404() {
   return (
     <>
       <Head>
-        <title>Cabana Branding Page - not found</title>
+        <title>Cabana Labs - not found</title>
         <meta
           property='og:title'
-          content='Cabana Branding Page - not found'
+          content='Cabana Labs - not found'
           key='title'
         />
         <meta
           name='description'
-          content='Cabana Branding Page - not found'
+          content='Cabana Labs - not found'
           key='description'
         />
       </Head>

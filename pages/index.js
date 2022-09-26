@@ -14,13 +14,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Cabana Branding Page</title>
-        <meta property='og:title' content='Cabana Branding Page' key='title' />
-        <meta
-          name='description'
-          content='Cabana Branding Page'
-          key='description'
-        />
+        <title>Cabana Labs</title>
+        <meta property='og:title' content='Cabana Labs' key='title' />
+        <meta name='description' content='Cabana Labs' key='description' />
       </Head>
       <>
         <HeroSection />

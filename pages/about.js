@@ -9,15 +9,11 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>Cabana Branding Page - About</title>
-        <meta
-          property='og:title'
-          content='Cabana Branding Page - about'
-          key='title'
-        />
+        <title>Cabana Labs - About</title>
+        <meta property='og:title' content='Cabana Labs - about' key='title' />
         <meta
           name='description'
-          content='Cabana Branding Page - about'
+          content='Cabana Labs - about'
           key='description'
         />
       </Head>
