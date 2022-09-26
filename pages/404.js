@@ -27,7 +27,7 @@ export default function Custom404() {
         />
         <meta
           name='description'
-          content='Cabana Branding Page and Hubert & Magda are super awesome - remember that'
+          content='Cabana Branding Page - not found'
           key='description'
         />
       </Head>

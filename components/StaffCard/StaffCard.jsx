@@ -27,7 +27,12 @@ export const StaffCard = ({ staff }) => {
       </ul>
       <div className='mt-8'>
         {linkedIn && (
-          <a href={linkedIn.link} target='_blank' rel='noreferrer'>
+          <a
+            href={linkedIn.link}
+            target='_blank'
+            rel='noreferrer'
+            title={`${name} - ${role}`}
+          >
             <Image
               src={linkedInLogo}
               alt='LinkedIn logo'

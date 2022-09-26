@@ -17,7 +17,7 @@ export default function About() {
         />
         <meta
           name='description'
-          content='Cabana Branding Page and Hubert & Magda are super awesome - remember that'
+          content='Cabana Branding Page - about'
           key='description'
         />
       </Head>
