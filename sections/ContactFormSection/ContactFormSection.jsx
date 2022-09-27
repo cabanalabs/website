@@ -199,7 +199,7 @@ export const ContactFormSection = () => {
           <button
             disabled={isSending}
             onClick={handleSubmit(onSubmit)}
-            className='button-filled-lg disabled:bg-gray-400 disabled:border-transparent disabled:cursor-wait disabled:text-white w-max'
+            className='button-filled-sm md:button-filled-lg disabled:bg-gray-400 disabled:border-transparent disabled:cursor-wait disabled:text-white w-max'
           >
             Send Message
           </button>

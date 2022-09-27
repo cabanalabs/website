@@ -75,19 +75,17 @@ export const Footer = () => {
       <section className='section mb-0 mt-0 pt-10 pb-10'>
         <div className='flex flex-col gap-10 md:flex-row justify-between px-6 lg:pt-10 lg:px-14 pb-4 text-lg'>
           <div className='flex flex-col flex-1 lg:flex-initial'>
-            <div className='flex flex-col gap-6 items-center md:items-start mb-8 md:mb-0 lg:justify-start'>
+            <ul className='flex md:flex-col gap-6 items-center justify-center md:items-start mb-8 md:mb-0 lg:justify-start'>
               {footerData.map(data => (
-                <ul key={data.category}>
-                  <li>
-                    <Link href={data.to}>
-                      <a className='text-base md:text-lg text-cabanaBlue font-bold'>
-                        {data.category}
-                      </a>
-                    </Link>
-                  </li>
-                </ul>
+                <li key={data.category}>
+                  <Link href={data.to}>
+                    <a className='text-base md:text-lg text-cabanaBlue font-bold'>
+                      {data.category}
+                    </a>
+                  </Link>
+                </li>
               ))}
-            </div>
+            </ul>
             <div className='flex items-center justify-center md:justify-start gap-4 lg:gap-10 mt-auto lg:-translate-x-6'>
               <div className='hidden md:block'>
                 <Image
