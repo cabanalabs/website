@@ -27,29 +27,26 @@ export const PartnetshipsSection = () => {
           data online.
         </h4>
         <div className='flex flex-wrap justify-center items-center gap-8 mt-12 md:mt-24 md:gap-20'>
-          <div className=''>
+          <div className='w-[170px] h-[31px] md:w-[242px] md:h-[44px]'>
             <Image
+              layout='responsive'
               src={validataLogo}
-              width={242}
-              height={44}
               alt='Validata logo'
               quality={100}
             />
           </div>
-          <div className=''>
+          <div className='w-[244px] h-[33px] md:w-[348px] md:h-[47px]'>
             <Image
+              layout='responsive'
               src={steadynamic}
-              width={348}
-              height={47}
               alt='Steadynamic logo'
               quality={100}
             />
           </div>
-          <div className='-translate-y-3'>
+          <div className='w-[120px] h-[51px] md:w-[172px] md:h-[73px] -translate-y-8 md:-translate-y-3'>
             <Image
+              layout='responsive'
               src={tokenLogo}
-              width={172}
-              height={73}
               alt='Banner'
               quality={100}
             />
