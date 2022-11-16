@@ -13,6 +13,10 @@
         "function": "auth"
       },
       {
+        "source": "/badges/**",
+        "function": "badges"
+      },
+      {
         "source": "/info/**",
         "function": "info"
       },
@@ -26,14 +30,6 @@
       },
       {
         "source": "/vc/**",
-        "function": "vc"
-      },
-      {
-        "source": "/m/**",
-        "function": "vc"
-      },
-      {
-        "source": "/t/**",
         "function": "vc"
       },
       {
