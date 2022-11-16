@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div style="margin-top: 10px; text-align: center">
+    <script async src="https://telegram.org/js/telegram-widget.js?19"></script>
+    <script type="text/javascript">
+
+        function onButtonClick() {
+
+            window.top.postMessage('telegram_verifying', '*');
+
+            window.Telegram.Login.auth(
+                { bot_id: '5316486466', request_access: true },
+                (data) => { //Callback from Telegram.Window via postMessage
+                    if (data) {
+                        onTelegramAuth(data);
+                    }
+                    else {
+                        console.error('Telegram login failed')
+                        window.top.postMessage('telegram_failed', '*');
+                    }
+                }
+            );
+
+            //Telegram OAUTH Popup Window
+            // OAUTH start page opens new window with below URL. After "Accept", source is injected with "window.opener.postMessage(authData, whitelistedOrigin)"
+            //https://oauth.telegram.org/auth?bot_id=5316486466&origin=http%3A%2F%2Fcabana.com%3A3001&request_access=true
+
+            //Challenges
+            //1. window.opener is only populated when one window is opened by another.
+            //2. Opening from extension will not keep the extension open. Once it loses focus it goes away. This is what launchWebAuthFlow accomplishes. (keeps extension open until complete)
+
+            //https://oauth.telegram.org/auth?bot_id=5128064540&origin=https%3A%2F%2Fcabanalabs.com&request_access=true
+
+        }
+        function onTelegramAuth(user) {
+            console.log('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
+
+            const urlParts = new URL(window.location.href);
+            const jwt = urlParts.searchParams.get('jwt');
+
+            console.log('adding token', jwt)
+
+            user.jwt = jwt;
+
+            const paramStr = this.serialize(user);
+            const url = `https://cabanalabs.com/auth/ext/telegram?${paramStr}`;
+            // const url = `http://cabana.com:5001/auth/ext/telegram?${paramStr}`;
+
+            fetch(url)
+                .then(() => {
+                    console.log('LOGIN SUCCESS');
+                    window.top.postMessage('telegram_completed', '*');
+                })
+                .catch(() => {
+                    console.log('LOGIN FAILED')
+                    window.top.postMessage('telegram_failed', '*');
+                })
+        }
+
+        function serialize(obj) {
+            if (obj) {
+                const keyMap = Object.keys(obj).map((key) => {
+                    return `${encodeURIComponent(key)}=${encodeURIComponent(obj[key])}`;
+                });
+
+                return keyMap.join('&');
+            }
+            return '';
+        }
+    </script>
+    <button onclick="onButtonClick()">Telegram Login</button>
+</div>
+</body>
+</html>
+
