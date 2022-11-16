@@ -17,6 +17,10 @@
         "function": "badges"
       },
       {
+        "source": "/did/**",
+        "function": "did"
+      },
+      {
         "source": "/info/**",
         "function": "info"
       },
