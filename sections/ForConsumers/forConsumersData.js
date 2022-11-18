@@ -5,7 +5,7 @@ import forConsumers4 from '../../public/images/forConsumers4.png';
 
 export const forConsumersData = [
   {
-    title: 'Digital identity solutions',
+    title: 'Self Sovereign Identity (SSI)',
     description:
       'We develop products that give individuals control over how their personal information is shared and used. We give digital identity back to the individual.',
     image: forConsumers1,

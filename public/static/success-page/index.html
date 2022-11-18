@@ -42,9 +42,16 @@
       else {
         const data = {
           type: 'authFlowComplete',
-          error,
+          url: location.href,
+          error
         }
-        window.opener.postMessage(data, '*');
+
+        if (window.opener) {
+          window.opener.postMessage(data, '*');
+        }
+        else {
+          window.close();
+        }
       }
 
     }

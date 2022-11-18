@@ -20,7 +20,7 @@ export const forOrgData = [
   {
     title: 'Reduced costs and data responsibility',
     description:
-      'We work together with industry leaders and adhere to open source software standards, so that our solutions are compliant, portable and easy to integrate.',
+      'Our products eliminate the need for expensive on-site data servers that are high-value targets for hackers.',
     image: org3,
   },
   {
@@ -32,7 +32,7 @@ export const forOrgData = [
   {
     title: 'Focus on your organization',
     description:
-      'We work together with industry leaders and adhere to open source software standards, so that our solutions are compliant, portable and easy to integrate.',
+      'Cabana simplifies digital identity and compliance for organizations so they can focus entirely on developing products and services for consumers.',
     image: org5,
   },
 ];
