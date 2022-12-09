@@ -9,7 +9,7 @@ export const faqData = [
     id: 2,
     question: 'Does Cabana limit the information available to organizations?',
     answer:
-      'No. Cabana simply enables the customer to choose the information they share with an organization, while the organization benefits in knowing the accuracy of the information provided. Simply put, Cabana reveals the existing trust relationship between an organization and its consumers and ensures all information provided both ways is useful and verified.',
+      'Cabana does not have access to customer data. Customers choose the information they share directly with organizations and the organizations in turn benefit from getting direct, accurate information. Cabana provides the the trust network between organizations and consumers, ensuring information provided both ways is truthful and verified.',
   },
   {
     id: 3,
