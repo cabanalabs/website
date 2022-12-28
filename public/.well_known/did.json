@@ -1,0 +1,39 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    {
+      "Ed25519VerificationKey2018": "https://w3id.org/security#Ed25519VerificationKey2018",
+      "publicKeyJwk": {
+        "@id": "https://w3id.org/security#publicKeyJwk",
+        "@type": "@json"
+      }
+    }
+  ],
+  "id": "did:web:cabanalabs.com",
+  "verificationMethod": [
+    {
+      "controller": "did:web:cabanalabs.com",
+      "id": "did:web:cabanalabs.com#940785ea-a487-420d-9a13-f5008ed03957",
+      "publicKeyHex": "04cbff63cf59997fcd746871de94665cb82a2f137b5e0ea22600623c5341ce2512dc6843450c3033a57428043a9a0f6c14c113c8ffabc455c2c10ba39c43ee949c",
+      "type": "EcdsaSecp256k1VerificationKey2019"
+    },
+    {
+      "id": "did:web:cabanalabs.com#z6MkfGHWTfYKFQiUp5wxwsm7B972HcNuY4ejJ55FKXZ36c4h",
+      "type": "Ed25519VerificationKey2018",
+      "controller": "did:web:cabanalabs.com",
+      "publicKeyJwk": {
+        "kty": "OKP",
+        "crv": "Ed25519",
+        "x": "DAvz2ewBcxT1cvuYD9JAjpT7Dj4GFuS3joI88HRXJCo"
+      }
+    }
+  ],
+  "authentication": [
+    "did:web:cabanalabs.com#940785ea-a487-420d-9a13-f5008ed03957",
+    "did:web:cabanalabs.com#z6MkfGHWTfYKFQiUp5wxwsm7B972HcNuY4ejJ55FKXZ36c4h"
+  ],
+  "assertionMethod": [
+    "did:web:cabanalabs.com#940785ea-a487-420d-9a13-f5008ed03957",
+    "did:web:cabanalabs.com#z6MkfGHWTfYKFQiUp5wxwsm7B972HcNuY4ejJ55FKXZ36c4h"
+  ]
+}
