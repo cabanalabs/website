@@ -37,10 +37,6 @@
         "function": "org"
       },
       {
-        "source": "/.well-known/did.json",
-        "destination": "/well-known/did.json"
-      },
-      {
         "source": "**",
         "destination": "/index.html"
       }
