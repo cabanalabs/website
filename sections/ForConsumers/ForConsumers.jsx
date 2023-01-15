@@ -3,24 +3,57 @@ import { SectionCard, SectionItem } from '../../components';
 import forConsumersImage from '../../public/images/forConsumers.png';
 
 import { forConsumersData } from './forConsumersData';
+import {scroller} from "react-scroll";
+import Image from "next/image";
+import consumerImage from "../../public/images/consumer_doug.png";
 
 export const ForConsumers = () => {
+
+  const onLearnMoreClickHandler = () => {
+    scroller.scrollTo('whatWeCanDoForYou', {
+      offset: -100,
+    });
+  };
+
   return (
-    <section className='section'>
-      <div className='section-content'>
-        <SectionCard
-          image={forConsumersImage}
-          title='Cabana for consumers'
-          description='Cabana gives consumers full control over their online personal data and digital privacy, improving security and reducing the time spent verifying their identity online.'
-        />
-        <div className='space-y-14 md:space-y-20 mt-20'>
+    <section className='section' id='forConsumer'>
+      <div>
+        <div className="flex flex-row space-x-20 justify-between">
+          <div>
+            <div className="uppercase font-bold text-xl text-cabanaRazz">
+              control your own identity  <span className="-tracking-4" >————</span>
+            </div>
+            <div className="text-4xl font-bold max-w-3xl pt-8 pb-16">
+              Cabana for consumers
+            </div>
+            <div className="text-lg2 text-corduroy font-medium max-w-3xl py-4">
+              Cabana gives consumers full control over their online personal data and digital privacy, improving security and reducing the time spent verifying their identity online.
+            </div>
+            <div className='pt-20 flex gap-4'>
+              <button
+                onClick={onLearnMoreClickHandler}
+                className='button-outlined-sm md:button-outlined-lg'>
+                Learn more
+              </button>
+            </div>
+        </div>
+        <div className="pr-20">
+          <Image
+            src={consumerImage}
+            alt='Consumer'
+            quality={100}
+          />
+        </div>
+      </div>
+        <div className='flex flex-row flex-wrap mt-8'>
           {forConsumersData.map((data, index) => (
             <SectionItem
               key={data.title}
-              reversed={index % 2}
+              size='small'
               image={data.image}
               title={data.title}
               description={data.description}
+              isLast={index === forConsumersData.length-1}
             />
           ))}
         </div>

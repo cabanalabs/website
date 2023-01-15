@@ -9,7 +9,7 @@ export default function Document() {
           content='width=device-width, initial-scale=1, maximum-scale=1'
         />
       </Head>
-      <body className='bg-porcelain'>
+      <body className='bg-white'>
         <Main />
         <NextScript />
       </body>

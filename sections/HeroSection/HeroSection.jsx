@@ -2,7 +2,10 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { scroller } from 'react-scroll';
 
-import heroBg from '../../public/images/hero_bg.jpg';
+import heroBg from '../../public/images/hero_banner_frame_1044563.jpg';
+import piggyIcon from "../../public/icons/piggy.svg";
+import boostIcon from "../../public/icons/boost.svg";
+import sparkleIcon from "../../public/icons/sparkle.svg";
 
 export const HeroSection = () => {
   const onLearnMoreClickHandler = () => {
@@ -19,34 +22,61 @@ export const HeroSection = () => {
 
   return (
     <section className='relative overflow-hidden'>
-      <div className='py-20 lg:py-40 flex justify-center items-center section-content'>
-        <div className='bg-white opacity-95 p-10 md:p-20 rounded-2xl drop-shadow-regular z-10'>
-          <h1 className='text-2xl md:text-4xl font-medium'>
-            One person, one account,
-            <br />
-            <span className='text-cabanaBlue font-medium'>
-              infinite possibilities.
-            </span>
-          </h1>
-          <div className='my-12 md:my-14'>
-            <span className='text-lg md:text-xl font-medium text-corduroy'>
-              Cabana provides digital identity solutions that mutually benefit
-              organizations and consumers. Our products reduce costs and improve
-              trust for businesses by giving individuals ownership and control
-              over their data.
-            </span>
+      <div className='pt-[24rem] lg:pt-[20rem] flex section-content'>
+        <div className='p-10 md:p-20 rounded-2xl z-10 min-h-[98rem]'>
+          <div className="uppercase font-bold text-xl text-cabanaBlue2">
+            What we do  <span className="-tracking-4" >——————</span>
           </div>
-          <div className='flex gap-4'>
+          <div className="text-4xl font-bold max-w-3xl pt-10 pb-32">
+            Digital Identity for Web3
+          </div>
+          <div className="flex flex-row space-x-10">
+            <div className="pr-10 border-dotted border-r-2 border-r-gray-300">
+              <Image
+                width={36}
+                height={34}
+                src={piggyIcon}
+                alt='Twitter icon'
+                quality={100}
+              />
+              <div className="text-base md:text-lg text-corduroy font-medium max-w-[16rem] py-4">
+                Funded by team members, strategic partners, grants and sponsorship
+              </div>
+            </div>
+            <div className="pr-10 border-dotted border-r-2 border-r-gray-300">
+              <Image
+                width={48}
+                height={36}
+                src={boostIcon}
+                alt='Twitter icon'
+                quality={100}
+              />
+              <div className="text-base md:text-lg text-corduroy font-medium max-w-[18rem] py-4">
+                Boost utility in your projects with our identity protocols. Leverage user centric tools for building decentralized profiles and on-chain reputation
+              </div>
+            </div>
+            <div className="pb-8">
+              <Image
+                width={36}
+                height={36}
+                src={sparkleIcon}
+                alt='Twitter icon'
+                quality={100}
+              />
+              <div className="text-base md:text-lg text-corduroy font-medium max-w-[18rem] py-4">
+                Get the latest web3 technology with gated access controls, verifiable credentials and profit sharing data monetization
+              </div>
+            </div>
+          </div>
+          <div className='pt-32 flex gap-4'>
             <button
               onClick={onLearnMoreClickHandler}
-              className='button-filled-sm md:button-filled-lg'
-            >
+              className='button-outlined-sm md:button-outlined-lg'>
               Learn more
             </button>
             <button
               onClick={onBookClickHandler}
-              className='button-outlined-sm md:button-outlined-lg'
-            >
+              className='button-filled-sm md:button-filled-lg'>
               Book a demo
             </button>
           </div>

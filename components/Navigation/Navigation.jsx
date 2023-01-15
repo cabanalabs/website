@@ -15,20 +15,22 @@ export const Navigation = () => {
   const pathName = router.pathname;
 
   return (
-    <header className='h-[72px] sticky top-0 left-0 z-20 bg-white'>
-      <nav className='flex justify-between items-center m-auto px-10 py-2 h-full max-w-section'>
+    <header className='h-[86px] sticky top-0 left-0 z-20 bg-white drop-shadow-small'>
+      <nav className='flex justify-between items-center m-auto h-full max-w-section'>
         <div className='cursor-pointer hover:scale-[1.02] active:scale-100 transition-all'>
+          <div className="py-[6px]">
           <Link href='/'>
             <a>
               <Image
-                width={104}
-                height={48}
+                width={152}
+                height={68}
                 alt='Cabana Labs Logo'
                 src={cabanaLabsLogo}
                 quality={100}
               />
             </a>
           </Link>
+          </div>
         </div>
         <motion.div
           className='sm:hidden'
