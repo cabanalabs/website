@@ -16,12 +16,12 @@ export const ForConsumers = () => {
   };
 
   return (
-    <section className='section' id='forConsumer'>
+    <section className='section max-w-[150rem]' id='forConsumer'>
       <div>
-        <div className="flex flex-row space-x-20 justify-between">
+        <div className="flex flex-row space-x-20 justify-between ml-10">
           <div>
             <div className="uppercase font-bold text-xl text-cabanaRazz">
-              control your own identity  <span className="-tracking-4" >————</span>
+              control your own identity  <span className="-tracking-4" >———</span>
             </div>
             <div className="text-4xl font-bold max-w-3xl pt-8 pb-16">
               Cabana for consumers

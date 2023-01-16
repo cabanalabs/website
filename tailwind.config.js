@@ -49,13 +49,13 @@ module.exports = {
         regular: '0px 4px 8px rgba(0, 0, 0, 0.16)',
       },
       maxWidth: {
-        section: '1450px',
+        section: '1650px',
         banner: '1140px',
-        content: '1450px',
+        content: '1650px',
       },
       letterSpacing: {
         2: '0.125rem',
-        4: '0.3rem'
+        4: '0.35rem'
       }
     },
   },
