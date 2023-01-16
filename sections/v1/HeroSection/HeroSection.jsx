@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { scroller } from 'react-scroll';
 
-import heroBg from '../../../public/images/hero_ba';
+import heroBg from '../../../public/images/hero_bg.jpg';
 
 export const HeroSection = () => {
   const onLearnMoreClickHandler = () => {

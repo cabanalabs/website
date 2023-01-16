@@ -1,4 +1,4 @@
-import { SectionCard, SectionItem } from '../../components';
+import { SectionCard, SectionItem } from '../../../components';
 
 import forConsumersImage from '../../../public/images/forConsumers.png';
 

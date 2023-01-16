@@ -1,4 +1,4 @@
-import { SectionCard, SectionItem } from '../../components';
+import { SectionCard, SectionItem } from '../../../components';
 
 import forOrg from '../../../public/images/forOrg.png';
 import { forOrgData } from './forOrgData';
