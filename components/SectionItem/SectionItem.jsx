@@ -15,23 +15,22 @@ const cardVariants = {
   },
 };
 
-export const SectionItem = ({ image, title, description, reversed }) => {
+export const SectionItem = ({ image, title, description, size, index, isLast }) => {
+  const maxWidth = size === 'small' ? 'max-w-[280px] xl:max-w-[300px] 2xl:max-w-[320px]' : 'max-w-[330px] lg:max-w-[290px] xl:max-w-[355px] 2xl:max-w-[430px]'
+  const marginRight = isLast || index % 2  ? '' : size === 'small' ? 'mr-8' : 'mr-16 lg:mr-10'
   return (
     <motion.div
       initial='offscreen'
       whileInView='onscreen'
       viewport={{ once: true, amount: 0.8 }}
       variants={cardVariants}
-      className={`flex flex-col md:flex-row ${
-        reversed ? 'md:flex-row-reverse' : ''
-      } items-center justify-between`}
-    >
-      <div className='w-[150px] h-[150px] md:w-[204px] md:h-[204px] relative'>
+      className={`p-16 border-2 rounded-3xl ${maxWidth} ${marginRight} mb-10 lg:p-8`}>
+      <div className='w-[80px] h-[80px] md:w-[80px] md:h-[80px] relative drop-shadow-md'>
         <Image layout='fill' src={image} alt={title} quality={100} />
       </div>
-      <div className='text-left max-w-[500px]'>
-        <h3 className='text-xl md:text-xxl font-bold mb-6'>{title}</h3>
-        <span className='text-base md:text-lg text-corduroy font-medium'>
+      <div className='text-left'>
+        <h3 className='text-xl font-bold mb-6 pt-4'>{title}</h3>
+        <span className='text-lg2 text-corduroy font-medium'>
           {description}
         </span>
       </div>

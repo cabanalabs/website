@@ -22,9 +22,9 @@ export const PartnetshipsSection = () => {
           Partnerships
         </h3>
         <h4 className='text-lg md:text-xl text-white font-normal text-center px-6 md:px-52'>
-          Cabana has partnered with a number of innovative organizations that
-          are revolutionizing the way we manage and control our identity and
-          data online.
+          Cabana is seeking to partner with organizations that
+          are revolutionizing the way people manage and control their identity and
+          data online. Join us and our current partners:
         </h4>
         <div className='flex flex-wrap justify-center items-center gap-8 mt-12 md:mt-24 md:gap-20'>
           <div className='w-[170px] h-[31px] md:w-[242px] md:h-[44px]'>

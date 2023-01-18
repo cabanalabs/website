@@ -5,7 +5,11 @@ import {
   HeroSection,
   ForOrg,
   ForConsumers,
-  ConnectSection,
+  ConnectSection
+} from '../sections/v1';
+
+import {
+
   PartnetshipsSection,
   FAQSection,
 } from '../sections';
@@ -19,9 +23,6 @@ export default function Home() {
         <meta name='description' content='Cabana Labs' key='description' />
       </Head>
       <>
-        {/*<div>*/}
-        {/*  <div className="bg-porcelain mt-[4px] h-4 w-full z-21"></div>*/}
-        {/*</div>*/}
         <HeroSection />
         <ForOrg />
         <Banner />

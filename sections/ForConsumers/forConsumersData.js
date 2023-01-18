@@ -1,7 +1,7 @@
-import forConsumers1 from '../../public/images/forConsumers1.png';
-import forConsumers2 from '../../public/images/forConsumers2.png';
-import forConsumers3 from '../../public/images/forConsumers3.png';
-import forConsumers4 from '../../public/images/forConsumers4.png';
+import forConsumers1 from '../../public/images/consumer_sm1.png';
+import forConsumers2 from '../../public/images/consumer_sm2.png';
+import forConsumers3 from '../../public/images/consumer_sm3.png';
+import forConsumers4 from '../../public/images/consumer_sm4.png';
 
 export const forConsumersData = [
   {
@@ -11,9 +11,9 @@ export const forConsumersData = [
     image: forConsumers1,
   },
   {
-    title: 'The future of privacy & security',
+    title: 'Platform agnostic',
     description:
-      'Our solutions ensure that data is cryptographically secure by not storing it on centralized servers. Only you can decrypt and disclose your data.',
+      'We build interoperable solutions that are not tied to one ecosystem, protocol, or technology stack. One individual. One digital identity. Infinite possibility.',
     image: forConsumers2,
   },
   {
@@ -23,9 +23,9 @@ export const forConsumersData = [
     image: forConsumers3,
   },
   {
-    title: 'Platform agnostic',
+    title: 'The future of privacy & security',
     description:
-      'We build interoperable solutions that are not tied to one ecosystem, protocol, or technology stack. One individual. One digital identity. Infinite possibility.',
+      'Our solutions ensure that data is cryptographically secure by not storing it on centralized servers. Only you can decrypt and disclose your data.',
     image: forConsumers4,
   },
 ];

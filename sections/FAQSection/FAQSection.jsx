@@ -14,7 +14,7 @@ export const FAQSection = () => {
         <h3 className='text-xxl md:text-3xl font-bold text-center md:font-medium'>
           Frequently asked questions
         </h3>
-        <div className='mt-20 flex flex-col gap-10'>
+        <div className='mt-20 px-10 flex flex-col gap-10'>
           {faqData.map((item, i) => (
             <FAQItem
               key={item.id}
