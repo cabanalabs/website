@@ -53,8 +53,8 @@ export const HeroSection = () => {
                   quality={100}
                 />
 
-              <div className="py-4 max-w-[22rem] md:max-w-[19rem]">
-                CabanaLabs <br/>boosts utility in web3 projects with its identity protocols. Your project members can leverage our user centric tools for building decentralized profiles and reputation.
+              <div className="py-4 max-w-[22rem] md:max-w-[18rem]">
+                CabanaLabs <br/>boosts utility in web3 projects with its identity protocols. Your project members can leverage our tools for building decentralized profiles and reputation.
               </div>
             </div>
             <div className="pb-8 mx-auto md:mx-0">
