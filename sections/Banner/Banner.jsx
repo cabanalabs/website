@@ -30,7 +30,7 @@ export const Banner = () => {
             Cabana makes it easy.
           </h3>
           <span className='text-lg md:text-xl text-white block'>
-            No complicated seed phrases and private keys required to export. A multi-party computation
+            No complicated seed phrases and the need to export private keys. A multi-party computation
             service securely streamlines wallet transactions.
             Discover how to provide frictionless onboarding to your customers
             that increase customer engagement and conversions.
