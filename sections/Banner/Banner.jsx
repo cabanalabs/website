@@ -11,7 +11,7 @@ export const Banner = () => {
   };
 
   return (
-    <section className='section max-w-[1900px] pr-10'>
+    <section className='section max-w-[1900px] pr-10 pl-10 lg:pl-0'>
       <div className='bg-cabanaBlue3 rounded-2xl drop-shadow-regular flex flex-col-reverse lg:flex-row justify-center items-center w-full p-10 max-h-[600px] overflow-clip'>
         <div className='hidden lg:block top-[130px] -left-[310px] relative drop-shadow-glow'>
           <Image
@@ -29,7 +29,7 @@ export const Banner = () => {
             <br />
             Cabana makes it easy.
           </h3>
-          <span className='text-lg lg:text-xl text-white block'>
+          <span className='text-lg md:text-xl text-white block'>
             No complicated seed phrases and private keys required to export. A multi-party computation
             service securely streamlines wallet transactions.
             Discover how to provide frictionless onboarding to your customers
