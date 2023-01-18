@@ -17,13 +17,13 @@ export const ConnectSection = () => {
 
   return (
     <section className='section max-w-[1900px] px-10' id='whatWeCanDoForYou'>
-      <div className='bg-cabanaBlue3 rounded-2xl drop-shadow-regular flex flex-col-reverse lg:flex-row justify-center items-center w-full py-10 max-h-[640px] overflow-clip'>
-        <div className='space-y-24 ml-80'>
-          <h3 className='text-xl md:text-5xl text-white font-extrabold'>
+      <div className='bg-cabanaBlue3 rounded-2xl drop-shadow-regular flex flex-col-reverse lg:flex-row justify-center items-center w-full p-10 max-h-[640px] overflow-clip'>
+        <div className='space-y-24 ml-10 md:ml-32 lg:ml-52 xl:ml-80'>
+          <h3 className='text-xl md:text-2xl lg:text-3xl xl:text-5xl text-white font-extrabold'>
             What we can do for your organization
           </h3>
           <div>
-            <h4 className='text-lg md:text-xl text-white font-normal min-w-[920px]'>
+            <h4 className='text-lg md:text-xl text-white font-normal lg:min-w-[660px] xl:min-w-[920px]'>
               Secure your identity assets and cryptocurrencies with the most advanced MPC security solutions and bring
               web3 connectivity into your organization.
             </h4>
@@ -35,7 +35,7 @@ export const ConnectSection = () => {
           </div>
 
           <ul className='flex gap-16 items-center'>
-            <li>
+            <li className="hidden md:block ">
               <button
                 onClick={onBookClickHandler}
                 className='button-filled-sm md:button-filled-lg'>
@@ -89,7 +89,7 @@ export const ConnectSection = () => {
             </li>
           </ul>
         </div>
-        <div className='top-[100px] -right-[274px] relative drop-shadow-glow'>
+        <div className='hidden xl:block top-[100px] -right-[274px] relative drop-shadow-glow'>
           <Image
             width={1850}
             height={1850}

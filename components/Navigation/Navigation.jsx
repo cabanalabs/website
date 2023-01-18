@@ -15,8 +15,8 @@ export const Navigation = () => {
   const pathName = router.pathname;
 
   return (
-    <header className='h-[86px] sticky top-0 left-0 z-20 bg-white drop-shadow-small'>
-      <nav className='flex justify-between items-center m-auto h-full max-w-section'>
+    <header className='h-[86px] sticky top-0 left-0 z-20 bg-white drop-shadow-small '>
+      <nav className='flex justify-between items-center m-auto h-full section-content px-10'>
         <div className='cursor-pointer hover:scale-[1.02] active:scale-100 transition-all'>
           <div className="py-[6px]">
           <Link href='/'>

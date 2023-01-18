@@ -12,8 +12,8 @@ export const Banner = () => {
 
   return (
     <section className='section max-w-[1900px] pr-10'>
-      <div className='bg-cabanaBlue3 rounded-2xl drop-shadow-regular flex flex-col-reverse lg:flex-row justify-center items-center w-full pt-10 pb-10 max-h-[600px] overflow-clip'>
-        <div className='top-[130px] -left-[310px] relative drop-shadow-glow'>
+      <div className='bg-cabanaBlue3 rounded-2xl drop-shadow-regular flex flex-col-reverse lg:flex-row justify-center items-center w-full p-10 max-h-[600px] overflow-clip'>
+        <div className='hidden lg:block top-[130px] -left-[310px] relative drop-shadow-glow'>
           <Image
             width={1850}
             height={1850}
@@ -23,13 +23,13 @@ export const Banner = () => {
             quality={100}
           />
         </div>
-        <div className='lg:pr-24 -ml-80'>
-          <h3 className='text-white text-left font-bold text-xl md:text-5xl md:whitespace-nowrap my-10'>
+        <div className='lg:pr-24 lg:-ml-96 xl:-ml-80'>
+          <h3 className='text-white text-left font-bold text-xl md:text-2xl lg:text-3xl xl:text-5xl md:whitespace-nowrap my-10'>
             Security is hard.
             <br />
             Cabana makes it easy.
           </h3>
-          <span className='text-lg md:text-xl text-white block'>
+          <span className='text-lg lg:text-xl text-white block'>
             No complicated seed phrases and private keys required to export. A multi-party computation
             service securely streamlines wallet transactions.
             Discover how to provide frictionless onboarding to your customers
