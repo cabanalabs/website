@@ -25,7 +25,7 @@ export const forConsumersData = [
   {
     title: 'The future of privacy & security',
     description:
-      'Our solutions ensure that data is cryptographically secure by not storing it on centralized servers. Only you can decrypt and disclose your data.',
+      'Our solutions cryptographically secure your data on decentralized servers. Only you can decrypt and disclose your data.',
     image: forConsumers4,
   },
 ];
