@@ -40,7 +40,7 @@ export const HeroSection = () => {
                 quality={100}
               />
               <div className="py-4 max-w-[22rem] md:max-w-[18rem]">
-                We are a group of web3 innovators. Funded by team members, strategic partners, grants and sponsorships.
+                We are a consortium of web3 innovators. Our projects are funded by team members, strategic partners, grants and sponsorships.
               </div>
             </div>
             <div className="pr-10 md:border-dotted md:border-r-2 border-r-gray-300 mx-auto md:mx-0">
@@ -53,8 +53,8 @@ export const HeroSection = () => {
                   quality={100}
                 />
 
-              <div className="py-4 max-w-[22rem] md:max-w-[20rem]">
-                CabanaLabs boosts utility in web3 projects with its identity protocols. Your members will leverage user centric tools for building decentralized profiles and on-chain reputation
+              <div className="py-4 max-w-[22rem] md:max-w-[19rem]">
+                CabanaLabs <br/>boosts utility in web3 projects with its identity protocols. Members leverage user centric tools for building decentralized profiles and reputation.
               </div>
             </div>
             <div className="pb-8 mx-auto md:mx-0">
@@ -65,8 +65,8 @@ export const HeroSection = () => {
                 alt='Twitter icon'
                 quality={100}
               />
-              <div className="py-4 max-w-[22rem] md:max-w-[18rem]">
-                We offer the latest web3 technologies with gated access controls, verifiable credentials and profit sharing data monetization
+              <div className="py-4 max-w-[22rem] md:max-w-[16rem]">
+                We offer the <br/> latest web3 technologies with gated access controls, verifiable credentials and profit sharing data monetization.
               </div>
             </div>
           </div>
