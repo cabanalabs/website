@@ -27,10 +27,10 @@ export const HeroSection = () => {
           <div className="uppercase font-bold text-xl text-cabanaBlue2">
             What we do  <span className="-tracking-4" >——————</span>
           </div>
-          <div className="text-2xl  md:text-4xl max-w-md md:max-w-3xl pt-10 pb-32 font-bold">
+          <div className="text-2xl md:text-4xl max-w-md md:max-w-3xl pt-10 pb-32 font-bold">
             Digital Identity for Web3
           </div>
-          <div className="flex flex-col md:flex-row space-y-10 md:space-y-0 space-x-none md:space-x-10">
+          <div className="flex flex-col flex-grow-1 md:flex-row space-y-10 md:space-y-0 space-x-none md:space-x-10 text-xl md:text-lg text-corduroy font-medium">
             <div className="pr-10 md:border-dotted md:border-r-2 border-r-gray-300 mx-auto md:mx-0">
               <Image
                 width={36}
@@ -39,8 +39,8 @@ export const HeroSection = () => {
                 alt='Twitter icon'
                 quality={100}
               />
-              <div className="text-xl md:text-lg text-corduroy font-medium max-w-[22rem] md:max-w-[16rem] py-4">
-                Funded by team members, strategic partners, grants and sponsorship
+              <div className="py-4 max-w-[22rem] md:max-w-[18rem]">
+                We are a group of web3 innovators. Funded by team members, strategic partners, grants and sponsorships.
               </div>
             </div>
             <div className="pr-10 md:border-dotted md:border-r-2 border-r-gray-300 mx-auto md:mx-0">
@@ -53,8 +53,8 @@ export const HeroSection = () => {
                   quality={100}
                 />
 
-              <div className="text-xl md:text-lg text-corduroy font-medium max-w-[22rem] md:max-w-[18rem] py-4">
-                Boost utility in your projects with our identity protocols. Leverage user centric tools for building decentralized profiles and on-chain reputation
+              <div className="py-4 max-w-[22rem] md:max-w-[20rem]">
+                CabanaLabs boosts utility in web3 projects with its identity protocols. Your members will leverage user centric tools for building decentralized profiles and on-chain reputation
               </div>
             </div>
             <div className="pb-8 mx-auto md:mx-0">
@@ -65,8 +65,8 @@ export const HeroSection = () => {
                 alt='Twitter icon'
                 quality={100}
               />
-              <div className="text-xl md:text-lg text-corduroy font-medium max-w-[22rem] md:max-w-[18rem] py-4">
-                Get the latest web3 technology with gated access controls, verifiable credentials and profit sharing data monetization
+              <div className="py-4 max-w-[22rem] md:max-w-[18rem]">
+                We offer the latest web3 technologies with gated access controls, verifiable credentials and profit sharing data monetization
               </div>
             </div>
           </div>
