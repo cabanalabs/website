@@ -22,7 +22,7 @@ export const HeroSection = () => {
 
   return (
     <section className='section relative'>
-      <div className='flex section-content  ml-10'>
+      <div className='flex section-content sm:ml-10'>
         <div className='pt-[2rem] lg:pt-[14rem] rounded-2xl z-10 min-h-[58rem] lg:min-h-[98rem] md:min-w-[60rem]'>
           <div className="uppercase font-bold text-xl text-cabanaBlue2">
             What we do  <span className="-tracking-4" >——————</span>
@@ -39,7 +39,7 @@ export const HeroSection = () => {
                 alt='Twitter icon'
                 quality={100}
               />
-              <div className="py-4 max-w-[22rem] md:max-w-[18rem]">
+              <div className="py-4 max-w-full sm:max-w-[22rem] md:max-w-[18rem]">
                 We are a consortium of web3 innovators. Our projects are funded by team members, strategic partners, grants and sponsorships.
               </div>
             </div>
@@ -53,7 +53,7 @@ export const HeroSection = () => {
                   quality={100}
                 />
 
-              <div className="py-4 max-w-[22rem] md:max-w-[19rem]">
+              <div className="py-4 max-w-full sm:max-w-[22rem] md:max-w-[19rem]">
                 CabanaLabs <br/>boosts utility in <br/>web3 projects with its identity protocols. Your project members can leverage our tools <br/>for building decentralized profiles and reputation.
               </div>
             </div>
@@ -65,12 +65,12 @@ export const HeroSection = () => {
                 alt='Twitter icon'
                 quality={100}
               />
-              <div className="py-4 max-w-[22rem] md:max-w-[16rem]">
+              <div className="py-4 max-w-full sm:max-w-[22rem] md:max-w-[16rem]">
                 We offer the <br/> latest web3 technologies with gated access controls, verifiable credentials and profit sharing data monetization.
               </div>
             </div>
           </div>
-          <div className='pt-32 flex gap-4'>
+          <div className='mt-8 sm:mt-32 flex gap-4'>
             <button
               onClick={onLearnMoreClickHandler}
               className='button-outlined-sm md:button-outlined-lg'>

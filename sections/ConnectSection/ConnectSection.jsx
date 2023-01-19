@@ -16,9 +16,9 @@ export const ConnectSection = () => {
   };
 
   return (
-    <section className='section max-w-[1900px] px-10' id='whatWeCanDoForYou'>
-      <div className='bg-cabanaBlue3 rounded-2xl drop-shadow-regular flex flex-col-reverse lg:flex-row justify-center items-center w-full p-10 max-h-[640px] overflow-clip'>
-        <div className='space-y-24 ml-10 md:ml-32 lg:ml-52 xl:ml-80'>
+    <section className='section max-w-[1900px] px-6 sm:px-10' id='whatWeCanDoForYou'>
+      <div className='bg-cabanaBlue3 rounded-2xl drop-shadow-regular flex flex-col-reverse lg:flex-row justify-center items-center w-full p-6 sm:p-10 max-h-[640px] overflow-clip'>
+        <div className='space-y-12 sm:space-y-24 sm:ml-10 md:ml-32 lg:ml-52 xl:ml-80'>
           <h3 className='text-xl md:text-2xl lg:text-3xl xl:text-5xl text-white font-extrabold'>
             What we can do for your organization
           </h3>
@@ -34,7 +34,7 @@ export const ConnectSection = () => {
             </h4>
           </div>
 
-          <ul className='flex gap-16 items-center'>
+          <ul className='flex gap-8 sm:gap-16 items-center mb-8'>
             <li className="hidden md:block ">
               <button
                 onClick={onBookClickHandler}

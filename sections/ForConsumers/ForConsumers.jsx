@@ -26,7 +26,7 @@ export const ForConsumers = () => {
             <div className="text-4xl font-bold max-w-3xl pt-8 pb-16">
               Cabana for consumers
             </div>
-            <div className="text-lg2 text-corduroy font-medium max-w-3xl py-4">
+            <div className="text-xl sm:text-lg2 text-corduroy font-medium max-w-3xl sm:py-4">
               Cabana gives consumers full control over their online personal data and digital privacy, improving security and reducing the time spent verifying their identity online.
             </div>
             <div className='pt-20 flex gap-4'>
@@ -45,7 +45,7 @@ export const ForConsumers = () => {
           />
         </div>
       </div>
-        <div className='flex flex-row flex-wrap mt-8'>
+        <div className='flex flex-row flex-wrap mt-10'>
           {forConsumersData.map((data, index) => (
             <SectionItem
               key={data.title}

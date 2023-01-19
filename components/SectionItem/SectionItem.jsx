@@ -16,8 +16,8 @@ const cardVariants = {
 };
 
 export const SectionItem = ({ image, title, description, size, index, isLast }) => {
-  const maxWidth = size === 'small' ? 'max-w-[280px] xl:max-w-[300px] 2xl:max-w-[320px]' : 'max-w-[330px] lg:max-w-[290px] xl:max-w-[355px] 2xl:max-w-[430px]'
-  const marginRight = isLast || index % 2  ? '' : size === 'small' ? 'mr-8' : 'mr-16 lg:mr-10'
+  const maxWidth = size === 'small' ? 'sm:max-w-[280px] xl:max-w-[300px] 2xl:max-w-[320px]' : 'sm:max-w-[330px] lg:max-w-[290px] xl:max-w-[355px] 2xl:max-w-[430px]'
+  const marginRight = isLast || index % 2  ? '' : size === 'small' ? 'sm:mr-8' : 'sm:mr-16 lg:mr-10'
   return (
     <motion.div
       initial='offscreen'
