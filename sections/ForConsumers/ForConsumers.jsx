@@ -18,7 +18,7 @@ export const ForConsumers = () => {
   return (
     <section className='section max-w-[150rem]' id='forConsumer'>
       <div>
-        <div className="flex flex-row space-x-20 justify-between ml-10">
+        <div className="flex flex-row space-x-20  ml-10 justify-center">
           <div>
             <div className="uppercase font-bold text-xl text-cabanaRazz">
               control your own identity  <span className="-tracking-4" >———</span>
@@ -45,7 +45,7 @@ export const ForConsumers = () => {
           />
         </div>
       </div>
-        <div className='flex flex-row flex-wrap mt-10'>
+        <div className='flex flex-row flex-wrap mt-10 justify-center'>
           {forConsumersData.map((data, index) => (
             <SectionItem
               key={data.title}

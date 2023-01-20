@@ -11,8 +11,8 @@ export const Banner = () => {
   };
 
   return (
-    <section className='section max-w-[1900px] pr-6 pl-6 sm:pr-10 sm:pl-10 lg:pl-0'>
-      <div className='bg-cabanaBlue3 rounded-2xl drop-shadow-regular flex flex-col-reverse lg:flex-row justify-center items-center w-full p-6 sm:p-10 max-h-[600px] overflow-clip'>
+    <section className='section max-w-[1900px] pr-6 pl-6 sm:pr-10 sm:pl-10'>
+      <div className='bg-cabanaBlue3 rounded-2xl flex flex-col-reverse lg:flex-row justify-center items-center w-full p-6 sm:p-10 max-h-[600px] overflow-clip'>
         <div className='hidden lg:block top-[130px] -left-[310px] relative drop-shadow-glow'>
           <Image
             width={1850}

@@ -22,15 +22,15 @@ export const HeroSection = () => {
 
   return (
     <section className='section relative'>
-      <div className='flex section-content sm:ml-10'>
+      <div className='flex section-content sm:ml-10 justify-center'>
         <div className='pt-[2rem] lg:pt-[14rem] rounded-2xl z-10 min-h-[58rem] lg:min-h-[98rem] md:min-w-[60rem]'>
           <div className="uppercase font-bold text-xl text-cabanaBlue2">
             What we do  <span className="-tracking-4" >——————</span>
           </div>
-          <div className="text-2xl md:text-4xl max-w-md md:max-w-3xl pt-10 pb-32 font-bold">
+          <div className="text-2xl md:text-4xl max-w-md md:max-w-3xl pt-10 pb-32 font-extrabold">
             Digital Identity for Web3
           </div>
-          <div className="flex flex-col flex-grow-1 md:flex-row space-y-10 md:space-y-0 space-x-none md:space-x-10 text-xl md:text-lg text-corduroy font-medium">
+          <div className="flex flex-col flex-grow-1 md:flex-row space-y-10 md:space-y-0 space-x-none md:space-x-10 text-xl md:text-lg text-corduroy font-medium justify-center">
             <div className="pr-10 md:border-dotted md:border-r-2 border-r-gray-300 mx-auto md:mx-0">
               <Image
                 width={36}
@@ -78,13 +78,13 @@ export const HeroSection = () => {
             </button>
             <button
               onClick={onBookClickHandler}
-              className='button-filled-sm md:button-filled-lg'>
+              className='button-filled-xs md:button-filled-lg--blue'>
               Book a demo
             </button>
           </div>
         </div>
-        <div className="relative -ml-56 -mt-52 hidden lg:block">
-          <div className='w-[120rem] h-[100rem]'>
+        <div className="relative -ml-56 hidden lg:block basis-[90rem]">
+          <div className='w-[120rem] h-[100rem] absolute '>
             <Image
               layout='fill'
               src={heroBg}

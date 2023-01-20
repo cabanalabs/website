@@ -10,5 +10,6 @@ export const navData = [
   {
     label: 'Contact',
     to: '/contact',
+    type: 'button'
   },
 ];

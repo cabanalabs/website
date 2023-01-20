@@ -15,7 +15,7 @@ export const ForOrg = () => {
   return (
     <section className='section' id='forOrg'>
       <div className='section-content sm:ml-10'>
-        <div className="flex flex-col lg:flex-row space-x-none space-y-none lg:space-y-20 lg:space-x-16 ">
+        <div className="flex flex-col lg:flex-row space-x-none space-y-none lg:space-y-20 lg:space-x-16 lg:ml-24 xl:ml-32">
           <div>
             <div className="uppercase font-bold text-xl lg:text-lg2 text-second600 ">
               limit risk, easier onboarding  <span className="-tracking-4" >——</span>

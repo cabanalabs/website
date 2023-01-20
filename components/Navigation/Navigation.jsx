@@ -22,8 +22,8 @@ export const Navigation = () => {
           <Link href='/'>
             <a>
               <Image
-                width={152}
-                height={68}
+                width={104}
+                height={48}
                 alt='Cabana Labs Logo'
                 src={cabanaLabsLogo}
                 quality={100}
@@ -54,7 +54,7 @@ export const Navigation = () => {
             transition={{ duration: 0.1 }}
           >
             <ul className='flex flex-col gap-4 '>
-              {navData.map(item => (
+              {navData.map(item =>(
                 <li
                   key={item.label}
                   className={
@@ -70,18 +70,26 @@ export const Navigation = () => {
           </motion.div>
         </motion.div>
         <ul className='hidden sm:flex gap-12 '>
-          {navData.map(item => (
-            <li
-              key={item.label}
-              className={
-                pathName === item.to ? 'nav-item--selected' : 'nav-item'
-              }
-            >
-              <Link href={item.to}>
-                <a>{item.label}</a>
-              </Link>
-            </li>
-          ))}
+          {navData.map(item => {
+            let className;
+            console.log(item.type)
+            if (item.type === 'button') {
+              className = pathName === item.to ? 'nav-button-outlined--selected -mt-2' : 'nav-button-outlined -mt-2';
+            } else {
+              className = pathName === item.to ? 'nav-item--selected' : 'nav-item';
+            }
+            console.log(className)
+            return (
+              <li
+                key={item.label}
+                className={className}
+              >
+                <Link href={item.to}>
+                  <a>{item.label}</a>
+                </Link>
+              </li>
+            )
+          })}
         </ul>
       </nav>
     </header>
