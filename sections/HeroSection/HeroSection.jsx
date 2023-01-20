@@ -21,7 +21,7 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className='section relative'>
+    <section className='section relative -mt-16'>
       <div className='flex section-content sm:ml-10 justify-center'>
         <div className='pt-[2rem] lg:pt-[14rem] rounded-2xl z-10 min-h-[58rem] lg:min-h-[98rem] md:min-w-[60rem]'>
           <div className="uppercase font-bold text-xl text-cabanaBlue2">
