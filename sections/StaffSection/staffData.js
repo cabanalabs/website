@@ -9,10 +9,9 @@ export const staffData = [
     role: 'Co-Founder, CTO',
     avatar: frankFox,
     description:
-      'Head of technology, Web3 product solutions and ecosystem buildouts. Technical Advisor for business and product strategies in accelerated incubation projects.',
+      'A leader in technology innovations for Web3 product solutions and ecosystem build-outs. Technical Advisor for business and product strategies.',
     list: [
       'Former Principal Product Engineer, Constellation Network',
-      ,
       'Former Technical Product Manager, Stardust Collective,',
       'Former Senior Front End Architect, TOTVS Labs,',
       'Former Technical Lead, Pearson English,',
