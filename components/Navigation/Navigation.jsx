@@ -57,6 +57,7 @@ export const Navigation = () => {
               {navData.map(item =>(
                 <li
                   key={item.label}
+                  style={{ display: item.hidden ? 'none' : 'block' }}
                   className={
                     pathName === item.to ? 'nav-item--selected' : 'nav-item'
                   }
@@ -72,7 +73,6 @@ export const Navigation = () => {
         <ul className='hidden sm:flex gap-12 '>
           {navData.map(item => {
             let className;
-            console.log(item.type)
             if (item.type === 'button') {
               className = pathName === item.to ? 'nav-button-outlined--selected -mt-2' : 'nav-button-outlined -mt-2';
             } else {
@@ -82,6 +82,7 @@ export const Navigation = () => {
             return (
               <li
                 key={item.label}
+                style={{ display: item.hidden ? 'none' : 'block' }}
                 className={className}
               >
                 <Link href={item.to}>

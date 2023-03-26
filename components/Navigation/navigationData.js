@@ -8,8 +8,14 @@ export const navData = [
     to: '/about',
   },
   {
+    label: 'Early Adopters',
+    to: '/early-adopters',
+    hidden: true
+  },
+  {
     label: 'Contact',
     to: '/contact',
     type: 'button'
   },
+
 ];

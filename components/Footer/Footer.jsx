@@ -73,9 +73,9 @@ export const Footer = () => {
   return (
     <footer className='bg-white'>
       <section className='section mb-0 mt-0 pt-10 pb-10'>
-        <div className='flex flex-col gap-10 md:flex-row justify-between px-6 lg:pt-10 lg:px-14 pb-4 text-lg'>
+        <div className='flex md:flex-row ms:flex-col gap-10 justify-between px-6 lg:pt-10 lg:px-14 pb-4 text-lg'>
           <div className='flex flex-col flex-1 lg:flex-initial'>
-            <ul className='flex md:flex-col gap-6 items-center justify-center md:items-start mb-8 md:mb-0 lg:justify-start'>
+            <ul className='flex flex-col gap-6 md:items-start mb-8 md:mb-0 lg:justify-start'>
               {footerData.map(data => (
                 <li key={data.category}>
                   <Link href={data.to}>
