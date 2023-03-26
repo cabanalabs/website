@@ -41,10 +41,10 @@ export default function EarlyAdopters() {
         />
       </Head>
       <section className='section'>
-        <div className='section-content mx-10 flex justify-center'>
+        <div className='section-content mx-10 md:mx-20 flex justify-center'>
           <div className="w-[1400px]">
             <div className="text-2xl md:text-3xl font-extrabold">Join our Early Adopters</div>
-            <div className="text-2xl md:text-xl text-corduroy font-medium max-w-[90rem]">
+            <div className="text-[2.4rem] md:text-xl text-corduroy font-medium max-w-[90rem]">
               Meet Cabana’s early adopters for decentralized profiles, shaping the future of secure and convenient identity management. Join us and be at the forefront of this emerging technology.
             </div>
             <div className='flex flex py-10 md:pt-20 md:pb-20 gap-16 flex-wrap'>
