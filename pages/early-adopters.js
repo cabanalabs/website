@@ -20,7 +20,7 @@ export default function EarlyAdopters() {
   useEffect(() => {
 
     const request = async () => {
-      const res = await fetch('https://cabana.me/api/adopters');
+      const res = await fetch('https://cabana.me/api/groups/cabana-labs/early-adopter');
       const data = await res.json();
       //data.widgets = [data.widgets[0],data.widgets[0],data.widgets[0],data.widgets[0]]
       setPageData(data);
@@ -33,11 +33,9 @@ export default function EarlyAdopters() {
     <>
       <Head>
         <title>Cabana Labs - Early Adopters</title>
-        <meta property='og:title' content='Cabana Labs - Early Adopters' key='title' />
-        <meta
-          name='description'
-          content='Cabana Labs - Early Adopters'
-          key='description'
+        <meta property='og:title' content='Early Adopters' key='title' />
+        <meta name='description' key='description'
+          content='Meet Cabana’s early adopters for decentralized profiles. We welcome you to join us at the forefront of this emerging technology.'
         />
       </Head>
       <section className='section'>
