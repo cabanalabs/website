@@ -11,11 +11,16 @@
   ],
   "id": "did:web:cabanalabs.com",
   "verificationMethod": [
-    {
+   {
+      "id": "did:web:cabanalabs.com#zQ3shdKPWyGcxk8ynLhLPt3dSc4sFZpHvewRQ8B3qrEyKZANj",
+      "type": "EcdsaSecp256k1VerificationKey2019",
       "controller": "did:web:cabanalabs.com",
-      "id": "did:web:cabanalabs.com#940785ea-a487-420d-9a13-f5008ed03957",
-      "publicKeyHex": "04cbff63cf59997fcd746871de94665cb82a2f137b5e0ea22600623c5341ce2512dc6843450c3033a57428043a9a0f6c14c113c8ffabc455c2c10ba39c43ee949c",
-      "type": "EcdsaSecp256k1VerificationKey2019"
+      "publicKeyJwk": {
+          "kty": "EC",
+          "crv": "secp256k1",
+          "x": "7FjPaVbvOejUkpmmND0846Ezg--NRs-AS4yuz0oqThA",
+          "y": "posdRsdQeOaSmtNihzFiEfNnS7dW6zZnGYFBhaNzDwQ"
+        }
     },
     {
       "id": "did:web:cabanalabs.com#z6MkfGHWTfYKFQiUp5wxwsm7B972HcNuY4ejJ55FKXZ36c4h",
