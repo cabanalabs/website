@@ -34,11 +34,11 @@
     }
   ],
   "authentication": [
-    "did:web:cabanalabs.com#940785ea-a487-420d-9a13-f5008ed03957",
+    "did:web:cabanalabs.com#zQ3shdKPWyGcxk8ynLhLPt3dSc4sFZpHvewRQ8B3qrEyKZANj",
     "did:web:cabanalabs.com#z6MkfGHWTfYKFQiUp5wxwsm7B972HcNuY4ejJ55FKXZ36c4h"
   ],
   "assertionMethod": [
-    "did:web:cabanalabs.com#940785ea-a487-420d-9a13-f5008ed03957",
+    "did:web:cabanalabs.com#zQ3shdKPWyGcxk8ynLhLPt3dSc4sFZpHvewRQ8B3qrEyKZANj",
     "did:web:cabanalabs.com#z6MkfGHWTfYKFQiUp5wxwsm7B972HcNuY4ejJ55FKXZ36c4h"
   ]
 }
