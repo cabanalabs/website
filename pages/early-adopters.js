@@ -17,16 +17,16 @@ export default function EarlyAdopters() {
 
   const [pageData, setPageData] = useState({ widgets: [] });
 
-  const queryParameters = new URLSearchParams(window.location.search)
-  const group = queryParameters.get("group") || 'cabana-labs';
-  const badge = queryParameters.get("badge") || 'team';
-
   useEffect(() => {
+
+    const queryParameters = new URLSearchParams(window.location.search)
+    const group = queryParameters.get("group") || 'cabana-labs';
+    const badge = queryParameters.get("badge") || 'team';
 
     const request = async () => {
       //https://cabana.me/api/groups/cabana-labs/early-adopter
       //http://localhost:3006/api/groups/cabana-labs/early-adopter
-      const res = await fetch(`https://cabana.me/api/groups/${group.toUpperCase()}/${badge.toUpperCase()}`);
+      const res = await fetch(`https://cabana.me/api/groups/${group.toLowerCase()}/${badge.toLowerCase()}`);
       const data = await res.json();
       //data.widgets = [data.widgets[0],data.widgets[0],data.widgets[0],data.widgets[0]]
       setPageData(data);
