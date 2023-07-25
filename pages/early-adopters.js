@@ -22,7 +22,11 @@ export default function EarlyAdopters() {
     const queryParameters = new URLSearchParams(window.location.search)
     const org = queryParameters.get("org") || 'cabana-labs';
     const cred = queryParameters.get("cred");
-    const query = cred ? `?cred=${cred.toLowerCase()}` : '';
+    const platform = queryParameters.get("platform");
+    const queries = [];
+    if (cred) queries.push(`cred=${cred.toLowerCase()}`);
+    if (platform) queries.push(`platform=${platform.toLowerCase()}`);
+    const query = queries.length ? `?${queries.join('&')}` : '';
 
     const request = async () => {
       //https://cabana.me/api/groups/cabana-labs/early-adopter
