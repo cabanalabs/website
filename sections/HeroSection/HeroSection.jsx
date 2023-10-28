@@ -1,101 +1,36 @@
-import Image from 'next/image';
-import { useRouter } from 'next/router';
-import { scroller } from 'react-scroll';
+import Image from "next/image";
 
-import heroBg from '../../public/images/hero_bg_47331.jpg';
-import piggyIcon from "../../public/icons/piggy.svg";
-import boostIcon from "../../public/icons/boost.svg";
-import sparkleIcon from "../../public/icons/sparkle.svg";
+import { Button } from "../../components";
+import { ScrollIndicator } from "../../components/ScrollIndicator/ScrollIndicator";
 
 export const HeroSection = () => {
-  const onLearnMoreClickHandler = () => {
-    scroller.scrollTo('forOrg', {
-      offset: -100,
-    });
-  };
-
-  const router = useRouter();
-
-  const onBookClickHandler = () => {
-    router.push('/contact');
-  };
-
   return (
-    <section className='section relative -mt-16'>
-      <div className='flex section-content sm:ml-10 justify-center'>
-        <div className='pt-[2rem] lg:pt-[14rem] rounded-2xl z-10 min-h-[58rem] lg:min-h-[98rem] md:min-w-[60rem]'>
-          <div className="uppercase font-bold text-xl text-cabanaBlue2">
-            What we do  <span className="-tracking-4" >——————</span>
-          </div>
-          <div className="text-2xl md:text-4xl max-w-md md:max-w-3xl pt-10 pb-32 font-extrabold">
-            Digital Identity for Web3
-          </div>
-          <div className="flex flex-col flex-grow-1 md:flex-row space-y-10 md:space-y-0 space-x-none md:space-x-10 text-xl md:text-lg text-corduroy font-medium justify-center">
-            <div className="pr-10 md:border-dotted md:border-r-2 border-r-gray-300 mx-auto md:mx-0">
-              <Image
-                width={36}
-                height={34}
-                src={piggyIcon}
-                alt='Twitter icon'
-                quality={100}
-              />
-              <div className="py-4 max-w-full sm:max-w-[22rem] md:max-w-[18rem]">
-                We are a consortium of web3 innovators. Our projects are funded by team members, strategic partners, grants and sponsorships.
-              </div>
-            </div>
-            <div className="pr-10 md:border-dotted md:border-r-2 border-r-gray-300 mx-auto md:mx-0">
-
-                <Image
-                  width={48}
-                  height={36}
-                  src={boostIcon}
-                  alt='Twitter icon'
-                  quality={100}
-                />
-
-              <div className="py-4 max-w-full sm:max-w-[22rem] md:max-w-[19rem]">
-                CabanaLabs <br/>boosts utility in <br/>web3 projects with its identity protocols. Your project members can leverage our tools <br/>for building decentralized profiles and reputation.
-              </div>
-            </div>
-            <div className="pb-8 mx-auto md:mx-0">
-              <Image
-                width={36}
-                height={36}
-                src={sparkleIcon}
-                alt='Twitter icon'
-                quality={100}
-              />
-              <div className="py-4 max-w-full sm:max-w-[22rem] md:max-w-[16rem]">
-                We offer the <br/> latest web3 technologies with gated access controls, verifiable credentials and profit sharing data monetization.
-              </div>
-            </div>
-          </div>
-          <div className='mt-8 sm:mt-32 flex gap-4'>
-            <button
-              onClick={onLearnMoreClickHandler}
-              className='button-outlined-sm md:button-outlined-lg'>
-              Learn more
-            </button>
-            <button
-              onClick={onBookClickHandler}
-              className='button-filled-xs md:button-filled-lg--blue'>
-              Book a demo
-            </button>
-          </div>
+    <section className="section relative xl:pb-24">
+      <div className="max-w-[482px] flex flex-col gap-8">
+        <h1 className="text-3xl md:text-4xl font-black text-white">What is your digital identity worth?</h1>
+        <p className="text-sm md:text-lg text-athensGray font-bold">
+          Cabana ID empowers individuals by giving them full control over their personal data and identity, allowing
+          them to create, share and monetize profiles based on their reputation, influence, professional experience,
+          network, and digital assets.
+        </p>
+        <div>
+          <Button>Create CabanaID</Button>
         </div>
-        <div className="relative -ml-56 hidden lg:block basis-[90rem]">
-          <div className='w-[120rem] h-[100rem] absolute '>
-            <Image
-              layout='fill'
-              src={heroBg}
-              alt='Hero background'
-              quality={100}
-            />
-          </div>
-        </div>
-
       </div>
-
+      <div className="hidden xl:block">
+        <div className="absolute bottom-0 right-24 -z-10">
+          <Image src="/images/hero-1.png" alt="Hero 1" width={754} height={754} />
+        </div>
+        <div className="absolute -top-4 right-[660px] -z-20">
+          <Image src="/images/hero-1.png" alt="Hero 2" width={246} height={246} />
+        </div>
+        <div className="absolute -top-16 right-4">
+          <Image src="/images/hero-3.png" alt="Hero 3" width={150} height={136} />
+        </div>
+      </div>
+      <div className="absolute bottom-0 right-10 hidden md:block">
+        <ScrollIndicator />
+      </div>
     </section>
   );
 };
