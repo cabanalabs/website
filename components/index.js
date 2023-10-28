@@ -1,10 +1,6 @@
 export { Navigation } from "./Navigation/Navigation";
 export { NavItems } from "./Navigation/NavItem";
 export { Footer } from "./Footer/Footer";
-export { SectionCard } from "./SectionCard/SectionCard";
-export { SectionItem } from "./SectionItem/SectionItem";
-export { FAQItem } from "./FAQItem/FAQItem";
 export { PageLayout } from "./PageLayout/PageLayout";
-export { StaffCard } from "./StaffCard/StaffCard";
 export { Logo } from "./Logo/Logo";
 export { Button } from "./Button/Button";

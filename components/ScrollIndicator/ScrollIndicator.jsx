@@ -3,7 +3,7 @@ import React from "react";
 export const ScrollIndicator = () => {
   return (
     <div className="animate-bounce text-linkWater flex flex-col items-center gap-4 text-xs font-medium tracking-2">
-      <span className="uppercase vertical">scroll</span>
+      <span className="uppercase vertical select-none">scroll</span>
       <div>
         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="106" viewBox="0 0 8 106" fill="none">
           <path
