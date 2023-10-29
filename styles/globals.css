@@ -40,13 +40,13 @@ a {
 
 @layer base {
   body {
-    @apply text-prussianBlue dark:text-athensGray;
+    @apply text-prussianBlue dark:text-linkWater;
   }
 }
 
 @layer components {
   .section {
-    @apply my-14 md:my-28 max-w-xxl mx-auto px-4 2xl:px-0;
+    @apply py-14 md:py-28 max-w-xxl mx-auto px-4 2xl:px-0;
   }
 
   .section-content {
@@ -62,7 +62,7 @@ a {
   }
 
   .text-gradient-green {
-    background: linear-gradient(124deg, #0ac2a2 3.54%, #79dd77 42.87%, #d9f6f1 78.31%);
+    background: linear-gradient(124deg, #11a78d 3.54%, #8fe74a 77.53%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

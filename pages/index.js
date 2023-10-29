@@ -1,6 +1,8 @@
 import Head from "next/head";
 
-import { HeroSection } from "../sections";
+import { AppFeature, HeroSection, HowItWorks, Team, WhyItMatters } from "../sections";
+
+import { appFeaturesData } from "../sections/AppFeature/appFeaturesData";
 
 export default function Home() {
   return (
@@ -26,6 +28,20 @@ export default function Home() {
       </Head>
       <>
         <HeroSection />
+        <HowItWorks />
+        {appFeaturesData.map((appFeature, index) => (
+          <AppFeature
+            key={index}
+            imageDark={appFeature.imageDark}
+            imageLight={appFeature.imageLight}
+            title={appFeature.title}
+            description={appFeature.description}
+            isReversed={appFeature.isReversed}
+            greenTitle={appFeature.greenTitle}
+          />
+        ))}
+        <WhyItMatters />
+        <Team />
       </>
     </>
   );
