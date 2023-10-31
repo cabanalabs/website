@@ -74,8 +74,4 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-
-  .cabana-input {
-    @apply border-dashed border-[1px] border-cabanaBlue rounded-xl p-4 text-sm font-bold text-corduroy outline-none placeholder-corduroy;
-  }
 }

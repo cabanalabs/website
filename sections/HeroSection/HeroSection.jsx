@@ -6,7 +6,7 @@ export const HeroSection = () => {
   return (
     <section className="section relative xl:pb-24">
       <div className="max-w-[482px] flex flex-col gap-8">
-        <h1 className="text-3xl lg:text-4xl font-black text-white">What is your digital identity worth?</h1>
+        <h1 className="text-3xl lg:text-4xl font-black text-athensGray">What is your digital identity worth?</h1>
         <p className="text-sm md:text-lg text-athensGray font-bold">
           Cabana ID empowers individuals by giving them full control over their personal data and identity, allowing
           them to create, share and monetize profiles based on their reputation, influence, professional experience,

@@ -7,3 +7,4 @@ export { Button } from "./Button/Button";
 export { ScrollIndicator } from "./ScrollIndicator/ScrollIndicator";
 export { SectionTitle } from "./SectionTitle/SectionTitle";
 export { TeamCard } from "./TeamCard/TeamCard";
+export { ScrollToTop } from "./ScrollIndicator/ScrollToTop";
