@@ -1,12 +1,12 @@
+import { SectionTitle } from "../../components";
 import { howItWorksData } from "./howItWorksData";
 
 export const HowItWorks = () => {
   return (
     <section className="section xl:pt-64">
-      <h2 className="text-2xl xl:text-3xl text-center font-black text-gradient-purple mb-20 xl:mb-36">
+      <SectionTitle className="mb-20 xl:mb-36 text-center" purple>
         How does it work?
-      </h2>
-
+      </SectionTitle>
       <div className="grid gap-10 md:gap-0 md:grid-cols-3">
         {howItWorksData.map(({ number, title, description, id }) => {
           return (

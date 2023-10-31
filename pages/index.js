@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import { AppFeature, HeroSection, HowItWorks, Team, WhyItMatters } from "../sections";
+import { AppFeature, HeroSection, HowItWorks, Newsletter, Partnerships, Team, WhyItMatters } from "../sections";
 
 import { appFeaturesData } from "../sections/AppFeature/appFeaturesData";
 
@@ -42,6 +42,8 @@ export default function Home() {
         ))}
         <WhyItMatters />
         <Team />
+        <Partnerships />
+        <Newsletter />
       </>
     </>
   );

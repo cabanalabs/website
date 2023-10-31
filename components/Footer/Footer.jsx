@@ -4,7 +4,7 @@ import { NavItem } from "../Navigation/NavItem";
 export const Footer = () => {
   return (
     <footer className="dark:bg-codGray bg-athensGray">
-      <div className="max-w-3xl mx-auto h-24 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-0 md:justify-normal px-10 2xl:px-4">
+      <div className="section-content h-24 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-0 md:justify-normal px-10 2xl:px-4">
         <p className="flex justify-center md:flex-1 text-sm font-medium dark:text-linkWater text-prussianBlue">
           Copyright © Cabana Labs 2023
         </p>

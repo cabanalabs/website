@@ -5,3 +5,5 @@ export { PageLayout } from "./PageLayout/PageLayout";
 export { Logo } from "./Logo/Logo";
 export { Button } from "./Button/Button";
 export { ScrollIndicator } from "./ScrollIndicator/ScrollIndicator";
+export { SectionTitle } from "./SectionTitle/SectionTitle";
+export { TeamCard } from "./TeamCard/TeamCard";

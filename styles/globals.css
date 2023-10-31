@@ -50,7 +50,7 @@ a {
   }
 
   .section-content {
-    @apply max-w-xxl m-auto px-6 2xl:px-0;
+    @apply max-w-xxl m-auto px-4 2xl:px-0;
   }
 
   .scroll-condition:not([data-scroll="0"]) {

@@ -1,17 +1,20 @@
-import { useState, useLayoutEffect } from "react";
+import { useState, useEffect } from "react";
 
-export const useElementPosition = ref => {
+export const useElementPosition = (ref, treshold = 10, offset = 10) => {
   const [elementXPosition, setElementXPosition] = useState(0);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
+    if (!ref.current) return;
+
     const element = ref.current;
     const elementXPosition = element.getBoundingClientRect().left;
-    const newPosition = elementXPosition < 10 ? 10 : elementXPosition;
+    const newPosition = elementXPosition < treshold ? offset : elementXPosition;
     setElementXPosition(newPosition);
 
     const updateElementPosition = () => {
+      const element = ref.current;
       const elementXPosition = element.getBoundingClientRect().left;
-      const newPosition = elementXPosition < 10 ? 10 : elementXPosition;
+      const newPosition = elementXPosition < treshold ? offset : elementXPosition;
       setElementXPosition(newPosition);
     };
 
@@ -20,7 +23,7 @@ export const useElementPosition = ref => {
     return () => {
       window.removeEventListener("resize", updateElementPosition);
     };
-  }, [ref]);
+  }, [ref, offset, treshold]);
 
   return { elementXPosition };
 };

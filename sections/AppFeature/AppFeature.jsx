@@ -1,6 +1,8 @@
 import { useTheme } from "next-themes";
 import Image from "next/image";
 
+import { SectionTitle } from "../../components";
+
 export const AppFeature = ({ imageDark, imageLight, title, description, isReversed, greenTitle }) => {
   const { resolvedTheme } = useTheme();
   const isDarkTheme = resolvedTheme === "dark";
@@ -16,13 +18,9 @@ export const AppFeature = ({ imageDark, imageLight, title, description, isRevers
           <Image src={isDarkTheme ? imageDark : imageLight} alt={title} layout="fill" />
         </figure>
         <div className="max-w-small">
-          <h2
-            className={`text-2xl xl:text-3xl font-black mb-12 ${
-              greenTitle ? "text-gradient-green" : "text-gradient-purple"
-            }`}
-          >
+          <SectionTitle className="mb-12" purple={!greenTitle}>
             {title}
-          </h2>
+          </SectionTitle>
           <p className="whitespace-pre-line font-medium text-sm xl:text-lg">{description}</p>
         </div>
       </div>
