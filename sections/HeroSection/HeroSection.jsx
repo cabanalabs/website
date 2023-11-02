@@ -21,7 +21,7 @@ export const HeroSection = () => {
           <Image src="/images/hero-1.png" alt="Hero 1" width={754} height={754} />
         </div>
         <div className="absolute top-28 right-[660px] -z-20">
-          <Image src="/images/hero-1.png" alt="Hero 2" width={246} height={246} />
+          <Image src="/images/hero-2.png" alt="Hero 2" width={246} height={246} />
         </div>
         <div className="absolute top-16 right-4">
           <Image src="/images/hero-3.png" alt="Hero 3" width={150} height={136} />
