@@ -1,11 +1,11 @@
-// import { useTheme } from "next-themes";
+import { useTheme } from "next-themes";
 import Image from "next/image";
 
 import { SectionTitle } from "../../components";
 
 export const AppFeature = ({ imageDark, imageLight, title, description, isReversed, greenTitle }) => {
-  // const { resolvedTheme } = useTheme();
-  const isDarkTheme = true;//resolvedTheme === "dark";
+  const { resolvedTheme } = useTheme();
+  const isDarkTheme = resolvedTheme === "dark";
 
   return (
     <section className="section">

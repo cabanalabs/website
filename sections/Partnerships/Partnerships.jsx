@@ -1,9 +1,9 @@
 import Image from "next/image";
-// import { useTheme } from "next-themes";
+import { useTheme } from "next-themes";
 
 export const Partnerships = () => {
-  // const { resolvedTheme } = useTheme();
-  const isDarkTheme = true;//resolvedTheme === "dark";
+  const { resolvedTheme } = useTheme();
+  const isDarkTheme = resolvedTheme === "dark";
 
   return (
     <section className="dark:bg-codGray bg-athensGray">

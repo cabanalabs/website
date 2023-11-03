@@ -7,7 +7,7 @@ import { PageLayout } from "../components";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
       <PageLayout>
         <NextNProgress
           color="#007CC2"
