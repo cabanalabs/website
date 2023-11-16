@@ -37,14 +37,14 @@ export const Partnerships = () => {
             </figure>
           </div>
         </div>
-        <div className="max-w-small">
-          <h2 className="text-2xl xl:text-3xl font-black dark:text-athensGray text-codGray !leading-[64px] mb-4">
+        <div className="mt-12 xl:mt-0 max-w-small">
+          <h2 className="text-2xl xl:text-3xl font-black dark:text-athensGray text-codGray xl:!leading-[64px] mb-4">
             Built on open standards and chain agnostic
           </h2>
           <ul>
-            <li className="text-lg text-corduroy underline">w3.org/TR/did-core</li>
-            <li className="text-lg text-corduroy underline">w3.org/TR/vc-data-model</li>
-            <li className="text-lg text-corduroy underline">identity.foundation</li>
+            <li className="text-sm xl:text-lg text-corduroy underline">w3.org/TR/did-core</li>
+            <li className="text-sm xl:text-lg text-corduroy underline">w3.org/TR/vc-data-model</li>
+            <li className="text-sm xl:text-lg text-corduroy underline">identity.foundation</li>
           </ul>
         </div>
       </div>

@@ -15,6 +15,9 @@ export const HeroSection = () => {
         <div>
           <Button>Create CabanaID</Button>
         </div>
+        <div className="absolute -top-40 lg:-top-22 xl:-top-12 -left-96 -z-20 scale-[2] lg:scale-[3.3] xl:scale-[3.7]">
+          <Image src="/images/gradient-blob.svg" alt="Gradient blob" width={800} height={900} />
+        </div>
       </div>
       <div className="hidden xl:block">
         <div className="absolute bottom-0 right-24 -z-10">
