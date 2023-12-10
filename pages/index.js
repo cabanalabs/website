@@ -28,7 +28,7 @@ export default function Home() {
       </Head>
       <>
         <HeroSection />
-        <HowItWorks />
+        {/*<HowItWorks />*/}
         {appFeaturesData.map((appFeature, index) => (
           <AppFeature
             key={index}
@@ -40,7 +40,7 @@ export default function Home() {
             greenTitle={appFeature.greenTitle}
           />
         ))}
-        <WhyItMatters />
+        {/*<WhyItMatters />*/}
         <Team />
         <Partnerships />
         <Newsletter />
