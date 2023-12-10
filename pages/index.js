@@ -3,6 +3,7 @@ import Head from "next/head";
 import { AppFeature, HeroSection, HowItWorks, Newsletter, Partnerships, Team, WhyItMatters } from "../sections";
 
 import { appFeaturesData } from "../sections/AppFeature/appFeaturesData";
+import {UseCases} from "../sections/UseCases/UseCases";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       <>
         <HeroSection />
         {/*<HowItWorks />*/}
+        <UseCases />
         {appFeaturesData.map((appFeature, index) => (
           <AppFeature
             key={index}
