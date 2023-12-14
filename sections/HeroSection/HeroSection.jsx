@@ -9,7 +9,7 @@ export const HeroSection = () => {
         <h1 className="text-3xl lg:text-4xl font-black text-athensGray mt-20">Bring Trust and Authenticity to Web3</h1>
         <p className="text-sm md:text-lg lg:text-xl text-athensGray font-bold mt-6 ">
           Cabana Identity is more than just an identity management system. It’s your partner in cultivating a vibrant, trustworthy community. It represents a reinvention of digital identity.
-          <div className="mt-10 mb-4">Cabana enables building a world where privacy is protected, trust is the norm, and communities foster genuine and meaningful connections with a sense of belonging.</div>
+          <div className="mt-10 mb-4">Cabana enables user-owned identity where individuals control privacy and communities benefit from trust.</div>
         </p>
         <div>
           <Button>Get started</Button>
