@@ -2,7 +2,7 @@ import Head from "next/head";
 
 import { AppFeature, HeroSection, HowItWorks, Newsletter, Partnerships, Team, WhyItMatters } from "../sections";
 
-import { appFeaturesData } from "../sections/AppFeature/appFeaturesData";
+import { appPillarsData } from "../sections/AppFeature/appPillarsData";
 import {UseCases} from "../sections/UseCases/UseCases";
 
 export default function Home() {
@@ -31,7 +31,7 @@ export default function Home() {
         <HeroSection />
         {/*<HowItWorks />*/}
         <UseCases />
-        {appFeaturesData.map((appFeature, index) => (
+        {appPillarsData.map((appFeature, index) => (
           <AppFeature
             key={index}
             imageDark={appFeature.imageDark}

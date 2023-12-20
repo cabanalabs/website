@@ -14,8 +14,7 @@ export const Team = () => {
         <div className="max-w-small space-y-6 xl:space-y-12">
           <SectionTitle className="mb-6 xl:mb-12">Team</SectionTitle>
           <p className="font-medium text-sm xl:text-lg">
-            We understand the importance of trust and security in the digital world, and our team works tirelessly to
-            create seamless and robust systems that empower individuals and businesses alike.
+            We&apos;re a collective of web3 enthusiasts committed to creating user-centric solutions. Funded through grants, sponsorships, and strategic partnerships, we&apos;re dedicated to fostering open-source innovation for the betterment of online communities.
           </p>
         </div>
       </div>

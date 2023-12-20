@@ -6,16 +6,16 @@ export const HeroSection = () => {
   return (
     <section className="section relative xl:pb-24">
       <div className="max-w-[532px] flex flex-col gap-8">
-        <h1 className="text-3xl lg:text-4xl font-black text-athensGray mt-20">Bring Trust and Authenticity to Web3</h1>
-        <p className="text-sm md:text-lg lg:text-xl text-athensGray font-bold mt-6 ">
-          Cabana Identity is more than just an identity management system. It’s your partner in cultivating a vibrant, trustworthy community. It represents a reinvention of digital identity.
-          <div className="mt-10 mb-4">Cabana enables user-owned identity where individuals control privacy and communities benefit from trust.</div>
-        </p>
+        <h1 className="text-3xl lg:text-4xl font-black text-athensGray mt-20">Deliver Trust and Authenticity to Web3</h1>
+        <div className="text-sm md:text-lg lg:text-xl text-athensGray font-bold mt-6 ">
+          <p>Cabana Identity is more than an identity management system. It’s your partner in cultivating a vibrant, trustworthy community and represents a reinvention of digital identity. </p>
+          <p className="mt-10 mb-4">Cabana enables user-owned identity where individuals control privacy and communities benefit from trust.</p>
+        </div>
         <div>
           <Button>Get started</Button>
         </div>
         <div className="absolute -top-40 lg:-top-22 xl:-top-12 -left-96 -z-20 scale-[2] lg:scale-[3.3] xl:scale-[3.7]">
-          <Image src="/images/gradient-blob.svg" alt="Gradient blob" width={800} height={900} />
+          <Image src="/images/gradient-blob.svg" alt="Gradient blob" width={800} height={900}/>
         </div>
       </div>
       <div className="hidden xl:block">
