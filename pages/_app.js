@@ -2,6 +2,7 @@ import NextNProgress from "nextjs-progressbar";
 import { ThemeProvider } from "next-themes";
 
 import "../styles/globals.css";
+import '../styles/satoshi.css';
 
 import { PageLayout } from "../components";
 

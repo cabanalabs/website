@@ -9,11 +9,12 @@ export const Footer = () => {
           Copyright © Cabana Labs 2023
         </p>
         <ul className="flex gap-9 items-center md:h-full md:ml-auto">
-          {footerData.map(data => (
-            <li key={data.category}>
+          {footerData.map(data => {
+            if (data.hidden) return null;
+            return (<li key={data.category}>
               <NavItem label={data.category} href={data.to} />
-            </li>
-          ))}
+            </li>)
+          })}
         </ul>
       </div>
     </footer>

@@ -6,6 +6,7 @@ export const footerData = [
   {
     category: "About",
     to: "/about",
+    hidden: true,
   },
   {
     category: "Contact Us",

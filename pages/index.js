@@ -3,7 +3,8 @@ import Head from "next/head";
 import { AppFeature, HeroSection, HowItWorks, Newsletter, Partnerships, Team, WhyItMatters } from "../sections";
 
 import { appPillarsData } from "../sections/AppFeature/appPillarsData";
-import {UseCases} from "../sections/UseCases/UseCases";
+import {BuildTogether} from "../sections/BuildTogether/BuildTogether";
+import {TrustScores} from "../sections/TrustScores/TrustScores";
 
 export default function Home() {
   return (
@@ -30,7 +31,8 @@ export default function Home() {
       <>
         <HeroSection />
         {/*<HowItWorks />*/}
-        <UseCases />
+        {/*<BuildTogether />*/}
+        <TrustScores />
         {appPillarsData.map((appFeature, index) => (
           <AppFeature
             key={index}

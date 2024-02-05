@@ -5,3 +5,4 @@ export { WhyItMatters } from "./WhyItMatters/WhyItMatters";
 export { Team } from "./Team/Team";
 export { Partnerships } from "./Partnerships/Partnerships";
 export { Newsletter } from "./Newsletter/Newsletter";
+export { ContactFormSection } from "./ContactFormSection/ContactFormSection";

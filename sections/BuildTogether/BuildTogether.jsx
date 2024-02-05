@@ -1,6 +1,6 @@
 import { SectionTitle } from "../../components";
 
-export const UseCases = () => {
+export const BuildTogether = () => {
   return (
     <section className="section xl:pt-36">
       <SectionTitle className="mb-20 xl:mb-12 text-center" purple>Let&apos;s Build Together</SectionTitle>

@@ -6,9 +6,7 @@ export const NavItem = ({ label, href, type }) => {
   if (type === "button") {
     return (
       <Link href={href}>
-        <>
-          <Button type="outlined">{label}</Button>
-        </>
+        <Button type="outlined">{label}</Button>
       </Link>
     );
   }

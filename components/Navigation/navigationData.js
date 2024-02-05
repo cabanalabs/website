@@ -6,6 +6,7 @@ export const navData = [
   {
     label: "About",
     to: "/about",
+    hidden: true,
   },
   {
     label: "Early Adopters",

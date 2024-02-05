@@ -1,18 +1,21 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { Button, ScrollIndicator } from "../../components";
 
 export const HeroSection = () => {
   return (
     <section className="section relative xl:pb-24">
-      <div className="max-w-[532px] flex flex-col gap-8">
-        <h1 className="text-3xl lg:text-4xl font-black text-athensGray mt-20">Deliver Trust and Authenticity to Web3</h1>
+      <div className="max-w-[552px] flex flex-col gap-8">
+        <h1 className="text-3xl lg:text-4xl font-black text-athensGray mt-20">Create Trusted Web3 Identities</h1>
         <div className="text-sm md:text-lg lg:text-xl text-athensGray font-bold mt-6 ">
-          <p>Cabana Identity is more than an identity management system. It’s your partner in cultivating a vibrant, trustworthy community and represents a reinvention of digital identity. </p>
-          <p className="mt-10 mb-4">Cabana enables user-owned identity where individuals control privacy and communities benefit from trust.</p>
+          <p>Build Stronger Communities with Cabana Labs.</p>
+          <p className="mt-10 mb-4">Go beyond anonymous avatars and faceless interactions with a robust framework that unlocks value in your community. Immutable metrics offer a rich tapestry of information – make informed decisions, secure interactions, and establish meaningful connections.</p>
         </div>
         <div>
-          <Button>Get started</Button>
+          <Link href="/contact">
+            <Button>Get started</Button>
+          </Link>
         </div>
         <div className="absolute -top-40 lg:-top-22 xl:-top-12 -left-96 -z-20 scale-[2] lg:scale-[3.3] xl:scale-[3.7]">
           <Image src="/images/gradient-blob.svg" alt="Gradient blob" width={800} height={900}/>
