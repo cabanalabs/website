@@ -10,7 +10,7 @@ export const HeroSection = () => {
         <h1 className="text-3xl lg:text-4xl font-black text-athensGray mt-20">Create Trusted Web3 Identities</h1>
         <div className="text-sm md:text-lg lg:text-xl text-athensGray font-bold mt-6 ">
           <p>Build stronger communities with Cabana Labs.</p>
-          <p className="mt-10 mb-4">Go beyond anonymous avatars and faceless interactions with a robust framework that unlocks value in your community. Trust Metrics offer a rich tapestry of information – make informed decisions, secure interactions, and establish meaningful connections.</p>
+          <p className="mt-10 mb-4">Go beyond anonymous avatars and faceless interactions with a robust framework that unlocks value in your community. Trust Scores offer a rich tapestry of information – make informed decisions, secure interactions, and establish meaningful connections.</p>
         </div>
         <div>
           <Link href="/contact">

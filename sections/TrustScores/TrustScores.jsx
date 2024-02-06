@@ -5,7 +5,7 @@ export const TrustScores = () => {
   return (
     <section className="section xl:pt-64">
       <SectionTitle className="mb-8" purple>
-        Trust Metrics
+        Trust Scores
       </SectionTitle>
       <p className="text-md xl:text-xl mb-14 max-w-[1020px]">
         Gain a holistic view of trustworthiness through immutable metrics. A comprehensive suite of measurements offer
