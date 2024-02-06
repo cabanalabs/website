@@ -1,10 +1,10 @@
 import Head from "next/head";
 
-import { AppFeature, HeroSection, HowItWorks, Newsletter, Partnerships, Team, WhyItMatters } from "../sections";
+import { HeroSection, Newsletter, Partnerships, Team } from "../sections";
 
-import { appPillarsData } from "../sections/AppFeature/appPillarsData";
-import {BuildTogether} from "../sections/BuildTogether/BuildTogether";
 import {TrustScores} from "../sections/TrustScores/TrustScores";
+import {ThreePillars} from "../sections/ThreePillars/ThreePillars";
+import {IdentityBuilding} from "../sections/IdentityBuilding/IdentityBuilding";
 
 export default function Home() {
   return (
@@ -33,17 +33,8 @@ export default function Home() {
         {/*<HowItWorks />*/}
         {/*<BuildTogether />*/}
         <TrustScores />
-        {appPillarsData.map((appFeature, index) => (
-          <AppFeature
-            key={index}
-            imageDark={appFeature.imageDark}
-            imageLight={appFeature.imageLight}
-            title={appFeature.title}
-            description={appFeature.description}
-            isReversed={appFeature.isReversed}
-            greenTitle={appFeature.greenTitle}
-          />
-        ))}
+        <IdentityBuilding />
+        <ThreePillars />
         {/*<WhyItMatters />*/}
         <Team />
         <Partnerships />

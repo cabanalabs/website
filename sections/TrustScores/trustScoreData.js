@@ -14,13 +14,13 @@ export const trustScoreData = [
   {
     number: "3.",
     title: "Collateral",
-    description: "Financial value pledged for identity legitimacy",
+    description: "Financial value pledged for identity legitimacy. Trust those with skin in the game.",
     image: "/images/trust/collateral-score.png",
   },
   {
     number: "4.",
     title: "Security",
-    description: "A measure of commitment to account security, such as use of 2FA, Passkeys, decoys, and device security.",
+    description: "A measure of commitment to account security, and a strategic awareness to risk vs convenience.",
     image: "/images/trust/security-score.png",
   },
 ];

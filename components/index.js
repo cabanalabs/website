@@ -1,6 +1,6 @@
 export { Navigation } from "./Navigation/Navigation";
 export { NavItems } from "./Navigation/NavItem";
-export { Footer } from "./Footer/Footer";
+export { Footer } from "../sections/Footer/Footer";
 export { PageLayout } from "./PageLayout/PageLayout";
 export { Logo } from "./Logo/Logo";
 export { Button } from "./Button/Button";
