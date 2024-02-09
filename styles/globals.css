@@ -75,4 +75,9 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  .li-star li {
+    margin-bottom: 10px;
+    @apply bg-star bg-no-repeat bg-left pl-[32px]
+  }
 }

@@ -1,9 +1,8 @@
 import Image from "next/image";
-import { useTheme } from "next-themes";
 
 export const Partnerships = () => {
-  const { resolvedTheme } = useTheme();
-  const isDarkTheme = resolvedTheme === "dark";
+  // const { resolvedTheme } = useTheme();
+  // const isDarkTheme = resolvedTheme === "dark";
 
   return (
     <section className="dark:bg-codGray bg-athensGray">
@@ -13,7 +12,7 @@ export const Partnerships = () => {
           <div className="flex flex-col gap-6 md:gap-12">
             <figure>
               <Image
-                src={isDarkTheme ? "/images/validata-dark.png" : "/images/validata-light.png"}
+                src="/images/validata-dark.png"
                 alt="Validata logo"
                 width={180}
                 height={33}
@@ -21,7 +20,7 @@ export const Partnerships = () => {
             </figure>
             <figure>
               <Image
-                src={isDarkTheme ? "/images/steadynamic-dark.svg" : "/images/steadynamic-light.png"}
+                src="/images/steadynamic-dark.svg"
                 alt="Steadynamic logo"
                 width={225}
                 height={30}
@@ -29,7 +28,7 @@ export const Partnerships = () => {
             </figure>
             <figure>
               <Image
-                src={isDarkTheme ? "/images/token-logo-dark.png" : "/images/token-logo-light.png"}
+                src="/images/token-logo-dark.png"
                 alt="Token logo"
                 width={130}
                 height={55}

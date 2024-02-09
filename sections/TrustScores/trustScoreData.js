@@ -2,7 +2,7 @@ export const trustScoreData = [
   {
     number: "1.",
     title: "Identity",
-    description: "Measure of personal identification via verified information, such as email, phone, social media, and KYC documents.",
+    description: "Measure of verified information such as from email, phone, social media, and KYC documents.",
     image: "/images/trust/identity-score.png",
   },
   {

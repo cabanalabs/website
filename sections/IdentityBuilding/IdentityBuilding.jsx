@@ -3,10 +3,10 @@ import {SectionTitle} from "../../components";
 
 export const IdentityBuilding = () => {
   return (
-    <section className="section">
+    <section className="section text-white">
       <div className={`flex flex-col gap-12 md:flex-row items-center`}>
         <div className="max-w-small">
-          <SectionTitle className="mb-12" purple>
+          <SectionTitle className="mb-12">
             Identity Building
           </SectionTitle>
           <p className="whitespace-pre-line font-medium text-md xl:text-xl">Motivate users to invest in their digital identities for greater access, opportunities, and community standing.</p>

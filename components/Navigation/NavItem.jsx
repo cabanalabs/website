@@ -5,7 +5,7 @@ import { Button } from "../Button/Button";
 export const NavItem = ({ label, href, type }) => {
   if (type === "button") {
     return (
-      <Link href={href}>
+      <Link href={href} passHref>
         <Button type="outlined">{label}</Button>
       </Link>
     );

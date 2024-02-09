@@ -1,11 +1,10 @@
-import { useTheme } from "next-themes";
 import Image from "next/image";
 
 import { SectionTitle } from "../../components";
 
-export const AppFeature = ({ imageDark, imageLight, title, description, isReversed, greenTitle }) => {
-  const { resolvedTheme } = useTheme();
-  const isDarkTheme = resolvedTheme === "dark";
+export const AppFeature = ({ imageDark, imageLight, title, description, isReversed, greenTitle, w= 404, h = 821 }) => {
+  // const { resolvedTheme } = useTheme();
+  // const isDarkTheme = resolvedTheme === "dark";
 
   return (
     <section className="section">
@@ -14,8 +13,9 @@ export const AppFeature = ({ imageDark, imageLight, title, description, isRevers
           isReversed ? "md:flex-row-reverse" : ""
         }`}
       >
-        <figure className="shrink-0 h-[574px] w-[283px] xl:h-[821px] xl:w-[404px] relative">
-          <Image src={isDarkTheme ? imageDark : imageLight} alt={title} layout="fill" />
+        <figure style={{ height:`${h}px`, width: `${w}px`}} className={`shrink-0 relative`}>
+          {/*<Image src={isDarkTheme ? imageDark : imageLight} alt={title} layout="fill" />*/}
+          <Image src={imageDark} alt={title} layout="fill" />
         </figure>
         <div className="max-w-small">
           <SectionTitle className="mb-12" purple={!greenTitle}>

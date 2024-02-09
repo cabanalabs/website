@@ -1,9 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}", "./sections/**/*.{js,ts,jsx,tsx}"],
-  darkMode: "class",
+  // darkMode: "class",
   theme: {
     extend: {
+      listStyleImage: {
+        star: 'url("../public/images/star.svg")',
+      },
+      backgroundImage: {
+        star: 'url("../public/images/star.svg")',
+      },
       colors: {
         athensGray: "#F4F5F7",
         linkWater: "#CCE5F3",
@@ -18,7 +24,7 @@ module.exports = {
         swamp: "#001927",
       },
       fontFamily: {
-        inter: ["Inter", "sans-serif"],
+        inter: ["Satoshi", "sans-serif"],
       },
       fontSize: {
         xs: ["0.75rem", { lineHeight: "1.125rem" }], //12px/18px

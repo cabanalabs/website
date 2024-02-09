@@ -1,5 +1,4 @@
 import NextNProgress from "nextjs-progressbar";
-import { ThemeProvider } from "next-themes";
 
 import "../styles/globals.css";
 import '../styles/satoshi.css';
@@ -8,7 +7,7 @@ import { PageLayout } from "../components";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+    // <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
       <PageLayout>
         <NextNProgress
           color="#007CC2"
@@ -19,7 +18,7 @@ function MyApp({ Component, pageProps }) {
         />
         <Component {...pageProps} />
       </PageLayout>
-    </ThemeProvider>
+    // </ThemeProvider>
   );
 }
 
