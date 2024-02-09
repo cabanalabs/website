@@ -42,7 +42,7 @@ export default function Home() {
         {/*<WhyItMatters />*/}
         <Team />
         <Partnerships />
-        <Newsletter />
+        {/*<Newsletter />*/}
       </>
     </>
   );

@@ -32,9 +32,9 @@ export const Team = () => {
           />
         ))}
       </div>
-      <div className="max-w-xxl mx-auto px-4 2xl:px-0">
-        <Button className="!bg-lochmara !border-lochmara">Contact Us</Button>
-      </div>
+      {/*<div className="max-w-xxl mx-auto px-4 2xl:px-0">*/}
+      {/*  <Button className="!bg-lochmara !border-lochmara">Contact Us</Button>*/}
+      {/*</div>*/}
     </section>
   );
 };
