@@ -6,7 +6,7 @@ export const Logo = () => {
       viewBox="0 0 104 48"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="antialiased fill-current text-[#00324E] dark:text-[#CCE5F3]"
+      className="antialiased fill-current"
     >
       <g id="Group 24">
         <g id="Group 23">

@@ -17,13 +17,12 @@ export const TrustScores = () => {
         <div className="flex flex-wrap justify-center gap-8 md:gap-8 xl:gap-6 ">
           {trustScoreData.map(({ number, title, description, image }, index) => {
             return (
-              <div key={index} className="p-4 lg:p-6 xl:p-8 flex flex-col gap-6 bg-black w-[244px] h-[434px] md:w-[344px] md:h-[474px] rounded-2xl border border-zinc-500">
+              <div key={index} className="p-4 lg:p-6 xl:p-6 flex flex-col gap-4 bg-black w-[344px] h-[434px] md:w-[344px] md:h-[474px] rounded-2xl border border-zinc-500">
                 <div className="flex justify-center items-center min-h-[230px]">
-                  <div><img src={image} width={200} /></div>
+                  <img src={image} width={200} />
                 </div>
-                <span className="text-xl lg:text-[2rem] xl:text-[2.5rem] font-bold">{title}</span>
-                {/*<p className="text-lg xl:text-xl font-extrabold mb-4">{title}</p>*/}
-                <SectionBody>{description}</SectionBody>
+                <span className="text-[2rem] xl:text-[2.5rem] font-bold">{title}</span>
+                <h2 className="text-md lg:text-lg">{description}</h2>
               </div>
             );
           })}

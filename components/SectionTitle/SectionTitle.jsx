@@ -16,7 +16,7 @@ export const SectionTitle = ({ children, purple, className }) => {
 };
 
 export const SectionBody = ({ children, className }) => {
-  return <p className={`text-sm md:text-lg ${className}`}>{children}</p>;
+  return <p className={`text-md md:text-lg ${className}`}>{children}</p>;
 }
 
 

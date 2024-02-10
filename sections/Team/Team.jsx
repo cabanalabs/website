@@ -10,7 +10,7 @@ export const Team = () => {
   const { elementXPosition } = useElementPosition(sectionRef);
 
   return (
-    <section className="py-14 md:py-28 space-y-6 xl:space-y-12">
+    <section className="pb-14 md:pb-28 space-y-6 xl:space-y-12">
       <div className="space-y-6 xl:space-y-12 max-w-xxl mx-auto px-4 2xl:px-0" ref={sectionRef}>
         <div className="space-y-6 xl:space-y-12">
           <SectionTitle className="max-w-[350px] xl:max-w-small mb-6 xl:mb-12">It's Time to Build with Trust</SectionTitle>

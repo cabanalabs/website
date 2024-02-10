@@ -39,11 +39,13 @@ export const Navigation = () => {
             transition={{ duration: 0.1 }}
           >
             <ul className="flex flex-col gap-4 ">
-              {navData.map(item => (
+              {navData.map(item => {
+                if (item.hidden) return null;
+                return (
                 <li key={item.label}>
                   <NavItem href={item.to} label={item.label} />
                 </li>
-              ))}
+              )})}
             </ul>
           </motion.div>
         </motion.div>

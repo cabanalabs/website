@@ -14,7 +14,7 @@ export const SDK = () => {
           <SectionBody>Cabana Identity thrives on collaboration. We provide the building blocks. You shape the future.</SectionBody>
         </div>
       </div>
-      <div className="px:16 xl:px-20 pt-32 flex flex-col gap-24 justify-center">
+      <div className="px:16 xl:px-20 pt-16 lg:pt-32 flex flex-col gap-12 lg:gap-24 justify-center">
         <div className="flex flex-wrap md:flex-nowrap items-center px-10 xl:px-20 gap-12">
           <div>
             <h2 className="text-xl lg:text-1xl font-bold max-w-small">
