@@ -81,6 +81,11 @@ a {
     @apply bg-star bg-no-repeat bg-left pl-[32px]
   }
 
+  .li-starGray li {
+    margin-bottom: 14px;
+    @apply bg-starGray bg-no-repeat bg-left pl-[32px]
+  }
+
   .li-star-2 li {
     margin-bottom: 14px;
     @apply bg-star bg-no-repeat bg-left pl-10 ml-8

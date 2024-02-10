@@ -9,6 +9,7 @@ module.exports = {
       },
       backgroundImage: {
         star: 'url("../public/images/star.svg")',
+        starGray: 'url("../public/images/starGray.svg")',
       },
       colors: {
         athensGray: "#F4F5F7",
