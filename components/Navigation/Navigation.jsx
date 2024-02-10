@@ -11,7 +11,7 @@ export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="h-24 sticky top-0 left-0 z-20 bg-white/70 backdrop-blur-md drop-shadow-small dark:bg-woodSmoke/70">
+    <header className="h-24 sticky top-0 left-0 z-20">
       <nav className="flex justify-between items-center m-auto h-full max-w-3xl px-10 2xl:px-4 relative">
         <div className="cursor-pointer hover:scale-[1.02] active:scale-100 transition-all">
           <Link href="/">

@@ -2,13 +2,13 @@ export const trustScoreData = [
   {
     number: "1.",
     title: "Identity",
-    description: "Measure of verified information such as from email, phone, social media, and KYC documents.",
+    description: "Measure of verified information such as email, phone, social media, and KYC documents.",
     image: "/images/trust/identity-score.png",
   },
   {
     number: "2.",
     title: "Reputation",
-    description:  "Peer-based rating of your past interactions and transactions that include feedback, reviews and ratings.",
+    description:  "Peer-based rating of past interactions and transactions that include feedback, reviews and ratings.",
     image: "/images/trust/reputation-score.png",
   },
   {

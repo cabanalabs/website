@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}", "./sections/**/*.{js,ts,jsx,tsx}"],
-  // darkMode: "class",
+  darkMode: "class",
   theme: {
     extend: {
       listStyleImage: {
@@ -32,6 +32,7 @@ module.exports = {
         base: ["1rem", { lineHeight: "1.5rem" }], //16px/24px
         lg: ["1.125rem", { lineHeight: "1.5rem" }], //18px/24px
         xl: ["1.5rem", { lineHeight: "1.875rem" }], //24px/30px
+        "1xl": ["2.5rem", { lineHeight: "3rem" }], //40px/48px
         "2xl": ["3rem", { lineHeight: "3rem" }], //48px/48px
         "3xl": ["4.5rem", { lineHeight: "4.5rem" }], //72px/72px
         "4xl": ["6rem", { lineHeight: "6.563rem" }], //96px/105px

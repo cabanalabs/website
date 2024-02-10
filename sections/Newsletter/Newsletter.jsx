@@ -4,7 +4,7 @@ export const Newsletter = () => {
   return (
     <section className="dark:bg-codGray bg-athensGray">
       <div className="max-w-[1092px] mx-auto px-4 2xl:px-0 py-14 md:py-28 relative">
-        <h2 className="text-2xl xl:text-3xl font-black dark:text-athensGray text-codGray mb-4 md:mb-8">Newsletter</h2>
+        <h2 className="text-2xl xl:text-3xl font-extrabold dark:text-athensGray text-codGray mb-4 md:mb-8">Newsletter</h2>
         <div>
           <span className="text-sm md:text-lg dark:text-grayChateau text-corduroy font-medium">
             Sign up to stay up-to-date on Cabana Labs progress.

@@ -8,7 +8,7 @@ export const Partnerships = () => {
     <section className="dark:bg-codGray bg-athensGray">
       <div className="max-w-[1092px] mx-auto px-4 2xl:px-0 py-14 md:py-28 flex flex-col xl:flex-row justify-between">
         <div className="space-y-6 md:space-y-12">
-          <h2 className="text-2xl xl:text-3xl font-black dark:text-athensGray text-codGray">Partnerships</h2>
+          <h2 className="text-2xl xl:text-3xl font-extrabold dark:text-athensGray text-codGray">Partnerships</h2>
           <div className="flex flex-col gap-6 md:gap-12">
             <figure>
               <Image
@@ -37,7 +37,7 @@ export const Partnerships = () => {
           </div>
         </div>
         <div className="mt-12 xl:mt-0 max-w-small">
-          <h2 className="text-2xl xl:text-3xl font-black dark:text-athensGray text-codGray xl:!leading-[64px] mb-4">
+          <h2 className="text-2xl xl:text-3xl font-extrabold dark:text-athensGray text-codGray xl:!leading-[64px] mb-4">
             Built on open standards and chain agnostic
           </h2>
           <ul>

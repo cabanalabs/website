@@ -1,11 +1,8 @@
 import Head from "next/head";
 
 import { HeroSection, Newsletter, Partnerships, Team } from "../sections";
-
 import {TrustScores} from "../sections/TrustScores/TrustScores";
-import {ThreePillars} from "../sections/ThreePillars/ThreePillars";
 import {IdentityBuilding} from "../sections/IdentityBuilding/IdentityBuilding";
-import {Products} from "../sections/Products/Products";
 import {SDK} from "../sections/SDK/SDK";
 
 export default function Home() {

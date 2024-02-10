@@ -21,10 +21,18 @@ export const teamData = [
     avatar: "/images/team/adriaan.jpg",
   },
   {
+    id: "c0727cb3-acc9-4157-8b55-b8c20544b022",
+    name: "Vilen Rodeski",
+    title: "Creative Advisor",
+    score: 42,
+    avatar: "/images/team/vilen.jpg",
+  },
+  {
     id: "c0727cb3-acc9-4057-8b55-b8c20544b022",
     name: "Vladan Vidakovic",
     title: "UX Design Lead",
     score: 41,
     avatar: "/images/team/vladan.png",
   },
+
 ];

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import {SectionTitle} from "../../components";
+import {SectionBody} from "../../components/SectionTitle/SectionTitle";
 
 export const IdentityBuilding = () => {
   return (
@@ -9,7 +10,7 @@ export const IdentityBuilding = () => {
           <SectionTitle className="mb-12">
             Identity Building
           </SectionTitle>
-          <p className="whitespace-pre-line font-medium text-md xl:text-xl">Motivate users to invest in their digital identities for greater access, opportunities, and community standing.</p>
+          <SectionBody>Motivate users to invest in their digital identities for greater access, opportunities, and community standing.</SectionBody>
         </div>
         <div className="relative w-[880px] h-[760px]">
           <div className="shrink-0 h-[238px] w-[238px] xl:h-[476px] xl:w-[475px] relative mt-28">
@@ -23,6 +24,9 @@ export const IdentityBuilding = () => {
           </div>
           <div className="shrink-0 h-[318px] w-[451px] xl:h-[318px] xl:w-[451px] absolute right-1 bottom-1 z-20">
             <Image src="/images/ib/ib_verifications.png" layout="fill"/>
+          </div>
+          <div className="absolute -z-10 -bottom-40 scale-[1.4]">
+            <Image src="/images/sdk/blob.svg" width={668} height={669}/>
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@
     src: url('fonts/Satoshi-Variable.woff2') format('woff2'),
     url('fonts/Satoshi-Variable.woff') format('woff'),
     url('fonts/Satoshi-Variable.ttf') format('truetype');
-    font-weight: 300 900;
+    font-weight: 300 800;
     font-display: swap;
     font-style: normal;
 }
@@ -13,7 +13,7 @@
     src: url('fonts/Satoshi-VariableItalic.woff2') format('woff2'),
     url('fonts/Satoshi-VariableItalic.woff') format('woff'),
     url('fonts/Satoshi-VariableItalic.ttf') format('truetype');
-    font-weight: 300 900;
+    font-weight: 300 800;
     font-display: swap;
     font-style: italic;
 }
@@ -103,7 +103,7 @@
     src: url('fonts/Satoshi-Black.woff2') format('woff2'),
     url('fonts/Satoshi-Black.woff') format('woff'),
     url('fonts/Satoshi-Black.ttf') format('truetype');
-    font-weight: 900;
+    font-weight: 800;
     font-display: swap;
     font-style: normal;
 }
@@ -113,7 +113,7 @@
     src: url('fonts/Satoshi-BlackItalic.woff2') format('woff2'),
     url('fonts/Satoshi-BlackItalic.woff') format('woff'),
     url('fonts/Satoshi-BlackItalic.ttf') format('truetype');
-    font-weight: 900;
+    font-weight: 800;
     font-display: swap;
     font-style: italic;
 }

@@ -11,8 +11,8 @@ export const HowItWorks = () => {
         {howItWorksData.map(({ number, title, description, id }) => {
           return (
             <div key={id} className="px-6 xl:px-20">
-              <span className="text-3xl xl:text-5xl font-black text mb-9">{number}</span>
-              <p className="text-lg xl:text-xl font-black mb-4">{title}</p>
+              <span className="text-3xl xl:text-5xl font-extrabold text mb-9">{number}</span>
+              <p className="text-lg xl:text-xl font-extrabold mb-4">{title}</p>
               <p className="text-sm xl:text-lg font-medium">{description}</p>
             </div>
           );

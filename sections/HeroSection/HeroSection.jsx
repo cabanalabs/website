@@ -1,34 +1,34 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { Button, ScrollIndicator } from "../../components";
+import { Button } from "../../components";
+import {SectionBody} from "../../components/SectionTitle/SectionTitle";
 
 export const HeroSection = () => {
   return (
-    <section className="section relative xl:pb-24">
-      <div className="max-w-[552px] flex flex-col gap-8">
-        <h1 className="text-3xl lg:text-4xl font-black text-white mt-28 -tracking-4">Create Trusted Web3 Identities</h1>
-        <div className="text-sm md:text-lg text-white mt-4 ">
-          <p>And stronger communities with Cabana Labs.</p>
-          <p className="mt-2 mb-4">Go beyond anonymous avatars and faceless interactions with a robust framework that unlocks value in your community. Trust Scores offer a rich tapestry of information – make informed decisions, secure interactions, and establish meaningful connections.</p>
-        </div>
+    <section className="section relative">
+      <div className="max-w-medium flex flex-col gap-8">
+        <h1 className="text-3xl lg:text-4xl font-extrabold text-white mt-36 -tracking-4">Create Trusted Web3 Identities</h1>
+        <SectionBody className="mt-6 mb-4">
+          Build stronger communities with Cabana Labs. Go beyond anonymous avatars and faceless interactions with a robust framework that unlocks value in your community.
+        </SectionBody>
         <div>
           <Link href="/contact">
             <Button>Get started</Button>
           </Link>
         </div>
-        <div className="absolute -top-40 lg:-top-22 xl:-top-12 -left-96 -z-20 scale-[2] lg:scale-[3.3] xl:scale-[3.7]">
-          <Image src="/images/gradient-blob.svg" alt="Gradient blob" width={800} height={900}/>
+        <div className="absolute -top-40 xl:-top-1/3 -left-96 -z-20 scale-[2] lg:scale-[3.3] xl:scale-[3.6]">
+          <Image src="/images/gradient-blob.svg" alt="Gradient blob" width={800} height={900} priority={true}/>
         </div>
       </div>
       <div className="hidden xl:block">
-        <div className="absolute top-72 right-24 -z-10">
-          <Image src="/images/hero-1.png" alt="Hero 1" width={754} height={754} />
+        <div className="absolute top-48 right-4 -z-10">
+          <Image src="/images/hero-1.png" alt="Hero 1" width={654} height={654} />
         </div>
-        <div className="absolute top-28 right-[660px] -z-20">
-          <Image src="/images/hero-2.png" alt="Hero 2" width={246} height={246} />
+        <div className="absolute top-0 right-[500px] -z-20">
+          <Image src="/images/hero-2.png" alt="Hero 2" width={236} height={236} />
         </div>
-        <div className="absolute top-16 right-4">
+        <div className="absolute top-32 -right-2">
           <Image src="/images/hero-3.png" alt="Hero 3" width={150} height={136} />
         </div>
       </div>

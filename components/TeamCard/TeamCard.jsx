@@ -8,7 +8,7 @@ export const TeamCard = ({ name, title, score, avatar }) => {
           <Image className="rounded-full overflow-hidden" src={avatar} width={92} height={92} alt={name} />
         </div>
         <div>
-          <h3 className="text-xl md:text-[31px] font-black text-codGray dark:text-white leading-[30px] md:leading-[41px]">
+          <h3 className="text-xl md:text-[31px] font-extrabold text-codGray dark:text-white leading-[30px] md:leading-[41px]">
             {name}
           </h3>
           <span className="text-[15px] font-medium text-corduroy dark:text-grayChateau leading-[21px]">{title}</span>
@@ -19,7 +19,7 @@ export const TeamCard = ({ name, title, score, avatar }) => {
           <span className="text-[12px] font-normal text-grayChateau">Profile score</span>
           <div className="flex items-center gap-2">
             <Image src="/images/profile-score.png" alt="Profile score" width={15} height={23} />
-            <span className="text-[31px] font-black text-codGray dark:text-white leading-[41px]">{score}</span>
+            <span className="text-[31px] font-extrabold text-codGray dark:text-white leading-[41px]">{score}</span>
           </div>
         </div>
         <div className="mt-auto">

@@ -1,7 +1,7 @@
 export const SectionTitle = ({ children, purple, className }) => {
   if (purple) {
     return (
-      <h2 className={`text-2xl xl:text-3xl font-black ${
+      <h2 className={`text-2xl xl:text-3xl font-extrabold ${
         purple ? "text-gradient-purple" : "text-gradient-green"
       } ${className}`}>
         {children}
@@ -14,3 +14,7 @@ export const SectionTitle = ({ children, purple, className }) => {
     </h2>
   );
 };
+
+export const SectionBody = ({ children, className }) => {
+  return <p className={`text-sm md:text-lg ${className}`}>{children}</p>;
+}

@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { Button, SectionTitle, TeamCard } from "../../components";
 import { useElementPosition } from "../../hooks";
 import { teamData } from "./teamData";
+import {SectionBody} from "../../components/SectionTitle/SectionTitle";
 
 export const Team = () => {
   const sectionRef = useRef(null);
@@ -13,18 +14,18 @@ export const Team = () => {
       <div className="space-y-6 xl:space-y-12 max-w-xxl mx-auto px-4 2xl:px-0" ref={sectionRef}>
         <div className="max-w-small space-y-6 xl:space-y-12">
           <SectionTitle className="mb-6 xl:mb-12">It's Time to Build with Trust</SectionTitle>
-          <p className="font-medium text-sm xl:text-lg">
+          <SectionBody>
             Are you ready to create a thriving, secure, and rewarding community? Contact us today to discover how Cabana Identity can unlock your community’s full potential.
-          </p>
+          </SectionBody>
         </div>
       </div>
       <div
         style={{ paddingLeft: elementXPosition + "px" }}
         className="flex gap-10 w-full overflow-scroll scrollbar-hide snap-x p-6"
       >
-        {teamData.map(member => (
+        {teamData.map((member, index) => (
           <TeamCard
-            key={member.id}
+            key={index}
             name={member.name}
             title={member.title}
             score={member.score}
