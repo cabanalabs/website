@@ -9,7 +9,7 @@ export const SectionTitle = ({ children, purple, className }) => {
     );
   }
   return (
-    <h2 className={`text-2xl xl:text-4xl font-bold text-white -tracking-4 ${className}`}>
+    <h2 className={`font-bold text-2xl -tracking-2 xl:text-3xl xl:-tracking-3 xxl:text-4xl xxl:-tracking-4 ${className}`}>
       {children}
     </h2>
   );
@@ -17,4 +17,13 @@ export const SectionTitle = ({ children, purple, className }) => {
 
 export const SectionBody = ({ children, className }) => {
   return <p className={`text-sm md:text-lg ${className}`}>{children}</p>;
+}
+
+
+export const PageTitle = ({ children, className }) => {
+  return (
+    <h1 className={`font-bold text-2xl -tracking-2 xl:text-3xl xl:-tracking-3 xxl:text-4xl xxl:-tracking-4 ${className}`}>
+      {children}
+    </h1>
+  );
 }

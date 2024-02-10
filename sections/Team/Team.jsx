@@ -12,9 +12,9 @@ export const Team = () => {
   return (
     <section className="py-14 md:py-28 space-y-6 xl:space-y-12">
       <div className="space-y-6 xl:space-y-12 max-w-xxl mx-auto px-4 2xl:px-0" ref={sectionRef}>
-        <div className="max-w-small space-y-6 xl:space-y-12">
-          <SectionTitle className="mb-6 xl:mb-12">It's Time to Build with Trust</SectionTitle>
-          <SectionBody>
+        <div className="space-y-6 xl:space-y-12">
+          <SectionTitle className="max-w-[350px] xl:max-w-small mb-6 xl:mb-12">It's Time to Build with Trust</SectionTitle>
+          <SectionBody className="max-w-small">
             Are you ready to create a thriving, secure, and rewarding community? Contact us today to discover how Cabana Identity can unlock your community’s full potential.
           </SectionBody>
         </div>

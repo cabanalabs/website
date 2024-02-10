@@ -1,7 +1,7 @@
 
 export const sdkData = [
   {
-    image: "/images/sdk/bitcoin.png",
+    image: "/images/sdk/bitcoin.svg",
     alt: "Bitcoin",
   },
   {
@@ -19,7 +19,7 @@ export const sdkData = [
     hidden: true
   },
   {
-    image: "/images/sdk/polkadot.png",
+    image: "/images/sdk/polkadot3.svg",
     alt: "Polkadot Ecosystem",
   },
   {
@@ -43,7 +43,7 @@ export const sdkData = [
     hidden: true
   },
   {
-    image: "/images/sdk/cardano.png",
+    image: "/images/sdk/cardano.svg",
     alt: "Cardano Ecosystem",
   },
   {
@@ -55,12 +55,12 @@ export const sdkData = [
     alt: "Zcash cryptocurrency",
   },
   {
-    image: "/images/sdk/jwt.png",
+    image: "/images/sdk/jwt.svg",
     alt: "JWT (JSON Web Tokens)",
   },
   {
-    image: "/images/sdk/passkey.png",
-    alt: "Passkeys (Simpler sign-in)",
+    image: "/images/sdk/passkey.svg",
+    alt: "Simpler sign-in with Passkeys",
   },
   {
     image: "/images/sdk/stellar.png",

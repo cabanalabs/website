@@ -4,6 +4,7 @@ import { HeroSection, Newsletter, Partnerships, Team } from "../sections";
 import {TrustScores} from "../sections/TrustScores/TrustScores";
 import {IdentityBuilding} from "../sections/IdentityBuilding/IdentityBuilding";
 import {SDK} from "../sections/SDK/SDK";
+import {OpenStandards} from "../sections/OpenStandards/OpenStandards";
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
         {/*<WhyItMatters />*/}
         <Team />
         <Partnerships />
+        <OpenStandards />
         {/*<Newsletter />*/}
       </>
     </>
