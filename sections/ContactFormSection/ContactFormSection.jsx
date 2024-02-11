@@ -171,7 +171,7 @@ export const ContactFormSection = () => {
               <span className='text-cabanaBlue'>*</span> Message
             </label>
             <textarea
-              className='cabana-input w-full md:p-8 text-base'
+              className='cabana-input w-full md:p-8 text-base text-black'
               type='text'
               name='message'
               id='message'

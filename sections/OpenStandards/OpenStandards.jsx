@@ -10,10 +10,12 @@ export const OpenStandards = () => {
           <SectionTitle >
             Built on open standards and chain agnostic
           </SectionTitle>
-          <ul className="li-starGray mt-8">
-            <li className="text-sm xl:text-lg text-corduroy underline">w3.org/TR/did-core</li>
-            <li className="text-sm xl:text-lg text-corduroy underline">w3.org/TR/vc-data-model</li>
-            <li className="text-sm xl:text-lg text-corduroy underline">identity.foundation</li>
+          <ul className="li-star mt-8">
+            <li className="text-sm xl:text-lg underline"><a href="https://w3.org/TR/did-core" target="_blank">w3.org/TR/did-core</a></li>
+            <li className="text-sm xl:text-lg underline"><a href="https://w3.org/TR/vc-data-model" target="_blank">w3.org/TR/vc-data-model</a></li>
+            <li className="text-sm xl:text-lg underline"><a href="https://identity.foundation" target="_blank">identity.foundation</a></li>
+            <li className="text-sm xl:text-lg underline"><a href="https://www.passkeys.com" target="_blank">passkeys.com</a></li>
+            <li className="text-sm xl:text-lg underline"><a href="https://jwt.io" target="_blank">jwt.io</a></li>
           </ul>
         </div>
       </div>
