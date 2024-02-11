@@ -23,7 +23,7 @@ export const TeamCard = ({ name, title, score, avatar }) => {
           </div>
         </div>
         <div className="mt-auto">
-          <Image src="/images/qr-code.png" width={82} height={82} alt="QR Code" />
+          <Image src="/images/qr-code.svg" width={82} height={82} alt="QR Code" />
         </div>
       </div>
     </div>
