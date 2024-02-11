@@ -17,14 +17,14 @@ export const teamData = [
     id: "7bcca349-cfc5-4ca6-a5f4-af7f5d99aa21",
     name: "Adriaan Mellegers",
     title: "CSO / Co-Founder",
-    score: 44,
+    score: 42,
     avatar: "/images/team/adriaan2.jpg",
   },
   {
     id: "c0727cb3-acc9-4157-8b55-b8c20544b022",
     name: "Vilen Rodeski",
     title: "Creative Advisor",
-    score: 42,
+    score: 44,
     avatar: "/images/team/vilen.jpg",
   },
   {
