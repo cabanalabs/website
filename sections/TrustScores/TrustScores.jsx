@@ -4,7 +4,7 @@ import {SectionBody} from "../../components/SectionTitle/SectionTitle";
 
 export const TrustScores = () => {
   return (
-    <section className="section pt-32 xl:pt-64">
+    <section className="section pt-4 lg:pt-32 xl:pt-64">
       <SectionTitle className="mb-8">
         Trust Scores
       </SectionTitle>

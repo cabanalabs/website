@@ -18,7 +18,7 @@ export const teamData = [
     name: "Adriaan Mellegers",
     title: "CSO / Co-Founder",
     score: 44,
-    avatar: "/images/team/adriaan.jpg",
+    avatar: "/images/team/adriaan2.jpg",
   },
   {
     id: "c0727cb3-acc9-4157-8b55-b8c20544b022",

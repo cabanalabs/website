@@ -5,8 +5,8 @@ import {SectionBody} from "../../components/SectionTitle/SectionTitle";
 export const IdentityBuilding = () => {
   return (
     <section className="max-w-medium xl:max-w-xxl mx-auto xl:my-24">
-      <div className={`flex flex-col lg:flex-row gap-6 xl:gap-12 items-center`}>
-        <div className="max-w-[360px]">
+      <div className={`flex flex-col lg:flex-row gap-12 xl:gap-12 items-center`}>
+        <div className="mx-2 lg:mx-0 max-w-[350px] lg:max-w-[290px] xl:max-w-[350px]">
           <SectionTitle className="mb-6 xl:mb-12 max-w-[300px]">
             Identity Building
           </SectionTitle>

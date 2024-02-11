@@ -9,7 +9,7 @@ export const HeroSection = () => {
     <section className="section relative">
       <div className="max-w-medium flex flex-col gap-8">
         <PageTitle className="max-w-[380px] xl:mt-36 xl:max-w-small">Create Trusted Web3 Identities</PageTitle>
-        <SectionBody className="mt-6 mb-4 max-w-lg xl:max-w-2xl">
+        <SectionBody className="mt-6 mb-4 xl:pr-20 max-w-lg xl:max-w-2xl">
           Build stronger communities with Cabana Labs. Go beyond anonymous avatars and faceless interactions with a robust framework that unlocks value in your community.
         </SectionBody>
         <div>

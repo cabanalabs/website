@@ -6,7 +6,7 @@ import {sdkData} from "./sdkData";
 export const SDK = () => {
   return (
     <section className="section divide-y divide-slate-600">
-      <div className="px-6 md:px-20 xl:px-0 ">
+      <div className="px-2 md:px-10 xl:px-0 ">
         <SectionTitle className="mb-8"> Cabana SDK </SectionTitle>
         <div className="flex flex-col gap-10 mb-14 max-w-[620px] xl:max-w-medium">
           <SectionBody>Effortlessly embed Cabana Identity into existing protocols, platforms and projects, enriching user experience and unlocking additional community value.</SectionBody>
@@ -39,11 +39,9 @@ export const SDK = () => {
           </div>
         </div>
         <div className="relative">
-          <div className="mx-0 mb-4 xl:mx-0 md:mb-12 flex flex-wrap justify-center gap-4 md:gap-8">
+          <div className="mb-4 md:mb-12 gap-0 md:gap-8 lg:mx-20 flex flex-wrap justify-center">
             {sdkData.map(({ alt, image, hidden }, index) => {
-              if (hidden) {
-                return null;
-              }
+              if (hidden) return null;
               return (
                 <div className="scale-75 md:scale-100" key={index}><Image src={image} width={100} height={100} title={alt} /></div>
               );
