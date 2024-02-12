@@ -1,3 +1,5 @@
+/*@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");*/
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,9 +9,9 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Satoshi', sans-serif;
-  font-size: 62.5%;
   -webkit-font-smoothing: antialiased;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 a {
@@ -23,8 +25,8 @@ a {
 }
 
 ::-webkit-scrollbar-track {
+  @apply bg-transparent;
   border-radius: 0.125rem;
-  background-color: rgba(0, 124, 194, 0.3);
 }
 
 ::-webkit-scrollbar {
@@ -33,83 +35,59 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
+  @apply bg-corduroy;
   border-radius: 1.125rem;
-  background-color: rgba(0, 124, 194, 0.3);
 }
 
-
+@layer base {
+  body {
+    @apply text-prussianBlue dark:text-linkWater;
+  }
+}
 
 @layer components {
-
-  .scroll-condition:not([data-scroll='0']) {
-    @apply shadow-regular
-  }
-
-  .nav-item {
-    @apply text-black text-base font-medium cursor-pointer hover:text-cabanaBlue hover:font-bold transition-all;
-  }
-
-  .nav-item--selected {
-    @apply text-base cursor-pointer text-cabanaBlue hover:text-black font-bold;
-  }
-
-  .nav-button-outlined {
-    @apply border-2 border-swamp text-swamp py-[5px] px-[12px] rounded-full text-base font-bold hover:bg-white hover:border-2 hover:border-swamp hover:text-swamp hover:scale-[1.02] active:scale-100 transition-all;
-  }
-
-  .nav-button-outlined--selected {
-    @apply border-2 border-cabanaBlue text-cabanaBlue py-[5px] px-[12px] rounded-full text-base font-bold hover:bg-white hover:border-2 hover:border-swamp hover:text-swamp hover:scale-[1.02] active:scale-100 transition-all;
-  }
-
-  .cabana-input {
-    @apply border-dashed border-[1px] border-cabanaBlue rounded-xl p-4 text-sm font-bold text-corduroy outline-none placeholder-corduroy;
-  }
-
   .section {
-    @apply my-20 md:my-40 max-w-section mx-auto;
+    @apply py-14 md:py-28 max-w-xxl mx-auto px-4 2xl:px-0;
   }
 
   .section-content {
-    @apply max-w-content m-auto px-6 lg:px-0;
+    @apply max-w-xxl m-auto px-4 2xl:px-0;
   }
 
-  .button-outlined-lg {
-    @apply border-4 border-swamp text-swamp py-[12px] px-[36px] rounded-full text-lg font-semibold hover:bg-swamp hover:border-4 hover:border-swamp hover:text-white hover:scale-[1.02] active:scale-100 transition-all;
+  .scroll-condition:not([data-scroll="0"]) {
+    @apply shadow-regular;
   }
 
-  .button-filled-lg {
-    @apply border-4 border-swamp bg-swamp text-white py-[12px] px-[36px] rounded-full text-lg font-semibold hover:bg-white hover:border-4 hover:border-swamp hover:text-swamp hover:scale-[1.02] active:scale-100 transition-all;
+  .vertical {
+    writing-mode: vertical-rl;
   }
 
-  .button-filled-lg--blue {
-    @apply border-4 border-cabanaBlue bg-cabanaBlue text-white py-[12px] px-[36px] rounded-full text-lg font-semibold hover:bg-white hover:border-4 hover:border-cabanaBlue hover:text-cabanaBlue hover:scale-[1.02] active:scale-100 transition-all;
+  .text-gradient-green {
+    background: linear-gradient(124deg, #11a78d 3.54%, #8fe74a 77.53%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-  .button-outlined-sm {
-    @apply border-4 border-swamp text-swamp py-[10px] px-[12px] rounded-full text-base font-medium hover:bg-swamp hover:border-4 hover:border-swamp hover:text-white hover:scale-[1.02] active:scale-100 transition-all;
+  .text-gradient-purple {
+    background: linear-gradient(133deg, #0145bc -17.99%, #b077dd 55.16%, #17469a 121.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-  .button-filled-sm {
-    @apply border-4 border-swamp bg-swamp text-white py-[10px] px-[12px] rounded-full text-base font-medium hover:bg-white hover:border-4 hover:border-swamp hover:text-swamp hover:scale-[1.02] active:scale-100 transition-all;
+  .li-star li {
+    margin-bottom: 14px;
+    @apply bg-star bg-no-repeat bg-left pl-[32px]
   }
 
-  .button-filled-xs {
-    @apply border-2 border-swamp bg-swamp text-white py-[5px] px-[12px] rounded-full text-xs font-bold hover:bg-white hover:border-2 hover:border-swamp hover:text-swamp hover:scale-[1.02] active:scale-100 transition-all;
+  .li-starGray li {
+    margin-bottom: 14px;
+    @apply bg-starGray bg-no-repeat bg-left pl-[32px]
   }
 
-  .button-filled-xs--blue {
-    @apply border-2 border-cabanaBlue bg-cabanaBlue text-white py-[5px] px-[12px] rounded-full text-xs font-bold hover:bg-white hover:border-2 hover:border-cabanaBlue hover:text-cabanaBlue hover:scale-[1.02] active:scale-100 transition-all;
-  }
-
-  .button-outlined-xs {
-    @apply border-2 border-swamp text-swamp py-[5px] px-[12px] rounded-full text-xs font-bold hover:bg-white hover:border-2 hover:border-swamp hover:text-swamp hover:scale-[1.02] active:scale-100 transition-all;
-  }
-
-  .button-outlined-lg-white {
-    @apply border-4 border-white text-white py-[12px] px-[36px] rounded-full text-lg font-semibold hover:scale-[1.02] active:scale-100 transition-all;
-  }
-
-  .button-outlined-sm-white {
-    @apply border-4 border-white text-white py-[10px] px-[12px] rounded-full text-base font-medium hover:scale-[1.02] active:scale-100 transition-all;
+  .li-star-2 li {
+    margin-bottom: 14px;
+    @apply bg-star bg-no-repeat bg-left pl-10 ml-8
   }
 }

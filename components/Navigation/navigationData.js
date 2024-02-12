@@ -1,21 +1,21 @@
 export const navData = [
   {
-    label: 'Home',
-    to: '/',
+    label: "Home",
+    to: "/",
   },
   {
-    label: 'About',
-    to: '/about',
+    label: "About",
+    to: "/about",
+    hidden: true,
   },
   {
-    label: 'Early Adopters',
-    to: '/early-adopters',
-    hidden: true
+    label: "Early Adopters",
+    to: "/early-adopters",
+    hidden: true,
   },
   {
-    label: 'Contact',
-    to: '/contact',
-    type: 'button'
+    label: "Contact Us",
+    to: "/contact",
+    type: "button",
   },
-
 ];

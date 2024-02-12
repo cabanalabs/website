@@ -77,7 +77,7 @@ export const ContactFormSection = () => {
         <div className='mb-12 md:mb-20 space-y-12'>
           <div>
             <label
-              className='text-base md:text-lg text-swamp font-medium mb-4 block'
+              className='text-base md:text-lg  font-medium mb-4 block'
               htmlFor='name'
             >
               Name
@@ -93,7 +93,7 @@ export const ContactFormSection = () => {
           </div>
           <div>
             <label
-              className='text-base md:text-lg text-swamp font-medium mb-4 block'
+              className='text-base md:text-lg  font-medium mb-4 block'
               htmlFor='organization'
             >
               Organization
@@ -109,7 +109,7 @@ export const ContactFormSection = () => {
           </div>
           <div>
             <label
-              className='text-base md:text-lg text-swamp font-medium mb-4 block'
+              className='text-base md:text-lg font-medium mb-4 block'
               htmlFor='email'
             >
               <span className='text-cabanaBlue'>*</span> Email Address
@@ -139,7 +139,7 @@ export const ContactFormSection = () => {
           </div>
           <div>
             <label
-              className='text-base md:text-lg text-swamp font-medium mb-4 block'
+              className='text-base md:text-lg font-medium mb-4 block'
               htmlFor='subject'
             >
               <span className='text-cabanaBlue'>*</span> Subject
@@ -165,13 +165,13 @@ export const ContactFormSection = () => {
           </div>
           <div>
             <label
-              className='text-base md:text-lg text-swamp font-medium mb-4 block'
+              className='text-base md:text-lg font-medium mb-4 block'
               htmlFor='message'
             >
               <span className='text-cabanaBlue'>*</span> Message
             </label>
             <textarea
-              className='cabana-input w-full md:p-8 text-base'
+              className='cabana-input w-full md:p-8 text-base text-black'
               type='text'
               name='message'
               id='message'

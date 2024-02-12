@@ -1,9 +1,8 @@
-export { HeroSection } from './HeroSection/HeroSection';
-export { ForOrg } from './ForOrg/ForOrg';
-export { Banner } from './Banner/Banner';
-export { ForConsumers } from './ForConsumers/ForConsumers';
-export { ConnectSection } from './ConnectSection/ConnectSection';
-export { PartnetshipsSection } from './PartnetshipsSection/PartnetshipsSection';
-export { FAQSection } from './FAQSection/FAQSection';
-export { StaffSection } from './StaffSection/StaffSection';
-export { ContactFormSection } from './ContactFormSection/ContactFormSection';
+export { HeroSection } from "./HeroSection/HeroSection";
+export { HowItWorks } from "./HowItWorks/HowItWorks";
+export { AppFeature } from "./AppFeature/AppFeature";
+export { WhyItMatters } from "./WhyItMatters/WhyItMatters";
+export { Team } from "./Team/Team";
+export { Partnerships } from "./Partnerships/Partnerships";
+export { Newsletter } from "./Newsletter/Newsletter";
+export { ContactFormSection } from "./ContactFormSection/ContactFormSection";

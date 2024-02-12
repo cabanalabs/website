@@ -1,7 +1,10 @@
-export { Navigation } from './Navigation/Navigation';
-export { Footer } from './Footer/Footer';
-export { SectionCard } from './SectionCard/SectionCard';
-export { SectionItem } from './SectionItem/SectionItem';
-export { FAQItem } from './FAQItem/FAQItem';
-export { PageLayout } from './PageLayout/PageLayout';
-export { StaffCard } from './StaffCard/StaffCard';
+export { Navigation } from "./Navigation/Navigation";
+export { NavItems } from "./Navigation/NavItem";
+export { Footer } from "../sections/Footer/Footer";
+export { PageLayout } from "./PageLayout/PageLayout";
+export { Logo } from "./Logo/Logo";
+export { Button } from "./Button/Button";
+export { ScrollIndicator } from "./ScrollIndicator/ScrollIndicator";
+export { SectionTitle } from "./SectionTitle/SectionTitle";
+export { TeamCard } from "./TeamCard/TeamCard";
+export { ScrollToTop } from "./ScrollIndicator/ScrollToTop";
