@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const TeamCard = ({ name, title, score, avatar }) => {
   return (
-    <div className="flex justify-between min-w-full sm:min-w-[340px] lg:min-w-[440px] p-6 bg-white/[.06] rounded-2xl shadow-regular snap-center">
+    <div className="flex justify-between min-w-full sm:min-w-[340px] lg:min-w-[440px] p-6 bg-black  rounded-2xl shadow-regular snap-center ">
       <div className="flex flex-col gap-6">
         <div>
           <Image className="rounded-full overflow-hidden" src={avatar} width={92} height={92} alt={name} />
