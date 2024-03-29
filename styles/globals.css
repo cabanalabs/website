@@ -14,6 +14,43 @@ body {
   overflow-x: hidden;
 }
 
+.parallax {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: -110;
+}
+
+.parallax::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    opacity: 0.2;
+
+    /* The image used */
+    background-image: url("/images/bg/stars3.jpg");
+
+    width: 100%;
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -111;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+
 a {
   color: inherit;
   text-decoration: none;
