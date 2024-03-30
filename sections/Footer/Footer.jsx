@@ -8,14 +8,14 @@ export const Footer = () => {
         <p className="flex justify-center md:flex-1 text-sm font-medium dark:text-linkWater text-prussianBlue">
           Copyright © Cabana Labs 2024
         </p>
-        <ul className="flex gap-9 items-center md:h-full md:ml-auto">
-          {footerData.map(data => {
-            if (data.hidden) return null;
-            return (<li key={data.category}>
-              <NavItem label={data.category} href={data.to} />
-            </li>)
-          })}
-        </ul>
+        {/*<ul className="flex gap-9 items-center md:h-full md:ml-auto">*/}
+        {/*  {footerData.map(data => {*/}
+        {/*    if (data.hidden) return null;*/}
+        {/*    return (<li key={data.category}>*/}
+        {/*      <NavItem label={data.category} href={data.to} />*/}
+        {/*    </li>)*/}
+        {/*  })}*/}
+        {/*</ul>*/}
       </div>
     </footer>
   );

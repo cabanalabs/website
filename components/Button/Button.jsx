@@ -14,7 +14,7 @@ export const Button = forwardRef(({ children, onClick, type, className }, ref) =
 
   return (
     <button
-      className={`bg-swamp text-white font-semibold  py-3 px-6 border-[3px] border-swamp hover:border-transparent rounded-full text-sm hover:font-bold transition-all hover:bg-linkWater hover:text-swamp hover:border-linkWater ${className}`}
+      className={`bg-swamp text-white font-semibold py-3 px-6 border-[3px] border-swamp hover:border-transparent rounded-full text-sm hover:font-bold transition-all hover:bg-linkWater hover:text-swamp hover:border-linkWater ${className}`}
       onClick={onClick}
     >
       {children}
