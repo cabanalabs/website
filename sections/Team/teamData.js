@@ -4,7 +4,7 @@ export const teamData = [
     name: "Frank Fox",
     title: "CTO / Co-Founder",
     score: 45,
-    avatar: "/images/team/frank.jpg",
+    avatar: "/images/team/frank2.jpg",
   },
   {
     id: "4a1bfa8f-aafe-41c9-8320-a67d85c85f04",
